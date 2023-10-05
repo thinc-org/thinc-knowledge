@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: thinc-org/thinc-roadmap:latest
+          tags: ghcr.io/thinc-org/thinc-roadmap:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
     
