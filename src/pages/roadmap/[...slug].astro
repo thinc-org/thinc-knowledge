@@ -1,29 +1,22 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
-import Base from '@/templates/Base.astro';
 import { Section } from '@/components/Section';
+import Base from '@/templates/Base.astro';
 import Roadmap from '@/templates/Roadmap.astro';
 
 export async function getStaticPaths() {
-    const posts = await getCollection('roadmap');
-    return posts.map((post) => ({
-        params: { slug: post.slug },
-        props: post,
+    const roadmaps = await getCollection('roadmap');
+    return roadmaps.map((roadmap) => ({
+        params: { slug: roadmap.slug },
+        props: roadmap,
     }));
 }
 type Props = CollectionEntry<'roadmap'>;
 
-const post = Astro.props;
-const { Content } = await post.render();
+const roadmap = Astro.props;
+const { Content } = await roadmap.render();
 ---
 
-
-
-<Roadmap {...post.data}>
-    <!-- <Section
-        prose
-        className="md:text-lg bg-gradient-to-b from-thinc-blue to-slate-950"
-    > -->
+<Roadmap {...roadmap.data}>
     <Content />
-    <!-- </Section> -->
 </Roadmap>

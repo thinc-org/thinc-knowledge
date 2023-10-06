@@ -1,8 +1,7 @@
 ---
-import '@/styles/global.css';
-import { Navigation } from '@/partials/Navigation';
 import { Footer } from '@/partials/Footer';
-import BaseHead from './BaseHead.astro';
+import { Navigation } from '@/partials/Navigation';
+import BaseHead from '@/templates/BaseHead.astro';
 
 export interface Props {
     title: string;
@@ -25,7 +24,5 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
             <slot />
         </main>
         <Footer />
-
-         @/partials/Navigation
     </body>
 </html>

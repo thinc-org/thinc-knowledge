@@ -1,9 +1,12 @@
 ---
-import Base from "@/templates/Base.astro";
-import { Hero, Roadmap } from "@/partials/Landing";
+import { getCollection } from 'astro:content';
+import { Hero, Roadmap } from '@/partials/Landing';
+import Base from '@/templates/Base.astro';
+
+const roadmaps = await getCollection('roadmap');
 ---
 
 <Base title="Thinc Roadmap" description="Thinc Roadmap">
     <Hero />
-    <Roadmap />
+    <Roadmap roadmaps={roadmaps} />
 </Base>

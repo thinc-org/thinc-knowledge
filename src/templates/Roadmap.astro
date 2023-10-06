@@ -1,9 +1,11 @@
 ---
+import '@/styles/content.css';
+
 import type { CollectionEntry } from 'astro:content';
-import BaseHead from './BaseHead.astro';
-import { Navigation } from '@/partials/Navigation';
 import { Footer } from '@/partials/Footer';
+import { Navigation } from '@/partials/Navigation';
 import { Header } from '@/partials/roadmap/Header';
+import BaseHead from '@/templates/BaseHead.astro';
 
 type Props = CollectionEntry<'roadmap'>['data'];
 
