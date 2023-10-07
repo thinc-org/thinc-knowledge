@@ -87,7 +87,8 @@
                 "unused-imports/no-unused-vars": [
                     "error",
                     { "argsIgnorePattern": "^_" }
-                ]
+                ],
+                "import/no-extraneous-dependencies": "off" // mjs is only used by Astro for configuration, false positive
             }
         },
         // Configuration for Astro

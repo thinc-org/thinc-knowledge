@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import { Section } from '@/components/Section';
+import Base from '@/templates/Base.astro';
+import Roadmap from '@/templates/Roadmap.astro';
+
+export async function getStaticPaths() {
+    const roadmaps = await getCollection('roadmap');
+    return roadmaps.map((roadmap) => ({
+        params: { slug: roadmap.slug },
+        props: roadmap,
+    }));
+}
+type Props = CollectionEntry<'roadmap'>;
+
+const roadmap = Astro.props;
+const { Content } = await roadmap.render();
+---
+
+<Roadmap {...roadmap.data}>
+    <Content />
+</Roadmap>

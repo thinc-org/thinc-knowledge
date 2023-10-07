@@ -6,7 +6,7 @@ module.exports = {
             colors: {
                 thinc: {
                     blue: '#0F162B',
-                    accent: '#F5EC11',
+                    accent: '#FEC92B',
                 },
             },
         },
