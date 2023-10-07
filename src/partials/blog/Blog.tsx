@@ -12,7 +12,7 @@ export const Title = () => {
                 Thinc Blogs
             </h1>
             <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                บทความให้ความรู้สำหรับการพัฒนาซอฟต์แวร์จากพี่ ๆ ในชมรม
             </p>
         </Section>
     );

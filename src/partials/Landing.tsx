@@ -108,7 +108,10 @@ export const Blogs = () => {
                         <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
                             Blogs
                         </h2>
-                        <p>แหล่งรวมบทความ...</p>
+                        <p>
+                            บทความให้ความรู้สำหรับการพัฒนาซอฟต์แวร์จากพี่ ๆ
+                            ในชมรม
+                        </p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-8">
