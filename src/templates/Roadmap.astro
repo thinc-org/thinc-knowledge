@@ -18,7 +18,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
     </head>
 
     <body class="bg-thinc-blue text-gray-100">
-        <Navigation />
+        <Navigation client:load />
         <main>
             <article
                 class="flex flex-col items-center bg-gradient-to-b from-thinc-blue to-slate-950"

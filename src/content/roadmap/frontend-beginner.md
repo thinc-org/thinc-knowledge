@@ -2,6 +2,7 @@
 title: 'Frontend Developer'
 description: 'เส้นทางการเรียนรู้สู่การเตรียมพร้อมเป็น Frontend Developer
     ฉบับพื้นฐาน'
+level: 'beginner'
 ---
 
 ## Fundamentals

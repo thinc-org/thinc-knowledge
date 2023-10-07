@@ -19,7 +19,7 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
         <BaseHead title={title} description={description} />
     </head>
     <body class="bg-thinc-blue text-gray-100">
-        <Navigation />
+        <Navigation client:load />
         <main class="min-h-screen">
             <slot />
         </main>
