@@ -6,3 +6,8 @@ level: 'beginner'
 ---
 
 ## Fundamentals
+
+-   JavaScript
+-   HTTP
+-   Database
+-   Docker

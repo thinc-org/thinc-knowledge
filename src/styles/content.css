@@ -67,3 +67,11 @@
     font-size: 1.3em;
     padding-right: 0.5em;
 }
+.content table {
+    text-align: left;
+    margin-bottom: 1em;
+}
+.content table th,
+.content table td {
+    padding: 0.5em 1em;
+}
