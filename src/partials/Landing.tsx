@@ -1,4 +1,9 @@
-import { LevelTag } from '@/components/LevelTag';
+// @ts-ignore
+import getSrc from 'get-src';
+import Parser from 'rss-parser';
+
+import { BlogCard } from '@/components/blog/BlogCard';
+import { RoadmapCard } from '@/components/roadmap/RoadmapCard';
 import { Section } from '@/components/Section';
 
 export const Hero = () => {
@@ -33,7 +38,7 @@ export const Hero = () => {
     );
 };
 
-export const Roadmap = ({
+export const Roadmaps = ({
     roadmaps,
 }: {
     roadmaps: {
@@ -47,50 +52,76 @@ export const Roadmap = ({
     }[];
 }) => {
     return (
-        <Section className="min-h-screen bg-white text-slate-600">
+        <Section className="bg-white pb-10 text-slate-600">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-6">
                     <div className="space-y-1">
                         <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
                             Developer Roadmap
                         </h2>
-                        <p>เริ่มต้นเรียนรู้ก่อนใคร...</p>
+                        <p>
+                            แหล่งรวมเส้นทางในการเริ่มต้นเรียนรู้ทักษะการเขียนโปรแกรมและพัฒนาซอฟต์แวร์
+                        </p>
                     </div>
                     {roadmaps?.map((roadmap) => (
-                        <div
+                        <RoadmapCard
                             key={roadmap.id}
-                            className="flex w-full rounded-lg border-2 bg-slate-50"
-                        >
-                            <a
-                                href={`/roadmap/${roadmap.slug}`}
-                                className="flex h-full w-full items-center px-10 py-8 text-center"
-                            >
-                                <div className="text-left">
-                                    <LevelTag level={roadmap.data.level} />
-                                    {/* <div className="flex">
-                                        <div className="rounded-full bg-thinc-accent/10 px-2 py-1 text-xs font-semibold uppercase text-thinc-accent">
-                                            {roadmap.data.level}
-                                        </div>
-                                    </div> */}
-                                    <h3 className="mt-1 text-2xl font-semibold text-slate-800">
-                                        {roadmap.data.title}
-                                    </h3>
-                                    <p>{roadmap.data.description}</p>
-                                </div>
-                            </a>
-                        </div>
+                            slug={roadmap.slug}
+                            level={roadmap.data.level}
+                            title={roadmap.data.title}
+                            description={roadmap.data.description}
+                        />
                     ))}
-                    <div className="relative h-40 select-none opacity-80">
+                    {/* <div className="relative h-40 select-none opacity-80">
                         <div className="absolute z-10 grid h-full w-full place-content-center bg-gradient-to-b from-transparent to-white"></div>
                         <div className="absolute grid h-full w-full place-content-center rounded-lg border-2 bg-slate-50">
                             <p>Coming Soon...</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
+            </div>
+        </Section>
+    );
+};
+
+const parser = new Parser();
+const feed = await parser.parseURL('https://medium.com/feed/thinc-org');
+const blogs = feed.items.slice(0, 4).map((item) => {
+    const imgSrc = getSrc(item['content:encoded']).replace('/1024/', '/400/');
+    const content = item['content:encodedSnippet'];
+    return {
+        title: item.title,
+        date: item.pubDate,
+        creator: item.creator,
+        link: item.link,
+        imgSrc,
+        content,
+    };
+});
+
+export const Blogs = () => {
+    return (
+        <Section className="border-t bg-slate-50 pb-10 text-slate-600">
+            <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-6">
-                    <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
-                        Blogs
-                    </h2>
+                    <div className="space-y-1">
+                        <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
+                            Blogs
+                        </h2>
+                        <p>แหล่งรวมบทความ...</p>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-8">
+                        {blogs.map((blog) => {
+                            return (
+                                <BlogCard
+                                    title={blog.title ?? ''}
+                                    link={blog.link ?? ''}
+                                    imgSrc={blog.imgSrc}
+                                />
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </Section>

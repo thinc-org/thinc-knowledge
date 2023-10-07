@@ -14,7 +14,9 @@ export const Header = ({
                 <h1 className="mt-0 text-3xl font-semibold text-white">
                     {title}
                 </h1>
-                <p className="-mt-1 text-slate-400 md:text-lg">{description}</p>
+                <p className="mt-0.5 text-slate-400 md:text-lg">
+                    {description}
+                </p>
             </div>
             <button></button>
         </div>

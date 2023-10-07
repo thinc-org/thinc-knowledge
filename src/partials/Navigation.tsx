@@ -18,8 +18,8 @@ export const Navigation = () => {
                     </div>
                 </div>
             )}
-            <header className="flex w-full justify-center">
-                <div className="flex h-24 w-full max-w-screen-lg items-center justify-between px-8">
+            <header className="flex w-full justify-center drop-shadow-md">
+                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 sm:h-24">
                     <div className="flex items-center space-x-12">
                         <div className="h-20 py-5">
                             <a href="/">
@@ -36,7 +36,7 @@ export const Navigation = () => {
                             <a href="/blog">Blog</a>
                         </div>
                     </div>
-                    <div className="mt-4 flex items-center space-x-4">
+                    <div className="flex items-center space-x-4 sm:mt-4">
                         <a
                             href="https://thinc.in.th"
                             target="_blank"

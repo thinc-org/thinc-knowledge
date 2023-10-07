@@ -10,11 +10,9 @@ export const Section = ({
     prose?: boolean;
 }) => {
     return (
-        <section
-            className={twMerge('flex w-full justify-center px-9', className)}
-        >
+        <section className={twMerge('flex w-full justify-center', className)}>
             <div
-                className={`h-full w-full py-8 ${
+                className={`h-full w-full p-8 ${
                     prose ? 'max-w-prose' : 'max-w-screen-lg'
                 }`}
             >
