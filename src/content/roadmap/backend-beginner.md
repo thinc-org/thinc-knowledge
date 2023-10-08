@@ -7,7 +7,7 @@ level: 'beginner'
 
 หากใครที่อยากเริ่มต้นเรียนรู้เกี่ยวกับ Backend Developer แต่ยังไม่รู้จะเริ่มต้นอย่างไร<br />หรือจะมางาน Thinc First Act แต่ยังไม่มีพื้นฐานเลย สามารถเริ่มต้นเรียนรู้ได้จาก Roadmap นี้เลย
 
-ถ้าหากใครที่มีเวลาไม่มาก สามารถกดดูเพียงแต่ลิงก์แรกของแต่ละหัวข้อ<br />และจึงค่อยมาเข้าใจเพิ่มเติมจากงาน Thinc First Act ได้เช่นกัน
+ถ้าหากใครที่มีเวลาไม่มาก ลิงก์นั้นจะเรียงจากความยาวน้อยไปมาก ลิงก์แรกนั้นจะสั้นและเนื้อหากระชับ<br />และจึงค่อยมาเข้าใจเพิ่มเติมจากงาน Thinc First Act ได้เช่นกัน
 
 ## Fundamental
 
@@ -46,10 +46,22 @@ Tips: แนะนำมาก ๆ ให้ทุกคนลองเรีย
 -   [How to build a REST API with Node js & Express](https://www.youtube.com/watch?v=pKd0Rpw7O48)
 -   [Learn Node.js & Express with Project in 2 Hours](https://www.youtube.com/watch?v=H9M02of22z4)
 
-<!-- ## Fundamentals
+## Database
 
+สิ่งสำคัญสุดท้ายที่เราต้องเรียนรู้คือการทำงานกับ Database<br />ซึ่งเป็นสิ่งที่จำเป็นสำหรับการพัฒนาระบบ Backend เนื่องจากเป็นสิ่งที่จะเก็บข้อมูลไว้ให้เราใช้งานได้
 
--   JavaScript
--   HTTP
--   Database
--   Docker -->
+### SQL
+
+Database นั้นมีหลากหลายแบบ แต่เราขอแนะนำให้เรียนรู้เกี่ยวกับ SQL ก่อน<br />เนื่องจากเป็น Database ที่จะปูพื้นฐานให้เราเข้าใจกับวิธีการเก็บและใช้ข้อมูล
+
+-   [SQL for Beginners Tutorial](https://www.youtube.com/watch?v=h0nxCDiD-zg)
+-   [MySQL Tutorial for Beginners [Full Course]](https://www.youtube.com/watch?v=7S_tz1z_5bA)
+-   [SQL Tutorial - Full Database Course for Beginners](https://www.youtube.com/watch?v=HXV3zeQKqGY)
+
+Tips: หลังจากที่ได้รู้จัก Database แล้ว ORM อย่าง Prisma นั้นเป็นหนึ่งในตัวช่วยในการทำงานกับ Database ที่สามารถช่วยให้เราเขียนโค้ดได้ง่ายขึ้น
+
+-   [Learn Prisma In 60 Minutes](https://www.youtube.com/watch?v=RebA5J-rlwg)
+
+<br />
+
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Backend Developer ได้แล้ว<br />และอย่าลืมมางาน Thinc First Act กันด้วยนะ

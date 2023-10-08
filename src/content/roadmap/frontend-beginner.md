@@ -61,3 +61,7 @@ JavaScript นั้นถือว่าเป็นภาษาที่ยา
 Tips: สุดท้ายเราลองมานำ 3 ภาษาที่เรียนมาทั้งหมดมาใช้งานร่วมกันดูผ่านตัวอย่างเล็ก ๆ นี้ได้เลย
 
 -   [Build a Netflix Landing Page Clone with HTML, CSS & JS](https://www.youtube.com/watch?v=P7t13SGytRk)
+
+<br />
+
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Frontend Developer ได้แล้ว<br />และอย่าลืมมางาน Thinc First Act กันด้วยนะ
