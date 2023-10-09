@@ -2,11 +2,12 @@
 import { getCollection } from 'astro:content';
 import Base from '@/templates/Base.astro';
 import { Title, Roadmaps } from '@/partials/roadmap/Roadmap';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 
 const roadmaps = await getCollection('roadmap');
 ---
 
-<Base title="Thinc Roadmap" description="Thinc Roadmap">
+<Base title={SITE_TITLE} description={SITE_DESCRIPTION}>
     <Title />
     <Roadmaps roadmaps={roadmaps} />
 </Base>
