@@ -20,7 +20,7 @@ export const Title = () => {
 
 const parser = new Parser();
 const feed = await parser.parseURL('https://medium.com/feed/thinc-org');
-const blogs = feed.items.slice(0, 4).map((item) => {
+const blogs = feed.items.map((item) => {
     const imgSrc = getSrc(item['content:encoded']).replace('/1024/', '/400/');
     const content = item['content:encodedSnippet'];
     return {
@@ -34,7 +34,7 @@ const blogs = feed.items.slice(0, 4).map((item) => {
 });
 export const Blogs = () => {
     return (
-        <Section className="h-screen border-t bg-slate-50">
+        <Section className="min-h-screen border-t bg-slate-50 pb-10">
             <div className="grid grid-cols-2 gap-8">
                 {blogs.map((blog) => {
                     return (
