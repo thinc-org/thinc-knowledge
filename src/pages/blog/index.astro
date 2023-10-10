@@ -1,10 +1,13 @@
 ---
+import { getCollection } from 'astro:content';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 import Base from '@/templates/Base.astro';
 import { Blogs, Title } from '@/partials/blog/Blog';
-import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+
+const blogs = await getCollection('blog');
 ---
 
 <Base title={SITE_TITLE} description={SITE_DESCRIPTION}>
     <Title />
-    <Blogs />
+    <Blogs blogs={blogs} />
 </Base>

@@ -1,0 +1,41 @@
+---
+import '@/styles/content.css';
+
+import type { CollectionEntry } from 'astro:content';
+import { Footer } from '@/partials/Footer';
+import { Navigation } from '@/partials/Navigation';
+import { Header } from '@/partials/roadmap/Header';
+import BaseHead from '@/templates/BaseHead.astro';
+
+type Props = CollectionEntry<'roadmap'>['data'];
+
+const { title, description } = Astro.props;
+---
+
+<html lang="th">
+    <head>
+        <BaseHead title={title} description={description} />
+    </head>
+
+    <body class="bg-thinc-blue text-gray-100">
+        <Navigation client:load />
+        <main>
+            <article
+                class="flex flex-col items-center bg-gradient-to-b from-thinc-blue to-slate-950"
+            >
+                <Header title={title} description={description} />
+                <div class="bg-white w-full h-10"></div>
+                <div
+                    class="min-h-[80vh] w-full text-lg bg-slate-50 border-t flex flex-col items-center"
+                >
+                    <div
+                        class="content max-w-screen-lg w-full text-slate-800 px-8 pt-6 pb-20"
+                    >
+                        <slot />
+                    </div>
+                </div>
+            </article>
+        </main>
+        <Footer />
+    </body>
+</html>

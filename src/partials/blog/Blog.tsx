@@ -20,7 +20,7 @@ export const Title = () => {
 
 const parser = new Parser();
 const feed = await parser.parseURL('https://medium.com/feed/thinc-org');
-const blogs = feed.items.map((item) => {
+const mediumBlogs = feed.items.map((item) => {
     const imgSrc = getSrc(item['content:encoded']).replace('/1024/', '/400/');
     const content = item['content:encodedSnippet'];
     return {
@@ -32,11 +32,34 @@ const blogs = feed.items.map((item) => {
         content,
     };
 });
-export const Blogs = () => {
+export const Blogs = ({
+    blogs,
+}: {
+    blogs: {
+        id: string;
+        slug: string;
+        data: {
+            title: string;
+            description: string;
+            level: string;
+        };
+    }[];
+}) => {
     return (
         <Section className="min-h-screen border-t bg-slate-50 pb-10">
             <div className="grid grid-cols-2 gap-8">
                 {blogs.map((blog) => {
+                    return (
+                        <BlogCard
+                            key={blog.id}
+                            title={blog.data.title}
+                            description={blog.data.description}
+                            link={blog.slug}
+                            local
+                        />
+                    );
+                })}
+                {mediumBlogs.map((blog) => {
                     return (
                         <BlogCard
                             key={blog.title}
