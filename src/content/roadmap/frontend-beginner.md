@@ -54,6 +54,8 @@ Tips: อย่าลืมทำความรู้จักกับกา�
 
 JavaScript นั้นถือว่าเป็นภาษาที่ยากที่สุดใน 3 ภาษา แต่ก็เป็นภาษาที่เราจะได้ใช้งานและต่อยอดต่อไปในเนื้อหาต่อ ๆ ไป
 
+-   [JavaScript Crash Course - PasaComputer](https://youtu.be/Tz5Wk1yPlBE?si=LF1miZGscb60gEPB)
+-   [JavaScript ใน 21 วัน - PasaComputer](https://www.youtube.com/watch?v=oKY8tJLA5nU&list=PLOgiLP3tCaPXc9-whn0on3tDT9rQdXAWL)
 -   [JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk)
 -   [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)
 -   [The Modern JavaScript Tutorial](https://javascript.info/)
