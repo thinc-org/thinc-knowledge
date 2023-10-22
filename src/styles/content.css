@@ -40,7 +40,10 @@
 .content code {
     padding: 2px 5px;
     background-color: #303030;
+    color: #fafafa;
     border-radius: 2px;
+    font-weight: 500;
+    font-size: 1em;
 }
 .content pre {
     padding: 1.5em;
