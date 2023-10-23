@@ -182,6 +182,10 @@ React มี Hook ที่ชื่อว่า `useEffect` ที่สาม�
 
 ### Testing
 
+-   [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+-   [Jest](https://jestjs.io/)
+-   [Cypress](https://www.cypress.io/)
+
 ### `useMemo` and `useCallback`
 
 -   [useMemo - React Docs](https://react.dev/reference/react/useMemo)
