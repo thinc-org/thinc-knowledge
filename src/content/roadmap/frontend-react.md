@@ -1,5 +1,5 @@
 ---
-title: 'Frontend Developer | React¸'
+title: 'Frontend Developer | React'
 description: 'เรียนรู้การใช้ React ฉบับพื้นฐาน'
 level: 'intermediate'
 ---
