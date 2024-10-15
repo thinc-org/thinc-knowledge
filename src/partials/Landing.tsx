@@ -14,7 +14,7 @@ export const Hero = () => {
                     Get Ready For
                 </span>
                 <h1 className="text-3xl font-semibold md:text-5xl">
-                    Thinc First Act 2023
+                    Thinc. 2024
                 </h1>
                 <p className="max-w-xl text-slate-400">
                     กิจกรรมที่พี่ ๆ ในชมรม Thinc.
@@ -23,7 +23,7 @@ export const Hero = () => {
                     ในหลากหลายสายงานอย่าง Frontend, Backend, Project Manager,
                     และ UX/UI
                 </p>
-                <div className="pt-10">
+                {/* <div className="pt-10">
                     <a
                         href="https://thinc.in.th/link/first_act"
                         target="_blank"
@@ -32,7 +32,7 @@ export const Hero = () => {
                     >
                         ลงทะเบียน
                     </a>
-                </div>
+                </div> */}
             </div>
         </Section>
     );
