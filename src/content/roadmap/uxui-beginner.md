@@ -96,8 +96,6 @@ Wireframe คือ การวาดร่างเบื้องต้นข
 
 ### Sitemap
 
-Sitemap สำหรับการออกแบบ UX คือ แผนผังของเว็บไซต์
-
 -   [Sitemap (แผนผังเว็บไซต์) คืออะไร?](https://medium.com/upskill-ux/sitemap-%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%9C%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%8B%E0%B8%95%E0%B9%8C-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-1a360039e549)
 -   [What is a Sitemap in UX Design?](https://www.interaction-design.org/literature/article/ux-sitemap?srsltid=AfmBOoqM3HVmq7U2J59Xmjz6JKovxIubs6gvEtzXzE3lJyn0-VVI0HVY)
 -   [How To Plan A Website Sitemap - EASY STEP BY STEP](https://www.youtube.com/watch?v=O3BXKqlfHGs)
