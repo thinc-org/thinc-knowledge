@@ -30,6 +30,11 @@ UX/UI แบ่งออกมาเป็นสองอย่างหลั�
 -   [Become a UI/UX designer in 2024 - A step by step guide](https://www.youtube.com/watch?v=HmKwiEmJIdM)
 -   [UI / UX Design Tutorial – Wireframe, Mockup & Design in Figma](https://www.youtube.com/watch?v=c9Wg6Cb_YlU)
 
+และนอกจากนั้น ยังมีแหล่งรวม Guidelines สำหรับการออกแบบ Product เพื่อให้ผู้ใช้สามารถใช้งานได้ง่ายที่สุดด้วย
+
+-   [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
+-   [Material Design](https://material.io/design)
+
 ## User Interface (UI)
 
 User Interface หมายถึง ส่วนที่ผู้ใช้สัมผัสได้ ซึ่งเป็นส่วนที่เราออกแบบขึ้นมา ซึ่งมีความหมายว่าเราต้องการให้ผู้ใช้สามารถใช้งานได้ง่ายและสวยงาม
@@ -40,6 +45,7 @@ Figma เป็นเครื่องมือที่ใช้ในกา�
 
 -   [world's shortest Figma course](https://www.youtube.com/watch?v=1pW_sk-2y40)
 -   [Introducing Figma: A Beginners Tutorial (2023 UI UX Design)](https://www.youtube.com/watch?v=JGLfyTDgfDc)
+-   [Figma UI Design Tutorial: Get Started in Just 24 Minutes!](https://www.youtube.com/watch?v=FTFaQWZBqQ8)
 -   [New to Figma? Get started with "Figma for beginners" tutorials](https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4)
 
 ### Graphic Design Fundamentals
@@ -50,8 +56,13 @@ Figma เป็นเครื่องมือที่ใช้ในกา�
 -   [4 Foundational UI Design Principles | C.R.A.P.](https://www.youtube.com/watch?v=uwNClNmekGU)
 -   [Beginning Graphic Design: Fundamentals](https://www.youtube.com/watch?v=YqQx75OPRa0&t=3s)
 -   [Design basics - by Figma](https://www.figma.com/resource-library/design-basics/)
+-   [60-30-10 Color Rule](https://www.youtube.com/watch?v=UWwNIMHFdW4)
 
 ### Prototyping
+
+Prototype คือแบบจำลองของ Product ที่เราออกแบบขึ้นมาเพื่อให้ผู้ใช้สามารถทดสอบการใช้งานได้ก่อนจะปล่ อยออกมาเป็น Product ที่ให้ใช้จริง
+
+เราสามารถสร้าง Prototype ได้ง่าย ๆ ด้วย Figma โดยการใช้งานเครื่องมือที่มีอยู่ใน Figma ได้เลย
 
 -   []()
 -   [Figma for Edu: Prototyping 101, new basics](https://www.youtube.com/watch?v=UUsysuFmVrA&t=70s)
@@ -60,13 +71,20 @@ Figma เป็นเครื่องมือที่ใช้ในกา�
 
 User Experience หมายถึง ประสบการณ์ที่ผู้ใช้ได้รับจากการใช้งานสิ่งต่าง ๆ ที่เราออกแบบขึ้นมา ซึ่งมีความหมายว่าเราต้องการให้ผู้ใช้มีประสบการณ์ที่ดี และสะดวกสบายในการใช้งาน
 
+-   [How to teach yourself UX Design (no bootcamps, no courses)](https://www.youtube.com/watch?v=hvBGy8ewZNc)
+-   [UX Design: How To Get Started (A Full Guide)](https://www.youtube.com/watch?v=t0aCoqXKFOU)
+
 ### UX Principles
 
--   https://lawsofux.com/
+-   [Laws of UX](https://lawsofux.com/)
 
 ### Research Methods
 
 -   https://www.scribbr.com/category/methodology/
+
+### Design Thinking
+
+-   [What Is Design Thinking? An Overview](https://www.youtube.com/watch?v=gHGN6hs2gZY)
 
 ### Information Architecture
 
@@ -83,12 +101,18 @@ Wireframe คือ การวาดร่างเบื้องต้นข
 -   https://medium.com/upskill-ux/sitemap-%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%9C%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%8B%E0%B8%95%E0%B9%8C-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-1a360039e549
 -   https://www.interaction-design.org/literature/article/ux-sitemap?srsltid=AfmBOoqM3HVmq7U2J59Xmjz6JKovxIubs6gvEtzXzE3lJyn0-VVI0HVY
 
+### UX Writing
+
+### Design Critique
+
+-   [Level up your UX design skills in 8 mins!](https://www.youtube.com/watch?v=g_rhKzX16f0)
+
 ## Design Resources, Inspiration & References
 
 ### Design Resources
 
 -   [Design Resources](https://designresourc.es/)
--   [onur.dev/bookmarks/design](https://onur.dev/bookmarks/design)
+-   [onur.dev - Design Bookmarks](https://onur.dev/bookmarks/design)
 
 ### Design Inspiration & References
 
@@ -99,3 +123,13 @@ Wireframe คือ การวาดร่างเบื้องต้นข
 -   [Pinterest](https://www.pinterest.com)
 -   [godly.website](https://godly.website/websites/startup)
 -   [cryptodesign.club](https://cryptodesign.club/)
+-   [PageFlows](https://pageflows.com/)
+
+### YouTube Channels
+
+-   [AJ&Smart](https://www.youtube.com/@AJSmart)
+-   [femke.deisgn](https://www.youtube.com/@femkedesign)
+-   [Mizko](https://www.youtube.com/@Mizko)
+-   [Rachel How](https://www.youtube.com/@rachelhow)
+-   [vaexperience](https://www.youtube.com/@vaexperience)
+-   [Jesse Showalter](https://www.youtube.com/@JesseShowalter)
