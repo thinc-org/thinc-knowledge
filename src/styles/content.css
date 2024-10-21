@@ -5,7 +5,8 @@
 }
 .content h1,
 .content h2,
-.content h3 {
+.content h3,
+.content h4 {
     font-weight: 700;
     margin: 3rem 0 1rem 0;
     line-height: 1.2;
@@ -19,6 +20,9 @@
 }
 .content h3 {
     font-size: 1.4em;
+}
+.content h4 {
+    font-size: 1.2em;
 }
 
 .content strong,
