@@ -108,7 +108,7 @@ Information Architecture คือ การวางแผนรูปแบบ
 -   [รู้จัก Information Architecture องค์ประกอบสำคัญในการทำ UX/UI Design](https://www.borntodev.com/2022/08/26/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-information-architecture/)
 -   [Information Architecture guide for UX designers](https://www.youtube.com/watch?v=akWDacn5lIA)
 
-#### Sitemap
+### Sitemap
 
 Sitemap เป็น Information Architecture รูปแบบหนึ่ง ที่ใช้ในการแสดงโครงสร้างของเว็บไซต์ หรือแอปพลิเคชันนั้น ๆ โดยส่วนใหญ่จะมีการแสดงโครงสร้างของเว็บไซต์เป็นลูกศรที่เชื่อมต่อกัน ซึ่งจะอธิบายถึงความสัมพันธ์ และวิธีการเข้าถึงข้อมูลในเว็บไซต์นั้น ๆ
 
