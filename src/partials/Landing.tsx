@@ -73,12 +73,6 @@ export const Roadmaps = ({
                             description={roadmap.data.description}
                         />
                     ))}
-                    {/* <div className="relative h-40 select-none opacity-80">
-                        <div className="absolute z-10 grid h-full w-full place-content-center bg-gradient-to-b from-transparent to-white"></div>
-                        <div className="absolute grid h-full w-full place-content-center rounded-lg border-2 bg-slate-50">
-                            <p>Coming Soon...</p>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </Section>
@@ -105,8 +99,8 @@ export const Blogs = () => {
         <Section className="border-t bg-slate-50 pb-10 text-slate-600">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-6">
-                    <div className="flex w-full justify-between">
-                        <div className="space-y-1">
+                    <div className="flex w-full items-end justify-start gap-4">
+                        <div className="shrink space-y-1">
                             <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
                                 Blogs
                             </h2>
@@ -120,9 +114,9 @@ export const Blogs = () => {
                             href="https://medium.com/thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2"
+                            className="flex flex-col items-end gap-2 sm:flex-row sm:items-center"
                         >
-                            <span className="text-lg font-semibold text-thinc-blue">
+                            <span className="w-full whitespace-nowrap text-sm font-semibold text-thinc-blue sm:text-lg">
                                 medium.com/thinc-org
                             </span>
                             <FiChevronRight className="text-2xl text-thinc-blue" />
@@ -193,12 +187,12 @@ export const Videos = () => {
         <Section className="bg-white pb-10 text-slate-600">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-6">
-                    <div className="flex w-full justify-between">
-                        <div className="space-y-1">
+                    <div className="flex w-full justify-between gap-4">
+                        <div className="flex shrink flex-col space-y-1">
                             <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
                                 Videos
                             </h2>
-                            <p>
+                            <p className="text-ellipsis">
                                 วิดีโอสอนการพัฒนาซอฟต์แวร์และวิธีการใช้เครื่องมือต่าง
                                 ๆ โดยชมรม Thinc.
                             </p>
@@ -207,12 +201,14 @@ export const Videos = () => {
                             href="https://www.youtube.com/@thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2"
+                            className="flex flex-col items-end gap-2 sm:flex-row sm:items-center"
                         >
-                            <FiYoutube className="text-6xl text-red-500 hover:text-red-600" />
-                            <span className="text-lg font-semibold text-thinc-blue">
-                                @thinc-org
-                            </span>
+                            <div className="flex items-center gap-2">
+                                <FiYoutube className="text-4xl text-red-500 hover:text-red-600" />
+                                <span className="w-full whitespace-nowrap text-base font-semibold text-thinc-blue sm:text-lg">
+                                    @thinc-org
+                                </span>
+                            </div>
                             <FiChevronRight className="text-2xl text-thinc-blue" />
                         </a>
                     </div>
@@ -237,7 +233,7 @@ export const Videos = () => {
                                         {video.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-400"
+                                                className="rounded-full bg-red-50 px-2 py-1 text-xs font-semibold text-red-400"
                                             >
                                                 {tag}
                                             </span>
