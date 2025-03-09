@@ -1,0 +1,10 @@
+---
+import Base from '@/templates/Base.astro';
+import { Blogs, Title } from '@/partials/blog/Blog';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+import { Videos } from '@/partials/Landing';
+---
+
+<Base title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <Videos />
+</Base>

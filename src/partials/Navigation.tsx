@@ -34,6 +34,7 @@ export const Navigation = () => {
                         <div className="mt-4 hidden items-center space-x-8 text-slate-400 sm:flex">
                             <a href="/roadmap">Roadmap</a>
                             <a href="/blog">Blog</a>
+                            <a href="/videos">Videos</a>
                         </div>
                     </div>
                     <div className="flex items-center space-x-4 sm:mt-4">
