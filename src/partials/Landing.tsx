@@ -1,11 +1,11 @@
 // @ts-ignore
 import getSrc from 'get-src';
+import { FiChevronRight, FiYoutube } from 'react-icons/fi';
 import Parser from 'rss-parser';
 
 import { BlogCard } from '@/components/blog/BlogCard';
 import { RoadmapCard } from '@/components/roadmap/RoadmapCard';
 import { Section } from '@/components/Section';
-import { FiArrowRight, FiChevronRight, FiYoutube } from 'react-icons/fi';
 
 export const Hero = () => {
     return (
@@ -237,7 +237,7 @@ export const Videos = () => {
                                         {video.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="rounded-full bg-amber-800 px-2 py-1 text-xs font-semibold text-white"
+                                                className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-400"
                                             >
                                                 {tag}
                                             </span>
