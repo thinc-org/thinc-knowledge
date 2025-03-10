@@ -99,7 +99,7 @@ export const Blogs = () => {
         <Section className="border-t bg-slate-50 pb-10 text-slate-600">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-6">
-                    <div className="flex w-full items-end justify-start gap-4">
+                    <div className="flex w-full items-end justify-between gap-4">
                         <div className="shrink space-y-1">
                             <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
                                 Blogs
