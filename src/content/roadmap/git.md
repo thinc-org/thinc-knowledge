@@ -1,0 +1,77 @@
+---
+title: 'Git Basics'
+description: 'เรียนรู้ทักษะพื้นฐานในกาใช้ Git ในการทำ version control'
+level: 'beginner'
+---
+
+# Git Basics
+
+บทความนี้จะพาทุกคนมารู้จักกับ basics ของการใช้งานโปรแกรม Git กัน
+
+Git เป็นโปรแกรม version control ที่นับได้ว่าใช้กันอย่างแพร่หลายที่่สุดในสำหรับ software development ที่ช่วยติดตามการเปลี่ยนแปลงของโค้ดระหว่างการพัฒนาโปรแกรมของเรา ซึ่งสำคัญอย่างมากในการจัดการ codebase ร่วมกันทีมที่มีหลายคนทำงานในโปรเจกต์เดียวกัน
+
+## Set up
+
+สามารถติดตั้ง Git ได้จาก [git-scm.com](https://git-scm.com/)
+
+# Basics
+
+การใช้งาน Git มีคำสั่งเบื้องต้นประมาณนี้ แนะนำให้อ่าน resources ที่เราได้แปะไว้เพื่อทำความเข้าใจแต่ละคำสั่งด้วย
+
+## เกี่ยวกับการสร้าง repository
+
+-   `git init` สร้าง repository ใหม่ เพื่อให้ Git ติดตามการเปลี่ยนแปลงของไฟล์ในโฟลเดอร์ปัจจุบัน
+-   `git clone` คัดลอก repository จาก remote repository เช่นใน GitHub (repository ที่ถูก host จาก network หรือ internet)
+
+## การอัปเดตการเปลี่ยนแปลง และตรวจสอบสถานะ
+
+-   `git add` เพิ่มไฟล์เข้า staging (เพื่อบอกว่าเรากำลังเตรียมจะ commit ไฟล์เหล่านี้)
+-   `git commit` การ commit บันทึกการเปลี่ยนแปลงที่อยู่ใน staging area
+-   `git log` ดูประวัติการ commit
+-   `git status` ตรวจสอบสถานะของไฟล์ในโฟลเดอร์ปัจจุบัน
+
+## การเปลี่ยนแปลง
+
+-   `git branch` จัดการ branch ของ repository
+-   `git rebase` รวม branch โดยการเลือก commit ที่จะรวม
+-   `git merge` รวม branch กับ branch ปัจจุบัน
+
+## อัปเดตการเปลี่ยนแปลงที่ remote repository
+
+remote repository คือ repository ที่ถูก host จาก network หรือ internet เช่นใน [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/product/)
+
+-   `git push` ส่งการ commit ไปยัง remote repository
+-   `git pull` ดึงการ commit จาก remote repository
+
+# Learning Resources
+
+## Video Tutorials
+
+-   [Git in 100 seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
+-   [Git Tutorial For Dummies](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
+-   [Learn Git - The Full Course [Freecodecamp]](https://www.youtube.com/watch?v=zTjRZNkhiEU)
+
+## Web Content
+
+-   [Git พื้นฐานสุด ๆ จบในหน้าเดียว](https://www.borntodev.com/2020/03/30/git-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%86/)
+-   [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+-   [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+## Interactive Games
+
+-   [Learn Git Branching](https://learngitbranching.js.org/)
+-   [Ohmygit (Git Game)](https://ohmygit.org/)
+-   [Githug - Command Line Git Game](https://github.com/Gazler/githug)
+
+## Long Content
+
+-   [GitHub: Git Basics](https://docs.github.com/en/get-started/git-basics)
+-   [Pro Git book](https://git-scm.com/book/en/v2)
+
+# Resources อื่น ๆ
+
+## การเขียน Commit Message ที่ดี
+
+-   [Conventional Commits - A specification for adding human and machine readable meaning to commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
+-   [How to write better Git commit messaages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
+-   [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
