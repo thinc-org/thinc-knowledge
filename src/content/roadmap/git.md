@@ -10,39 +10,6 @@ level: 'beginner'
 
 Git เป็นโปรแกรม version control ที่นับได้ว่าใช้กันอย่างแพร่หลายที่่สุดในสำหรับ software development ที่ช่วยติดตามการเปลี่ยนแปลงของโค้ดระหว่างการพัฒนาโปรแกรมของเรา ซึ่งสำคัญอย่างมากในการจัดการ codebase ร่วมกันทีมที่มีหลายคนทำงานในโปรเจกต์เดียวกัน
 
-# Learning Resources
-
-## Video Tutorials
-
--   [Git in 100 seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
--   [Git Tutorial For Dummies](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
--   [Learn Git - The Full Course [Freecodecamp]](https://www.youtube.com/watch?v=zTjRZNkhiEU)
-
-## Web Content
-
--   [Git พื้นฐานสุด ๆ จบในหน้าเดียว](https://www.borntodev.com/2020/03/30/git-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%86/)
--   [Git Handbook](https://guides.github.com/introduction/git-handbook/)
--   [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-
-## Interactive Games
-
--   [Learn Git Branching](https://learngitbranching.js.org/)
--   [Ohmygit (Git Game)](https://ohmygit.org/)
--   [Githug - Command Line Git Game](https://github.com/Gazler/githug)
-
-## Long Content
-
--   [GitHub: Git Basics](https://docs.github.com/en/get-started/git-basics)
--   [Pro Git book](https://git-scm.com/book/en/v2)
-
-# Resources อื่น ๆ
-
-## การเขียน Commit Message ที่ดี
-
--   [Conventional Commits - A specification for adding human and machine readable meaning to commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
--   [How to write better Git commit messaages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
--   [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
-
 # Basics
 
 การใช้งาน Git มีคำสั่งเบื้องต้นประมาณนี้ แนะนำให้อ่าน resources ที่เราได้แปะไว้เพื่อทำความเข้าใจแต่ละคำสั่งด้วย
@@ -71,6 +38,10 @@ Git เป็นโปรแกรม version control ที่นับได�
 -   `git checkout` สลับไปที่ branch ที่เราต้องการ
 -   `git rebase` รวม branch โดยการเลือก commit ที่จะรวม (เพื่อให้ประวัติการ commit ของ branch ที่เรา merge มีลำดับที่เรียงกัน)
 -   `git merge` รวม branch หนึ่ง กับ branch ปัจจุบัน
+
+แหล่งเรียนรู้เพิ่มเติม
+
+-   [Learn Git Branching](https://learngitbranching.js.org/)
 
 ## อัปเดตการเปลี่ยนแปลงที่ remote repository
 
@@ -105,3 +76,39 @@ Pull Request เป็น feature ที่ช่วยให้เราสา�
 Issues เป็น feature ที่ช่วยให้เราสามารถสร้าง task หรือ bug report ใน repository ของเรา
 
 -   [Quickstart for GitHub Issues - Follow this brief interactive guide to learn about GitHub Issues.](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart)
+
+# Learning Resources
+
+เราตั้งในให้บทความนี้เป็นแหล่งรวม resources ในการเรียนรู้ต่าง ๆ เกี่ยวกับการใช้ Git โดยเนื้อหาทั้งหมดที่เราแนะนำไว้จะสามารถเรียนรู้ได้ทั้งหมดภายในเวลาไม่เกิน **3 ชั่วโมง** โดยจะมีทั้งเนื้อหาที่สั้นและยาวปนกันไป สามารถคลิกไปที่ลิงก์ต่าง ๆ เพื่อลองหา resources การเรียนที่ใช่สำหรับเราได้เลย
+
+## Video Tutorials
+
+-   [Git & GitHub Tutorial | Visualized Git Course](https://www.youtube.com/watch?v=S7XpTAnSDL4)
+-   [Git in 100 seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
+-   [Git Tutorial For Dummies](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
+-   [Learn Git - The Full Course [Freecodecamp]](https://www.youtube.com/watch?v=zTjRZNkhiEU)
+
+## Web Content
+
+-   [Git พื้นฐานสุด ๆ จบในหน้าเดียว](https://www.borntodev.com/2020/03/30/git-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%86/)
+-   [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+-   [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+## Interactive Games
+
+-   [Learn Git Branching](https://learngitbranching.js.org/)
+-   [Ohmygit (Git Game)](https://ohmygit.org/)
+-   [Githug - Command Line Git Game](https://github.com/Gazler/githug)
+
+## Long Content
+
+-   [GitHub: Git Basics](https://docs.github.com/en/get-started/git-basics)
+-   [Pro Git book](https://git-scm.com/book/en/v2)
+
+## Resources อื่น ๆ
+
+### การเขียน Commit Message ที่ดี
+
+-   [Conventional Commits - A specification for adding human and machine readable meaning to commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
+-   [How to write better Git commit messaages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
+-   [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
