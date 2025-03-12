@@ -157,6 +157,7 @@ React มี Hook ที่ชื่อว่า `useEffect` ที่สาม�
 
 ### State Management
 
+-   [Zustand](https://zustand-demo.pmnd.rs/)
 -   [Nanostores](https://github.com/nanostores/nanostores)
 -   [Jotai](https://jotai.org/)
 -   [Redux](https://redux.js.org/)
@@ -164,7 +165,7 @@ React มี Hook ที่ชื่อว่า `useEffect` ที่สาม�
 ### Styling
 
 -   [TailwindCSS](https://tailwindcss.com/)
--   [Bootstrap]()
+-   [Bootstrap](https://getbootstrap.com/)
 -   [Styled Components](https://styled-components.com/)
 -   [Stitches](https://stitches.dev/)
 
@@ -192,3 +193,5 @@ React มี Hook ที่ชื่อว่า `useEffect` ที่สาม�
 -   [useCallback - React Docs](https://react.dev/reference/react/useCallback)
 -   [Understanding when to use useMemo](https://maxrozen.com/understanding-when-use-usememo)
 -   [When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
+
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ React ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.in.th](https://instagram.com/thinc.in.th) ด้วยนะะ

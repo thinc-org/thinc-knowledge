@@ -1,6 +1,6 @@
 ---
-title: 'Git Basics'
-description: 'เรียนรู้ทักษะพื้นฐานในกาใช้ Git ในการทำ version control'
+title: 'Git/GitHub Basics'
+description: 'เรียนรู้ทักษะพื้นฐานในกาใช้ Git/GitHub ในการทำ version control'
 level: 'beginner'
 ---
 
@@ -112,3 +112,5 @@ Issues เป็น feature ที่ช่วยให้เราสามา�
 -   [Conventional Commits - A specification for adding human and machine readable meaning to commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
 -   [How to write better Git commit messaages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 -   [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับการใช้ Git/GitHub ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.in.th](https://instagram.com/thinc.in.th) ด้วยนะะ
