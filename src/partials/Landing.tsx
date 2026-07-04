@@ -9,13 +9,13 @@ import { Section } from '@/components/Section';
 
 export const Hero = () => {
     return (
-        <Section className="h-[60vh] bg-gradient-to-b from-thinc-blue to-slate-950 md:h-[65vh]">
+        <Section className="bg-gradient-to-b from-thinc-blue to-slate-950">
             <div className="flex flex-col items-center space-y-6 py-16 text-center md:py-20">
-                <span className="-mb-3.5 font-semibold uppercase text-thinc-accent">
+                <span className="-mb-3.5 text-lg md:text-xl font-semibold uppercase tracking-widest text-thinc-accent">
                     Get Ready For
                 </span>
-                <h1 className="text-3xl font-semibold md:text-5xl">
-                    Thinc. 2024
+                <h1 className="text-5xl font-semibold">
+                    Thinc. 2026
                 </h1>
                 <p className="max-w-xl text-slate-400">
                     กิจกรรมที่พี่ ๆ ในชมรม Thinc.
@@ -53,26 +53,29 @@ export const Roadmaps = ({
     }[];
 }) => {
     return (
-        <Section className="bg-white pb-10 text-slate-600">
+        <Section className="border-t bg-white py-4 md:py-6 text-slate-600">
             <div className="flex w-full flex-col space-y-16">
-                <div className="space-y-6">
-                    <div className="space-y-1">
-                        <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
+                <div className="space-y-10">
+                    <div className="space-y-3">
+                        <h2 className="text-3xl font-bold text-slate-800 md:text-4xl">
                             Developer Roadmap
                         </h2>
                         <p>
                             แหล่งรวมเส้นทางในการเริ่มต้นเรียนรู้ทักษะการเขียนโปรแกรมและพัฒนาซอฟต์แวร์
                         </p>
                     </div>
-                    {roadmaps?.map((roadmap) => (
-                        <RoadmapCard
-                            key={roadmap.id}
-                            slug={roadmap.slug}
-                            level={roadmap.data.level}
-                            title={roadmap.data.title}
-                            description={roadmap.data.description}
-                        />
-                    ))}
+                    <div className="space-y-6">
+                        {roadmaps?.map((roadmap) => (
+                            <RoadmapCard
+                                key={roadmap.id}
+                                slug={roadmap.slug}
+                                level={roadmap.data.level}
+                                title={roadmap.data.title}
+                                description={roadmap.data.description}
+                                className="border-slate-200/60 bg-slate-50"
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </Section>
@@ -96,12 +99,12 @@ const blogs = feed.items.slice(0, 4).map((item) => {
 
 export const Blogs = () => {
     return (
-        <Section className="border-t bg-slate-50 pb-10 text-slate-600">
+        <Section className="border-t bg-slate-50 py-4 md:py-6 text-slate-600">
             <div className="flex w-full flex-col space-y-16">
-                <div className="space-y-6">
-                    <div className="flex w-full items-end justify-between gap-4">
-                        <div className="shrink space-y-1">
-                            <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
+                <div className="space-y-10">
+                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                        <div className="space-y-3 max-w-md">
+                            <h2 className="text-3xl font-bold text-slate-800 md:text-4xl">
                                 Blogs
                             </h2>
                             <p>
@@ -114,16 +117,14 @@ export const Blogs = () => {
                             href="https://medium.com/thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex flex-col items-end gap-2 sm:flex-row sm:items-center"
+                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-50 hover:text-slate-900 self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                         >
-                            <span className="w-full whitespace-nowrap text-sm font-semibold text-thinc-blue sm:text-lg">
-                                medium.com/thinc-org
-                            </span>
-                            <FiChevronRight className="text-2xl text-thinc-blue" />
+                            <span>medium.com/thinc-org</span>
+                            <FiChevronRight className="text-lg md:text-xl" />
                         </a>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                         {blogs.map((blog) => {
                             return (
                                 <BlogCard
@@ -134,6 +135,15 @@ export const Blogs = () => {
                                 />
                             );
                         })}
+                    </div>
+                    <div className="flex w-full justify-center">
+                        <a
+                            href="/blog"
+                            className="group flex items-center gap-2 rounded-full bg-thinc-blue px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-slate-800 hover:shadow md:px-8 md:py-3.5 md:text-base"
+                        >
+                            Explore all blogs
+                            <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -184,12 +194,12 @@ const videosPlaylists = [
 
 export const Videos = () => {
     return (
-        <Section className="bg-white pb-10 text-slate-600">
+        <Section className="border-t bg-white py-4 md:py-6 text-slate-600">
             <div className="flex w-full flex-col space-y-16">
-                <div className="space-y-6">
-                    <div className="flex w-full justify-between gap-4">
-                        <div className="flex shrink flex-col space-y-1">
-                            <h2 className="text-xl font-bold text-slate-800 md:text-2xl">
+                <div className="space-y-10">
+                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                        <div className="space-y-3 max-w-md">
+                            <h2 className="text-3xl font-bold text-slate-800 md:text-4xl">
                                 Videos
                             </h2>
                             <p className="text-ellipsis">
@@ -201,22 +211,18 @@ export const Videos = () => {
                             href="https://www.youtube.com/@thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex flex-col items-end gap-2 sm:flex-row sm:items-center"
+                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-50 hover:text-slate-900 self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                         >
-                            <div className="flex items-center gap-2">
-                                <FiYoutube className="text-4xl text-red-500 hover:text-red-600" />
-                                <span className="w-full whitespace-nowrap text-base font-semibold text-thinc-blue sm:text-lg">
-                                    @thinc-org
-                                </span>
-                            </div>
-                            <FiChevronRight className="text-2xl text-thinc-blue" />
+                            <FiYoutube className="text-lg text-red-500 md:text-xl" />
+                            <span>@thinc-org</span>
+                            <FiChevronRight className="text-lg md:text-xl" />
                         </a>
                     </div>
-                    <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                         {videosPlaylists.map((video) => (
                             <div
                                 key={video.title}
-                                className="flex flex-col items-start gap-4 rounded-lg border border-slate-100 bg-white p-4 shadow-md transition-all duration-300 hover:shadow-lg"
+                                className="flex flex-col items-start gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:shadow"
                             >
                                 <iframe
                                     width="560"

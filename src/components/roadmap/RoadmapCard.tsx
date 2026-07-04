@@ -18,18 +18,18 @@ export const RoadmapCard = ({
     return (
         <div
             className={twMerge(
-                'flex w-full rounded-lg border-2 bg-slate-50',
+                'flex w-full rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow transition-all duration-300',
                 className,
             )}
         >
             <a
                 href={`/roadmap/${slug}`}
-                className="flex h-full w-full items-center px-10 py-8 text-center"
+                className="flex h-full w-full items-center px-6 py-6 md:px-7 md:py-7 text-center"
             >
-                <div className="text-left">
+                <div className="text-left space-y-2">
                     <LevelTag level={level} />
 
-                    <h3 className="mt-1 text-2xl font-semibold text-slate-800">
+                    <h3 className="text-xl font-semibold text-slate-800 md:text-2xl">
                         {title}
                     </h3>
                     <p className="text-slate-600">{description}</p>

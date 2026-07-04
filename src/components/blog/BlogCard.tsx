@@ -12,10 +12,13 @@ export const BlogCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="space-y-4 rounded-lg border bg-white p-4"
+            className="group space-y-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm hover:shadow transition-all duration-300"
         >
-            <div className="grid h-36 w-full place-content-center overflow-hidden rounded-md">
-                <img src={imgSrc} className="scale-110" />
+            <div className="w-full overflow-hidden rounded-md bg-slate-100">
+                <img
+                    src={imgSrc}
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                />
             </div>
             <h4 className="text-lg font-semibold text-slate-700">{title}</h4>
         </a>

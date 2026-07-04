@@ -7,16 +7,16 @@ export const Header = ({
 }) => {
     return (
         <div className="flex w-full max-w-screen-lg flex-col px-8 pb-8 pt-6 md:flex-row md:items-end md:justify-between">
-            <div>
-                <span className="text-sm font-bold uppercase text-thinc-accent">
-                    Roadmap
-                </span>
-                <h1 className="mt-0 text-3xl font-semibold text-white">
-                    {title}
-                </h1>
-                <p className="mt-0.5 text-slate-400 md:text-lg">
-                    {description}
-                </p>
+            <div className="flex flex-col space-y-6">
+                <div className="flex flex-col">
+                    <span className="mb-2 text-lg font-semibold uppercase tracking-widest text-thinc-accent md:text-xl">
+                        Roadmap
+                    </span>
+                    <h1 className="text-4xl font-semibold text-white md:text-5xl">
+                        {title}
+                    </h1>
+                </div>
+                <p className="max-w-xl text-slate-400">{description}</p>
             </div>
             <button></button>
         </div>

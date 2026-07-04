@@ -82,3 +82,8 @@
 .content table td {
     padding: 0.5em 1em;
 }
+
+/* Remove top margin from the very first element so spacing is uniform regardless of whether a page starts with a paragraph or a heading */
+.content > *:first-child {
+    margin-top: 0;
+}
