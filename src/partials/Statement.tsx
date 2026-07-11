@@ -40,7 +40,9 @@ export const Statement = () => {
                 return;
             }
             const r = el.getBoundingClientRect();
-            const off = r.top + r.height / 2 - window.innerHeight / 2;
+            // LOCK_BIAS px above geometric center (fixed navbar + optical weight make true center read low)
+            const LOCK_BIAS = 32;
+            const off = r.top + r.height / 2 - (window.innerHeight / 2 - LOCK_BIAS);
             // catch slow scrolls near center AND fast scrolls that jump across it
             const crossed = prevOff !== null && prevOff > 0 !== off > 0;
             const inBand = Math.abs(off) < 48;
