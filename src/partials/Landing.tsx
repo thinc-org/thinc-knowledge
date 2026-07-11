@@ -9,33 +9,143 @@ import { Section } from '@/components/Section';
 
 export const Hero = () => {
     return (
-        <Section className="bg-gradient-to-b from-thinc-blue to-slate-950">
-            <div className="flex flex-col items-center space-y-6 py-16 text-center md:py-20">
-                <span className="-mb-3.5 text-lg md:text-xl font-semibold uppercase tracking-widest text-thinc-accent">
-                    Get Ready For
-                </span>
-                <h1 className="text-5xl font-semibold">
-                    Thinc. 2026
-                </h1>
-                <p className="max-w-xl text-slate-400">
-                    กิจกรรมที่พี่ ๆ ในชมรม Thinc.
-                    จะมาสอนและแชร์วิชาในการพัฒนาโปรแกรมพร้อมทั้งวิธีการ
-                    Implement ผลงานตัวเองในแบบพื้นฐานที่สุด
-                    ในหลากหลายสายงานอย่าง Frontend, Backend, Project Manager,
-                    และ UX/UI
-                </p>
-                {/* <div className="pt-10">
-                    <a
-                        href="https://thinc.in.th/link/first_act"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-lg bg-slate-50 px-8 py-3 font-semibold text-thinc-blue"
-                    >
-                        ลงทะเบียน
-                    </a>
-                </div> */}
+        <section className="relative flex min-h-screen flex-col overflow-hidden bg-black">
+            {/* Hero gradient – orange top-left + blue bottom-right (Figma SVG export) */}
+            <img
+                aria-hidden="true"
+                alt=""
+                src="/images/hero-gradient.svg"
+                className="pointer-events-none absolute top-0 left-0 h-screen w-full"
+            />
+            {/* Light ray – warm beam, top-left (Figma SVG export) */}
+            <img
+                aria-hidden="true"
+                alt=""
+                src="/images/hero-ray.svg"
+                className="pointer-events-none absolute -top-6 -left-6 w-[720px]"
+            />
+            {/* Highlight glow at ray head (Figma SVG export) */}
+            <img
+                aria-hidden="true"
+                alt=""
+                src="/images/hero-ray-highlight.svg"
+                className="pointer-events-none absolute -top-[17px] -left-[27px] w-[150px]"
+            />
+            <div className="relative z-10 flex w-full flex-1 items-start px-10 pb-16 sm:px-32 pt-48">
+                <div className="w-full max-w-[1400px]">
+                    {/* Wordmark */}
+                    <div>
+                        <img
+                            alt="Thinc."
+                            className="-ml-3 w-full max-w-[280px] sm:-ml-5 sm:max-w-[380px]"
+                            src="/images/thinc-wordmark.svg"
+                        />
+                    </div>
+
+                    {/* Phonetic + noun */}
+                    <div className="mt-6 sm:mt-[26px]">
+                        <p className="font-display font-normal text-2xl leading-[1.23] tracking-[0.03em] text-white/90 sm:text-[26px]">
+                            /θɪŋk/
+                        </p>
+                        <p className="font-display font-normal text-2xl leading-[1.23] tracking-[0.03em] text-white/70 sm:text-[26px]">
+                            noun
+                        </p>
+                    </div>
+
+                    {/* Description */}
+                    <div className="mt-6 sm:mt-[27px]">
+                        <p className="font-display font-normal text-3xl leading-[1.45] tracking-[0.03em] text-text-primary sm:text-[30px]">
+                            The real <strong className="font-bold text-white">startup incubator</strong>. Where builders and dreamers turn{' '}
+                            <strong className="font-bold text-white">ideas</strong> into{' '}
+                            <strong className="font-bold text-white">real startups</strong> through close{' '}
+                            <strong className="font-bold text-white">mentorship</strong> from founder alumni and take full ownership.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </Section>
+            <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-40 opacity-[0.04] mix-blend-overlay bg-grain" />
+        </section>
+	);
+};
+
+export const Values = () => {
+    return (
+        <section className="relative flex min-h-[calc(100vh+290px)] flex-col items-center justify-start overflow-hidden bg-black px-10 pb-24 pt-32 sm:px-32 md:min-h-0 md:h-screen md:pb-0 md:pt-44">
+            {/* Values gradient (Figma SVG export) */}
+            <img
+                aria-hidden="true"
+                alt=""
+                src="/images/values-gradient.svg"
+                className="pointer-events-none absolute top-0 left-0 h-full w-full"
+            />
+            <div className="relative z-10 grid w-full max-w-screen-lg gap-16 md:grid-cols-3">
+                {/* Love the Pain */}
+                <div className="text-center md:text-left">
+                    <h2 className="font-display text-6xl font-bold text-white">
+                        Love the Pain
+                    </h2>
+                    <div className="relative mt-6">
+                        <img
+                            aria-hidden="true"
+                            alt=""
+                            src="/images/values-pillar-1.svg"
+                            className="pointer-events-none absolute left-1/2 -top-[60px] w-full max-w-[350px] -translate-x-1/2"
+                        />
+                        <p className="relative whitespace-pre-line font-display text-3xl font-semibold leading-[1.4] text-white">
+                            &ldquo;Empathy is not softness.{'\n'}It is the foundation of{'\n'}everything we build.&rdquo;
+                        </p>
+                    </div>
+                </div>
+
+                {/* Fail out loud */}
+                <div className="text-center md:text-left">
+                    <h2 className="font-display text-6xl font-bold text-white">
+                        Fail out loud
+                    </h2>
+                    <div className="relative mt-6">
+                        <img
+                            aria-hidden="true"
+                            alt=""
+                            src="/images/values-pillar-2.svg"
+                            className="pointer-events-none absolute left-1/2 -top-[48px] w-full max-w-[350px] -translate-x-1/2"
+                        />
+                        <p className="relative whitespace-pre-line font-display text-3xl font-semibold leading-[1.4] text-white">
+                            &ldquo;Fail together,{'\n'}laugh together,{'\n'}grow together.&rdquo;
+                        </p>
+                    </div>
+                </div>
+
+                {/* Impact at Scale */}
+                <div className="text-center md:text-left">
+                    <h2 className="font-display text-6xl font-bold text-white">
+                        Impact at Scale
+                    </h2>
+                    <div className="relative mt-6">
+                        <img
+                            aria-hidden="true"
+                            alt=""
+                            src="/images/values-pillar-3.svg"
+                            className="pointer-events-none absolute left-1/2 -top-[56px] w-full max-w-[350px] -translate-x-1/2"
+                        />
+                        <p className="relative whitespace-pre-line font-display text-3xl font-semibold leading-[1.4] text-white">
+                            &ldquo;Knowledge is our fuel.{'\n'}Impact is our footprint.&rdquo;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export const Statement = () => {
+    return (
+        <section className="flex flex-col items-center justify-center bg-white py-24 text-center md:py-28">
+            <p className="font-display text-5xl font-bold leading-tight text-black sm:text-7xl md:text-8xl">
+                STOP IMAGINING
+                <br />
+                START BUILDING
+            </p>
+        </section>
     );
 };
 
@@ -53,18 +163,18 @@ export const Roadmaps = ({
     }[];
 }) => {
     return (
-        <Section className="border-t bg-white py-4 md:py-6 text-slate-600">
+        <Section data-section-theme="dark" className="border-t border-border-primary bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
-                    <div className="space-y-3">
-                        <h2 className="text-3xl font-bold text-slate-800 md:text-4xl">
+                    <div className="space-y-3 border-t border-border-primary pt-4">
+                        <h2 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                             Developer Roadmap
                         </h2>
-                        <p>
+                        <p className="text-lg font-body">
                             แหล่งรวมเส้นทางในการเริ่มต้นเรียนรู้ทักษะการเขียนโปรแกรมและพัฒนาซอฟต์แวร์
                         </p>
                     </div>
-                    <div className="space-y-6">
+                    <div className="grid gap-6 md:grid-cols-2">
                         {roadmaps?.map((roadmap) => (
                             <RoadmapCard
                                 key={roadmap.id}
@@ -72,7 +182,7 @@ export const Roadmaps = ({
                                 level={roadmap.data.level}
                                 title={roadmap.data.title}
                                 description={roadmap.data.description}
-                                className="border-slate-200/60 bg-slate-50"
+                                className="border-border-primary bg-bg-secondary hover:border-accent-primary"
                             />
                         ))}
                     </div>
@@ -99,15 +209,15 @@ const blogs = feed.items.slice(0, 4).map((item) => {
 
 export const Blogs = () => {
     return (
-        <Section className="border-t bg-slate-50 py-4 md:py-6 text-slate-600">
+        <Section data-section-theme="dark" className="border-t border-border-primary bg-bg-secondary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
-                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between border-t border-border-primary pt-4">
                         <div className="space-y-3 max-w-md">
-                            <h2 className="text-3xl font-bold text-slate-800 md:text-4xl">
+                            <h2 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                                 Blogs
                             </h2>
-                            <p>
+                            <p className="text-lg font-body">
                                 บทความให้ความรู้สำหรับการพัฒนาซอฟต์แวร์จากพี่ ๆ
                                 ในชมรม
                             </p>
@@ -117,7 +227,7 @@ export const Blogs = () => {
                             href="https://medium.com/thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-50 hover:text-slate-900 self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-primary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                         >
                             <span>medium.com/thinc-org</span>
                             <FiChevronRight className="text-lg md:text-xl" />
@@ -136,10 +246,10 @@ export const Blogs = () => {
                             );
                         })}
                     </div>
-                    <div className="flex w-full justify-center">
+                    <div className="flex w-full justify-center pt-4">
                         <a
                             href="/blog"
-                            className="group flex items-center gap-2 rounded-full bg-thinc-blue px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-slate-800 hover:shadow md:px-8 md:py-3.5 md:text-base"
+                            className="group flex items-center gap-2 rounded-full bg-accent-primary px-7 py-3.5 text-base font-semibold text-black shadow-sm transition-all duration-normal hover:shadow-[0_0_32px_-6px_var(--orange)] md:px-8 md:py-3.5"
                         >
                             Explore all blogs
                             <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />
@@ -194,15 +304,15 @@ const videosPlaylists = [
 
 export const Videos = () => {
     return (
-        <Section className="border-t bg-white py-4 md:py-6 text-slate-600">
+        <Section data-section-theme="dark" className="border-t border-border-primary bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
-                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between border-t border-border-primary pt-4">
                         <div className="space-y-3 max-w-md">
-                            <h2 className="text-3xl font-bold text-slate-800 md:text-4xl">
+                            <h2 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                                 Videos
                             </h2>
-                            <p className="text-ellipsis">
+                            <p className="text-lg font-body">
                                 วิดีโอสอนการพัฒนาซอฟต์แวร์และวิธีการใช้เครื่องมือต่าง
                                 ๆ โดยชมรม Thinc.
                             </p>
@@ -211,7 +321,7 @@ export const Videos = () => {
                             href="https://www.youtube.com/@thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 transition-all hover:bg-slate-50 hover:text-slate-900 self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-secondary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                         >
                             <FiYoutube className="text-lg text-red-500 md:text-xl" />
                             <span>@thinc-org</span>
@@ -222,7 +332,7 @@ export const Videos = () => {
                         {videosPlaylists.map((video) => (
                             <div
                                 key={video.title}
-                                className="flex flex-col items-start gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:shadow"
+                                className="group/tilt flex flex-col items-start gap-4 rounded-xl border border-border-primary bg-bg-secondary p-5 shadow-lg transition-all duration-slow hover:shadow-2xl liquid-glass relative overflow-hidden"
                             >
                                 <iframe
                                     width="560"
@@ -232,23 +342,23 @@ export const Videos = () => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin"
                                     allowFullScreen
-                                    className="aspect-video h-auto w-full rounded-lg"
+                                    className="aspect-video h-auto w-full rounded-lg relative z-10 border border-border-primary"
                                 />
-                                <div className="flex flex-col gap-2">
+                                <div className="flex flex-col gap-2 relative z-10">
                                     <div className="flex flex-wrap gap-2">
                                         {video.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="rounded-full bg-red-50 px-2 py-1 text-xs font-semibold text-red-400"
+                                                className="rounded-full bg-border-secondary px-2.5 py-1 text-xs font-semibold text-accent-primary border border-border-primary"
                                             >
                                                 {tag}
                                             </span>
                                         ))}
                                     </div>
-                                    <h3 className="text-xl font-semibold">
+                                    <h3 className="text-xl font-bold font-display text-text-primary">
                                         {video.title}
                                     </h3>
-                                    <p className="text-slate-400">
+                                    <p className="text-text-tertiary text-sm leading-normal">
                                         {video.description}
                                     </p>
                                 </div>

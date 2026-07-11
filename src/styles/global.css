@@ -1,11 +1,385 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
 
-@font-face {
-    font-family: 'IBM Plex Sans Thai';
-    src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
-    unicode-range: U+0E00, U+0E7F;
+
+
+
+:root {
+    /* Base Color Palette (Dark Theme / default stage) */
+    --black: #000000;
+    --white: #ffffff;
+    --logo-gray: #34333b;
+    --cream: #edddbb;
+
+    /* Warm Pole (Incubator - light & people) */
+    --gold: #ffd700;
+    --pillar: #fec92b;
+    --orange: #ff7b0f;
+    --red-orange: #ff4c00;
+
+    /* Cool Pole (Software House - energy & scale) */
+    --blue: #0064ff;
+    --sky: #00a0ff;
+    --cyan: #00ddff;
+
+    /* Semantic Text Variables from Reference */
+    --text: rgba(255, 255, 255, 0.92);
+    --text-dim: rgba(255, 255, 255, 0.6);
+    --text-faint: rgba(255, 255, 255, 0.38);
+    --hairline: rgba(255, 255, 255, 0.1);
+    --glow-blue-soft: rgba(0, 35, 255, 0.06);
+    --line: rgba(255, 255, 255, 0.14);
+    --line-strong: rgba(255, 255, 255, 0.42);
+    --ghost: rgba(255, 255, 255, 0.25);
+    --ghost-soft: rgba(255, 255, 255, 0.14);
+
+    --paper: #f6f3ee;
+    --ink: #16130d;
+
+    /* Semantic tokens */
+    --color-bg-primary: var(--black);
+    --color-bg-secondary: rgba(255, 255, 255, 0.03);
+    --color-bg-tertiary: rgba(255, 255, 255, 0.02);
+    --color-bg-inverse: var(--paper);
+
+    --color-text-primary: var(--text);
+    --color-text-secondary: var(--text-dim);
+    --color-text-tertiary: var(--text-faint);
+    --color-text-inverse: var(--ink);
+    --color-text-link: var(--sky);
+
+    --color-border-primary: var(--hairline);
+    --color-border-secondary: var(--line);
+    --color-border-focus: var(--sky);
+
+    --color-accent-primary: var(--orange);
+    --color-accent-primary-hover: #ff9133;
+    --color-accent-primary-active: #e66b05;
+    --color-accent-secondary: var(--blue);
+
+    --color-status-success: #10b981;
+    --color-status-warning: var(--pillar);
+    --color-status-error: var(--red-orange);
+    --color-status-info: var(--sky);
+
+    --color-surface-overlay: rgba(0, 0, 0, 0.7);
+
+    /* Spacing Scale (Balanced 8px base) */
+    --space-0: 0px;
+    --space-1: 0.25rem;  /* 4px */
+    --space-2: 0.5rem;   /* 8px */
+    --space-3: 0.75rem;  /* 12px */
+    --space-4: 1rem;     /* 16px */
+    --space-5: 1.5rem;   /* 24px */
+    --space-6: 2rem;     /* 32px */
+    --space-7: 3rem;     /* 48px */
+    --space-8: 4rem;     /* 64px */
+    --space-9: 6rem;     /* 96px */
+    --space-10: 8rem;    /* 128px */
+    --space-11: 12rem;   /* 192px */
+    --space-12: 16rem;   /* 256px */
+
+    /* Typography Settings */
+    --font-afacad: 'Afacad', 'Inter', 'IBM Plex Sans Thai', sans-serif;
+    --font-family-display: var(--font-afacad);
+    --font-family-body: var(--font-afacad);
+    --font-family-mono: 'Afacad', 'Inter', monospace;
+
+    /* Fonts size ramp */
+    --font-size-xs: 0.75rem;     /* 12px */
+    --font-size-sm: 0.875rem;    /* 14px */
+    --font-size-base: 1rem;      /* 16px */
+    --font-size-md: 1.125rem;    /* 18px */
+    --font-size-lg: 1.25rem;     /* 20px */
+    --font-size-xl: 1.5rem;      /* 24px */
+    --font-size-2xl: 1.875rem;   /* 30px */
+    --font-size-3xl: 2.25rem;    /* 36px */
+    --font-size-4xl: 3rem;       /* 48px */
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.15;
+    --line-height-normal: 1.55;
+    --line-height-relaxed: 1.7;
+
+    --letter-spacing-tight: -0.03em;
+    --letter-spacing-normal: 0em;
+    --letter-spacing-wide: 0.3em;
+
+    /* Layout Boundaries */
+    --max-width-content: 68ch;
+    --max-width-wide: 80rem;
+    --max-width-page: 90rem;
+
+    --border-radius-sm: 0.375rem;
+    --border-radius-md: 0.75rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 1.5rem;
+    --border-radius-full: 9999px;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-focus: 0 0 0 2px var(--color-border-focus);
+
+    /* Motion Curves */
+    --duration-instant: 50ms;
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 400ms;
+    --duration-slower: 600ms;
+
+    --easing-default: cubic-bezier(0.4, 0, 0.2, 1);
+    --easing-in: cubic-bezier(0.4, 0, 1, 1);
+    --easing-out: cubic-bezier(0, 0, 0.2, 1);
+    --easing-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+    :root {
+        --blue: color(display-p3 0 0.384 1);
+        --sky: color(display-p3 0 0.616 1);
+        --cyan: color(display-p3 0 0.851 1);
+        --gold: color(display-p3 1 0.851 0);
+        --orange: color(display-p3 1 0.518 0.216);
+        --red-orange: color(display-p3 1 0.365 0);
+    }
+}
+
+/* Light Theme overrides (flipping the stage to daylight) */
+[data-section-theme="light"],
+[data-theme="light"],
+.theme-light {
+    background: var(--paper);
+    color: var(--ink);
+    --text: rgba(22, 19, 13, 0.94);
+    --text-dim: rgba(22, 19, 13, 0.64);
+    --text-faint: rgba(22, 19, 13, 0.42);
+    --hairline: rgba(22, 19, 13, 0.12);
+    --line: rgba(22, 19, 13, 0.16);
+    --line-strong: rgba(22, 19, 13, 0.45);
+    --ghost: rgba(22, 19, 13, 0.32);
+    --ghost-soft: rgba(22, 19, 13, 0.18);
+    --gold: #8f6b00;
+    --pillar: #b8860b;
+    --sky: #0064ff;
+    --cyan: #007a9e;
+
+    /* Semantics overrides for light theme using variables */
+    --color-bg-primary: var(--paper);
+    --color-bg-secondary: rgba(22, 19, 13, 0.03);
+    --color-bg-tertiary: rgba(22, 19, 13, 0.02);
+    --color-bg-inverse: var(--black);
+
+    --color-text-primary: var(--text);
+    --color-text-secondary: var(--text-dim);
+    --color-text-tertiary: var(--text-faint);
+    --color-text-inverse: #ffffff;
+    --color-text-link: var(--sky);
+
+    --color-border-primary: var(--hairline);
+    --color-border-secondary: var(--line);
+    --color-border-focus: var(--sky);
+
+    --color-accent-primary: var(--orange);
+    --color-accent-primary-hover: #b84f00;
+    --color-accent-primary-active: #943f00;
+    --color-accent-secondary: var(--blue);
+
+    --color-status-success: #059669;
+    --color-status-warning: var(--pillar);
+    --color-status-error: var(--red-orange);
+    --color-status-info: var(--sky);
+
+    --color-surface-overlay: rgba(255, 255, 255, 0.8);
 }
 
 body {
-    font-family: 'Poppins', 'IBM Plex Sans Thai', sans-serif;
+    font-family: var(--font-family-body);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    transition: background-color var(--duration-slow) var(--easing-default), color var(--duration-slow) var(--easing-default);
 }
+
+/* Glows & Blooms from Reference */
+.bloom-warm {
+    background: radial-gradient(107.1% 63% at 15.87% 23.39%,rgba(255,77,0,.6) 0,rgba(255,199,175,0) 79.55%);
+    background: radial-gradient(107.1% 63% at 15.87% 23.39%,color(display-p3 1 0.365 0 / 0.6) 0,color(display-p3 1 0.792 0.702 / 0) 79.55%);
+}
+.bloom-cool {
+    background: radial-gradient(107.1% 63% at 92.16% 86.83%,rgba(0,100,255,.468) 0,rgba(0,160,255,.234) 46.17%,rgba(0,221,255,0) 81.62%);
+    background: radial-gradient(107.1% 63% at 92.16% 86.83%,color(display-p3 0 0.384 1 / 0.468) 0,color(display-p3 0 0.616 1 / 0.234) 46.17%,color(display-p3 0 0.851 1 / 0) 81.62%);
+}
+.ray-warm {
+    border-radius: 50%;
+    background: linear-gradient(180deg,#ffd700 0%,rgba(255,0,0,0) 100%);
+    background: linear-gradient(180deg,color(display-p3 1 0.851 0) 0%,color(display-p3 1 0 0 / 0) 100%);
+    filter: blur(50px);
+    transform: rotate(-45deg);
+}
+.ray-glow {
+    border-radius: 50%;
+    background: linear-gradient(180deg,rgba(255,255,255,.73) 0%,rgba(255,177,86,.73) 100%);
+    background: linear-gradient(180deg,color(display-p3 1 1 1 / 0.73) 0%,color(display-p3 0.961 0.71 0.4 / 0.73) 100%);
+    filter: blur(50px);
+    transform: rotate(-45deg);
+}
+.pillar-glow {
+    background: linear-gradient(180deg,var(--cream) 0,rgba(143,132,110,0) 100%);
+    filter: blur(90px);
+}
+
+/* Glassmorphic surface */
+.liquid-glass {
+    border-color: rgba(255,255,255,.1);
+    background: linear-gradient(to bottom right,rgba(255,255,255,.05),rgba(255,255,255,.02));
+    box-shadow: 0 8px 40px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.18);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+[data-section-theme="light"] .liquid-glass,
+[data-theme="light"] .liquid-glass,
+.theme-light .liquid-glass {
+    border-color: rgba(22,19,13,.1);
+    background: linear-gradient(to bottom right,rgba(22,19,13,.05),rgba(22,19,13,.02));
+    box-shadow: 0 8px 40px rgba(22,19,13,.12),inset 0 1px 0 rgba(255,255,255,.6);
+}
+
+/* Specular reflection on TiltCard */
+.specular {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(440px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.1),transparent 55%);
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+.group\/tilt:hover .specular {
+    opacity: 1;
+}
+
+/* Auto-remapping helper classes for light-mode sections from Reference */
+[data-section-theme=light] .group:hover .group-hover\:text-white,
+[data-section-theme=light] .hover\:text-white:hover,
+[data-section-theme=light] .text-white {
+    color: var(--text);
+}
+[data-section-theme=light] .bg-black {
+    background-color: transparent;
+}
+[data-section-theme=light] .border-white\/10 {
+    border-color: rgba(22,19,13,.14);
+}
+[data-section-theme=light] .border-white\/15 {
+    border-color: rgba(22,19,13,.2);
+}
+[data-section-theme=light] .divide-white\/10>:not([hidden])~:not([hidden]) {
+    border-color: rgba(22,19,13,.14);
+}
+[data-section-theme=light] .bg-white\/10 {
+    background-color: rgba(22,19,13,.14);
+}
+[data-section-theme=light] .bg-white\/15 {
+    background-color: rgba(22,19,13,.18);
+}
+[data-section-theme=light] .bg-white\/30 {
+    background-color: rgba(22,19,13,.32);
+}
+[data-section-theme=light] .bg-white\/\[0\.02\] {
+    background-color: rgba(22,19,13,.03);
+}
+[data-section-theme=light] .bg-white\/\[0\.03\] {
+    background-color: rgba(22,19,13,.045);
+}
+[data-section-theme=light] .bg-white\/\[0\.04\] {
+    background-color: rgba(22,19,13,.055);
+}
+[data-section-theme=light] .bg-white\/\[0\.06\] {
+    background-color: rgba(22,19,13,.07);
+}
+[data-section-theme=light] .hover\:bg-white\/\[0\.04\]:hover {
+    background-color: rgba(22,19,13,.055);
+}
+[data-section-theme=light] .ring-white\/5 {
+    --tw-ring-color: rgba(22,19,13,0.08);
+}
+[data-section-theme=light] .ring-white\/10 {
+    --tw-ring-color: rgba(22,19,13,0.14);
+}
+[data-section-theme=light] .hover\:ring-white\/15:hover {
+    --tw-ring-color: rgba(22,19,13,0.22);
+}
+[data-section-theme=light] .hover\:ring-white\/20:hover {
+    --tw-ring-color: rgba(22,19,13,0.26);
+}
+
+/* Duotone photo overlays & Noise Grain overlay */
+.bg-grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.duotone-photo {
+    position: relative;
+    overflow: hidden;
+}
+.duotone-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: overlay;
+    opacity: 0.18;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.duotone-photo-warm {
+    background: linear-gradient(165deg, rgba(255, 215, 0, 0.38) 0%, rgba(255, 123, 15, 0.24) 46%, rgba(16, 6, 0, 0.95) 100%);
+}
+.duotone-photo-cool {
+    background: linear-gradient(165deg, rgba(0, 221, 255, 0.36) 0%, rgba(0, 100, 255, 0.26) 46%, rgba(0, 4, 14, 0.95) 100%);
+}
+
+/* Level Tags */
+.tag-beginner {
+  color: var(--color-status-success);
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+[data-section-theme="light"] .tag-beginner,
+[data-theme="light"] .tag-beginner,
+.theme-light .tag-beginner {
+  color: #059669;
+  background-color: rgba(5, 150, 105, 0.1);
+  border-color: rgba(5, 150, 105, 0.2);
+}
+
+.tag-intermediate {
+  color: var(--color-status-warning);
+  background-color: rgba(254, 201, 43, 0.1);
+  border-color: rgba(254, 201, 43, 0.2);
+}
+[data-section-theme="light"] .tag-intermediate,
+[data-theme="light"] .tag-intermediate,
+.theme-light .tag-intermediate {
+  color: #cc9900;
+  background-color: rgba(204, 153, 0, 0.1);
+  border-color: rgba(204, 153, 0, 0.2);
+}
+
+.tag-advanced {
+  color: var(--color-status-error);
+  background-color: rgba(255, 76, 0, 0.1);
+  border-color: rgba(255, 76, 0, 0.2);
+}
+[data-section-theme="light"] .tag-advanced,
+[data-theme="light"] .tag-advanced,
+.theme-light .tag-advanced {
+  color: #d63000;
+  background-color: rgba(214, 48, 0, 0.1);
+  border-color: rgba(214, 48, 0, 0.2);
+}
+
+

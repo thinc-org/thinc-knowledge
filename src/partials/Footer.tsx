@@ -10,7 +10,7 @@ export const Footer = () => {
                         loading="eager"
                     />
                 </div>
-                <p className="mb-0 mt-4 text-slate-400">© THINC. 2023-2026</p>
+                <p className="mb-0 mt-4 text-text-tertiary font-mono text-[10px] tracking-wide">© THINC. 2023-2026</p>
             </div>
         </section>
     );

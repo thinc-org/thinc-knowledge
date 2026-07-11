@@ -18,7 +18,7 @@ export const RoadmapCard = ({
     return (
         <div
             className={twMerge(
-                'flex w-full rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow transition-all duration-300',
+                'flex w-full rounded-xl border border-border-primary bg-bg-primary shadow-sm hover:shadow-md hover:border-accent-primary transition-all duration-normal',
                 className,
             )}
         >
@@ -29,10 +29,10 @@ export const RoadmapCard = ({
                 <div className="text-left space-y-2">
                     <LevelTag level={level} />
 
-                    <h3 className="text-xl font-semibold text-slate-800 md:text-2xl">
+                    <h3 className="text-xl font-bold font-display text-text-primary md:text-2xl">
                         {title}
                     </h3>
-                    <p className="text-slate-600">{description}</p>
+                    <p className="text-text-secondary text-sm leading-normal">{description}</p>
                 </div>
             </a>
         </div>

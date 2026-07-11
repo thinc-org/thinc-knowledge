@@ -7,44 +7,42 @@ export const Navigation = () => {
     return (
         <>
             {showNav && (
-                <div className="fixed inset-0 z-50 flex flex-col bg-gradient-to-b from-thinc-blue to-slate-950 sm:hidden">
-                    <div className="flex items-center justify-between px-8">
-                        <div className="h-20 py-5">
-                            <a href="/" onClick={() => setShowNav(false)}>
-                                <img
-                                    className="h-full w-auto select-none"
-                                    src="/images/thinc-logo-alt.svg"
-                                    alt="Thinc Logo"
-                                    loading="eager"
-                                />
-                            </a>
-                        </div>
+                <div className="fixed inset-0 z-[60] flex flex-col bg-bg-primary text-text-primary border-b border-border-primary sm:hidden">
+                    <div className="flex h-16 items-center justify-between px-8">
+                        <a
+                            href="/"
+                            onClick={() => setShowNav(false)}
+                            className="flex items-center gap-2.5"
+                        >
+                            <img alt="" className="h-7 w-auto" src="/images/thinc-mark.svg" />
+                            <span className="text-lg font-semibold tracking-[0.01em] text-text-primary">Thinc.</span>
+                        </a>
                         <button
                             onClick={() => setShowNav(false)}
-                            className="grid h-10 place-content-center rounded-lg border border-slate-700 px-3 text-lg text-slate-400 duration-200 hover:bg-slate-800"
+                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border-primary text-text-secondary duration-fast hover:bg-bg-secondary"
                         >
-                            <FiX />
+                            <FiX size={18} />
                         </button>
                     </div>
 
                     <div className="flex flex-1 flex-col items-center justify-center space-y-8 px-8">
                         <a
                             href="/roadmap"
-                            className="text-3xl font-medium text-slate-300 duration-200 hover:text-thinc-accent"
+                            className="text-3xl font-bold font-display text-text-primary duration-fast hover:text-accent-primary"
                             onClick={() => setShowNav(false)}
                         >
                             Roadmap
                         </a>
                         <a
                             href="/blog"
-                            className="text-3xl font-medium text-slate-300 duration-200 hover:text-thinc-accent"
+                            className="text-3xl font-bold font-display text-text-primary duration-fast hover:text-accent-primary"
                             onClick={() => setShowNav(false)}
                         >
                             Blog
                         </a>
                         <a
                             href="/videos"
-                            className="text-3xl font-medium text-slate-300 duration-200 hover:text-thinc-accent"
+                            className="text-3xl font-bold font-display text-text-primary duration-fast hover:text-accent-primary"
                             onClick={() => setShowNav(false)}
                         >
                             Videos
@@ -56,7 +54,7 @@ export const Navigation = () => {
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex w-full items-center justify-center rounded-lg border border-slate-700 py-3 text-slate-300 duration-200 hover:bg-slate-800"
+                            className="flex w-full items-center justify-center rounded-xl border border-border-primary py-3 text-text-primary duration-fast hover:bg-bg-secondary hover:border-accent-primary"
                         >
                             Main Site
                         </a>
@@ -64,7 +62,7 @@ export const Navigation = () => {
                             href="https://www.instagram.com/thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center space-x-2 text-slate-400 duration-200 hover:text-white"
+                            className="flex items-center space-x-2 text-text-secondary duration-fast hover:text-accent-primary"
                         >
                             <FiInstagram size={20} />
                             <span>Instagram</span>
@@ -72,31 +70,30 @@ export const Navigation = () => {
                     </div>
                 </div>
             )}
-            <header className="flex w-full justify-center drop-shadow-md">
-                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 sm:h-24">
-                    <div className="flex items-center space-x-12">
-                        <div className="h-20 py-5">
-                            <a href="/">
-                                <img
-                                    className="h-full w-auto select-none"
-                                    src="/images/thinc-logo-alt.svg"
-                                    alt="Thinc Logo"
-                                    loading="eager"
-                                />
-                            </a>
-                        </div>
-                        <div className="mt-4 hidden items-center space-x-8 text-slate-400 sm:flex">
-                            <a href="/roadmap">Roadmap</a>
-                            <a href="/blog">Blog</a>
-                            <a href="/videos">Videos</a>
-                        </div>
+            <header className="fixed top-0 left-0 right-0 z-50 flex w-full justify-center border-b border-white/10 bg-black/20 backdrop-blur-md transition-colors duration-normal">
+                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 h-16">
+                    <div className="flex items-center space-x-10">
+                        {/* Logo */}
+                        <a
+                            href="/"
+                            className="flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--sky)]"
+                        >
+                            <img alt="" className="h-7 w-auto" src="/images/thinc-mark.svg" />
+                            <span className="text-lg font-semibold tracking-[0.01em] text-white">Thinc.</span>
+                        </a>
+                        {/* Nav links */}
+                        <nav className="hidden items-center space-x-6 sm:flex">
+                            <a href="/roadmap" className="text-sm text-white/70 transition-colors hover:text-white">Roadmap</a>
+                            <a href="/blog" className="text-sm text-white/70 transition-colors hover:text-white">Blog</a>
+                            <a href="/videos" className="text-sm text-white/70 transition-colors hover:text-white">Videos</a>
+                        </nav>
                     </div>
-                    <div className="flex items-center space-x-4 sm:mt-4">
+                    <div className="flex items-center space-x-3">
                         <a
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 place-content-center rounded-lg border border-slate-700 px-3 text-sm text-slate-400 duration-200 hover:bg-slate-800 sm:grid"
+                            className="hidden h-8 items-center rounded-lg border border-white/15 px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
                         >
                             Main Site
                         </a>
@@ -104,15 +101,15 @@ export const Navigation = () => {
                             href="https://www.instagram.com/thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 place-content-center rounded-lg border border-slate-700 px-2.5 text-slate-400 duration-200 hover:bg-slate-800 sm:grid"
+                            className="hidden h-8 w-8 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
                         >
-                            <FiInstagram />
+                            <FiInstagram size={16} />
                         </a>
                         <button
                             onClick={() => setShowNav(true)}
-                            className="grid h-10 place-content-center rounded-lg border border-slate-700 px-3 text-lg text-slate-400 duration-200 hover:bg-slate-800 sm:hidden"
+                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-colors duration-fast hover:bg-white/10 sm:hidden"
                         >
-                            <FiMenu />
+                            <FiMenu size={18} />
                         </button>
                     </div>
                 </div>

@@ -12,15 +12,15 @@ export const BlogCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group space-y-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm hover:shadow transition-all duration-300"
+            className="group space-y-4 rounded-xl border border-border-primary bg-bg-primary p-4 shadow-sm hover:shadow-md hover:border-accent-primary transition-all duration-normal"
         >
-            <div className="w-full overflow-hidden rounded-md bg-slate-100">
+            <div className="w-full overflow-hidden rounded-lg bg-bg-secondary">
                 <img
                     src={imgSrc}
                     className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
                 />
             </div>
-            <h4 className="text-lg font-semibold text-slate-700">{title}</h4>
+            <h4 className="text-lg font-bold font-display text-text-primary transition-colors duration-fast group-hover:text-accent-primary">{title}</h4>
         </a>
     );
 };
