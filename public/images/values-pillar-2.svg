@@ -1,18 +1,10 @@
 <svg width="1667" height="1860" viewBox="0 0 1667 1860" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_df_154_2292)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M348.031 162.629C245.636 162.629 162.628 245.639 162.628 348.026C162.628 450.427 245.636 533.438 348.031 533.438V1696.83H482.8H640.033H754.445H911.68H1026.09H1183.33H1318.1V533.438C1420.49 533.438 1503.5 450.427 1503.5 348.026C1503.5 245.639 1420.49 162.629 1318.1 162.629H348.031Z" fill="url(#paint0_linear_154_2292)" fill-opacity="0.66" shape-rendering="crispEdges"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M348.031 162.629C245.636 162.629 162.628 245.639 162.628 348.026C162.628 450.427 245.636 533.438 348.031 533.438V1696.83H482.8H640.033H754.445H911.68H1026.09H1183.33H1318.1V533.438C1420.49 533.438 1503.5 450.427 1503.5 348.026C1503.5 245.639 1420.49 162.629 1318.1 162.629H348.031Z" fill="url(#paint0_linear_154_2292)" fill-opacity="0.66"/>
 </g>
 <defs>
 <filter id="filter0_df_154_2292" x="-0.00038147" y="0.000595093" width="1666.13" height="1859.46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="3.6301"/>
-<feGaussianBlur stdDeviation="43.425"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.133333 0 0 0 0 1 0 0 0 0.06 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_154_2292"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_154_2292" result="shape"/>
-<feGaussianBlur stdDeviation="56" result="effect2_foregroundBlur_154_2292"/>
+<feGaussianBlur stdDeviation="56"/>
 </filter>
 <linearGradient id="paint0_linear_154_2292" x1="833.063" y1="162.629" x2="833.063" y2="2282.32" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EBDDBE" style="stop-color:#EBDDBE;stop-color:color(display-p3 0.9201 0.8682 0.7467);stop-opacity:1;"/>

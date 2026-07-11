@@ -3,11 +3,11 @@ import { getCollection } from 'astro:content';
 import {
     Hero,
     Values,
-    Statement,
     Roadmaps,
     Blogs,
     Videos,
 } from '@/partials/Landing';
+import { Statement } from '@/partials/Statement';
 import Base from '@/templates/Base.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 
@@ -16,7 +16,7 @@ const roadmaps = await getCollection('roadmap');
 
 <Base title={SITE_TITLE} description={SITE_DESCRIPTION}>
     <Hero />
-    <Statement />
+    <Statement client:load />
     <Values />
     <Roadmaps roadmaps={roadmaps} />
     <Blogs client:load />

@@ -4,9 +4,7 @@
 </g>
 <defs>
 <filter id="filter0_f_154_2265" x="-79.1123" y="-70.7812" width="506.96" height="506.961" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_154_2265"/>
+<feGaussianBlur stdDeviation="50"/>
 </filter>
 <linearGradient id="paint0_linear_154_2265" x1="174.368" y1="15.0771" x2="174.368" y2="350.322" gradientUnits="userSpaceOnUse">
 <stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>

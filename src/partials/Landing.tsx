@@ -10,34 +10,32 @@ import { Section } from '@/components/Section';
 export const Hero = () => {
     return (
         <section className="relative flex min-h-screen flex-col overflow-hidden bg-black">
-            {/* Hero gradient – orange top-left + blue bottom-right (Figma SVG export) */}
-            <img
+            {/* Hero gradient – orange top-left + blue bottom-right (CSS, see global.css) */}
+            <div
                 aria-hidden="true"
-                alt=""
-                src="/images/hero-gradient.svg"
-                className="pointer-events-none absolute top-0 left-0 h-screen w-full"
+                className="hero-gradient inset-0"
             />
             {/* Light ray – warm beam, top-left (Figma SVG export) */}
             <img
                 aria-hidden="true"
                 alt=""
-                src="/images/hero-ray.svg"
+                src="/images/hero-ray.webp"
                 className="pointer-events-none absolute -top-6 -left-6 w-[720px]"
             />
             {/* Highlight glow at ray head (Figma SVG export) */}
             <img
                 aria-hidden="true"
                 alt=""
-                src="/images/hero-ray-highlight.svg"
+                src="/images/hero-ray-highlight.webp"
                 className="pointer-events-none absolute -top-[17px] -left-[27px] w-[150px]"
             />
-            <div className="relative z-10 flex w-full flex-1 items-start px-10 pb-16 sm:px-32 pt-48">
+            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pb-16 sm:pl-32 pt-40">
                 <div className="w-full max-w-[1400px]">
                     {/* Wordmark */}
                     <div>
                         <img
                             alt="Thinc."
-                            className="-ml-3 w-full max-w-[280px] sm:-ml-5 sm:max-w-[380px]"
+                            className="-ml-3 w-full max-w-[220px] sm:-ml-5 sm:max-w-[380px]"
                             src="/images/thinc-wordmark.svg"
                         />
                     </div>
@@ -54,11 +52,19 @@ export const Hero = () => {
 
                     {/* Description */}
                     <div className="mt-6 sm:mt-[27px]">
-                        <p className="font-display font-normal text-3xl leading-[1.45] tracking-[0.03em] text-text-primary sm:text-[30px]">
-                            The real <strong className="font-bold text-white">startup incubator</strong>. Where builders and dreamers turn{' '}
-                            <strong className="font-bold text-white">ideas</strong> into{' '}
-                            <strong className="font-bold text-white">real startups</strong> through close{' '}
-                            <strong className="font-bold text-white">mentorship</strong> from founder alumni and take full ownership.
+                        <p className="font-display font-normal text-2xl leading-[1.45] tracking-[0.03em] text-text-primary sm:text-[30px]">
+                            The real <strong className="font-bold text-white">startup incubator</strong>.{' '}
+                            <br className="sm:hidden" />
+                            Where builders and dreamers{' '}
+                            <br className="sm:hidden" />
+                            turn <strong className="font-bold text-white">ideas</strong> into{' '}
+                            <strong className="font-bold text-white">real startups</strong>{' '}
+                            <br className="sm:hidden" />
+                            through close <strong className="font-bold text-white">mentorship</strong>{' '}
+                            <br className="sm:hidden" />
+                            from founder alumni and{' '}
+                            <br className="sm:hidden" />
+                            take full ownership.
                         </p>
                     </div>
                 </div>
@@ -70,28 +76,26 @@ export const Hero = () => {
 
 export const Values = () => {
     return (
-        <section className="relative flex min-h-[calc(100vh+290px)] flex-col items-center justify-start overflow-hidden bg-black px-10 pb-24 pt-32 sm:px-32 md:min-h-0 md:h-screen md:pb-0 md:pt-44">
-            {/* Values gradient (Figma SVG export) */}
-            <img
+        <section className="relative flex min-h-[calc(100vh+140px)] flex-col items-center justify-start overflow-hidden bg-black px-10 pb-24 pt-32 sm:px-32 md:min-h-0 md:h-screen md:pb-0 md:pt-44">
+            {/* Values gradient (CSS, see global.css) */}
+            <div
                 aria-hidden="true"
-                alt=""
-                src="/images/values-gradient.svg"
-                className="pointer-events-none absolute top-0 left-0 h-full w-full"
+                className="values-gradient top-0 left-0 h-full w-full"
             />
             <div className="relative z-10 grid w-full max-w-screen-lg gap-16 md:grid-cols-3">
                 {/* Love the Pain */}
                 <div className="text-center md:text-left">
-                    <h2 className="font-display text-6xl font-bold text-white">
+                    <h2 className="font-display text-5xl font-bold text-white">
                         Love the Pain
                     </h2>
                     <div className="relative mt-6">
                         <img
                             aria-hidden="true"
                             alt=""
-                            src="/images/values-pillar-1.svg"
+                            src="/images/values-pillar-1.webp"
                             className="pointer-events-none absolute left-1/2 -top-[60px] w-full max-w-[350px] -translate-x-1/2"
                         />
-                        <p className="relative whitespace-pre-line font-display text-3xl font-semibold leading-[1.4] text-white">
+                        <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
                             &ldquo;Empathy is not softness.{'\n'}It is the foundation of{'\n'}everything we build.&rdquo;
                         </p>
                     </div>
@@ -99,17 +103,17 @@ export const Values = () => {
 
                 {/* Fail out loud */}
                 <div className="text-center md:text-left">
-                    <h2 className="font-display text-6xl font-bold text-white">
+                    <h2 className="font-display text-5xl font-bold text-white">
                         Fail out loud
                     </h2>
                     <div className="relative mt-6">
                         <img
                             aria-hidden="true"
                             alt=""
-                            src="/images/values-pillar-2.svg"
+                            src="/images/values-pillar-2.webp"
                             className="pointer-events-none absolute left-1/2 -top-[48px] w-full max-w-[350px] -translate-x-1/2"
                         />
-                        <p className="relative whitespace-pre-line font-display text-3xl font-semibold leading-[1.4] text-white">
+                        <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
                             &ldquo;Fail together,{'\n'}laugh together,{'\n'}grow together.&rdquo;
                         </p>
                     </div>
@@ -117,17 +121,17 @@ export const Values = () => {
 
                 {/* Impact at Scale */}
                 <div className="text-center md:text-left">
-                    <h2 className="font-display text-6xl font-bold text-white">
+                    <h2 className="font-display text-5xl font-bold text-white">
                         Impact at Scale
                     </h2>
                     <div className="relative mt-6">
                         <img
                             aria-hidden="true"
                             alt=""
-                            src="/images/values-pillar-3.svg"
+                            src="/images/values-pillar-3.webp"
                             className="pointer-events-none absolute left-1/2 -top-[56px] w-full max-w-[350px] -translate-x-1/2"
                         />
-                        <p className="relative whitespace-pre-line font-display text-3xl font-semibold leading-[1.4] text-white">
+                        <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
                             &ldquo;Knowledge is our fuel.{'\n'}Impact is our footprint.&rdquo;
                         </p>
                     </div>
@@ -137,17 +141,6 @@ export const Values = () => {
     );
 };
 
-export const Statement = () => {
-    return (
-        <section className="flex flex-col items-center justify-center bg-white py-24 text-center md:py-28">
-            <p className="font-display text-5xl font-bold leading-tight text-black sm:text-7xl md:text-8xl">
-                STOP IMAGINING
-                <br />
-                START BUILDING
-            </p>
-        </section>
-    );
-};
 
 export const Roadmaps = ({
     roadmaps,

@@ -198,6 +198,10 @@
     --color-surface-overlay: rgba(255, 255, 255, 0.8);
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     font-family: var(--font-family-body);
     background-color: var(--color-bg-primary);
@@ -205,32 +209,35 @@ body {
     transition: background-color var(--duration-slow) var(--easing-default), color var(--duration-slow) var(--easing-default);
 }
 
-/* Glows & Blooms from Reference */
-.bloom-warm {
-    background: radial-gradient(107.1% 63% at 15.87% 23.39%,rgba(255,77,0,.6) 0,rgba(255,199,175,0) 79.55%);
-    background: radial-gradient(107.1% 63% at 15.87% 23.39%,color(display-p3 1 0.365 0 / 0.6) 0,color(display-p3 1 0.792 0.702 / 0) 79.55%);
+/* Background gradients (converted from Figma SVG exports).
+   The SVG's rotated ellipses, after its non-uniform stretch to the viewport,
+   come out nearly axis-aligned — sizes below are the stretched ellipses
+   computed for a ~16:9 viewport. Orange layer listed first (on top). */
+.hero-gradient,
+.values-gradient {
+    position: absolute;
+    pointer-events: none;
+    background-blend-mode: screen;
 }
-.bloom-cool {
-    background: radial-gradient(107.1% 63% at 92.16% 86.83%,rgba(0,100,255,.468) 0,rgba(0,160,255,.234) 46.17%,rgba(0,221,255,0) 81.62%);
-    background: radial-gradient(107.1% 63% at 92.16% 86.83%,color(display-p3 0 0.384 1 / 0.468) 0,color(display-p3 0 0.616 1 / 0.234) 46.17%,color(display-p3 0 0.851 1 / 0) 81.62%);
+.hero-gradient {
+    background:
+        radial-gradient(90.6% 49.4% at 15.87% 23.39%,rgba(255,93,0,.6) 0,rgba(255,202,179,0) 79.55%),
+        radial-gradient(58% 38% at 54% 55%,rgba(0,255,150,.10) 0,rgba(0,255,150,0) 100%),
+        radial-gradient(133.9% 68.4% at 92.16% 86.83%,rgba(0,98,255,.468) 0,rgba(0,157,255,.234) 46.17%,rgba(0,217,255,0) 81.62%);
+    background:
+        radial-gradient(90.6% 49.4% at 15.87% 23.39%,color(display-p3 1 0.3667 0 / 0.6) 0,color(display-p3 1 0.792 0.702 / 0) 79.55%),
+        radial-gradient(58% 38% at 54% 55%,color(display-p3 0 1 0.6 / 0.10) 0,color(display-p3 0 1 0.6 / 0) 100%),
+        radial-gradient(133.9% 68.4% at 92.16% 86.83%,color(display-p3 0 0.3833 1 / 0.468) 0,color(display-p3 0 0.6167 1 / 0.234) 46.17%,color(display-p3 0 0.85 1 / 0) 81.62%);
 }
-.ray-warm {
-    border-radius: 50%;
-    background: linear-gradient(180deg,#ffd700 0%,rgba(255,0,0,0) 100%);
-    background: linear-gradient(180deg,color(display-p3 1 0.851 0) 0%,color(display-p3 1 0 0 / 0) 100%);
-    filter: blur(50px);
-    transform: rotate(-45deg);
-}
-.ray-glow {
-    border-radius: 50%;
-    background: linear-gradient(180deg,rgba(255,255,255,.73) 0%,rgba(255,177,86,.73) 100%);
-    background: linear-gradient(180deg,color(display-p3 1 1 1 / 0.73) 0%,color(display-p3 0.961 0.71 0.4 / 0.73) 100%);
-    filter: blur(50px);
-    transform: rotate(-45deg);
-}
-.pillar-glow {
-    background: linear-gradient(180deg,var(--cream) 0,rgba(143,132,110,0) 100%);
-    filter: blur(90px);
+.values-gradient {
+    background:
+        radial-gradient(111% 52.7% at 53.93% 17.06%,rgba(255,93,0,.6) 0,rgba(255,202,179,0) 79.55%),
+        radial-gradient(58% 38% at 46% 55%,rgba(0,255,150,.10) 0,rgba(0,255,150,0) 100%),
+        radial-gradient(185.2% 61% at 38.38% 92.5%,rgba(0,98,255,.468) 0,rgba(0,157,255,.234) 46.17%,rgba(0,217,255,0) 81.62%);
+    background:
+        radial-gradient(111% 52.7% at 53.93% 17.06%,color(display-p3 1 0.3667 0 / 0.6) 0,color(display-p3 1 0.792 0.702 / 0) 79.55%),
+        radial-gradient(58% 38% at 46% 55%,color(display-p3 0 1 0.6 / 0.10) 0,color(display-p3 0 1 0.6 / 0) 100%),
+        radial-gradient(185.2% 61% at 38.38% 92.5%,color(display-p3 0 0.3833 1 / 0.468) 0,color(display-p3 0 0.6167 1 / 0.234) 46.17%,color(display-p3 0 0.85 1 / 0) 81.62%);
 }
 
 /* Glassmorphic surface */

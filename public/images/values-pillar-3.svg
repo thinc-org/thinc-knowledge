@@ -1,18 +1,10 @@
 <svg width="1747" height="2232" viewBox="0 0 1747 2232" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_df_154_2296)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M388.415 203.012C286.022 203.012 203.013 286.025 203.013 388.41C203.013 490.811 286.022 573.823 388.415 573.823V3271.43H523.184V403.753H680.419V3271.43H794.83V403.753H952.065V3271.43H1066.48V403.753H1223.71V3271.43H1358.48V573.823C1460.87 573.823 1543.88 490.811 1543.88 388.41C1543.88 286.025 1460.87 203.012 1358.48 203.012H388.415Z" fill="url(#paint0_linear_154_2296)" fill-opacity="0.75" shape-rendering="crispEdges"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M388.415 203.012C286.022 203.012 203.013 286.025 203.013 388.41C203.013 490.811 286.022 573.823 388.415 573.823V3271.43H523.184V403.753H680.419V3271.43H794.83V403.753H952.065V3271.43H1066.48V403.753H1223.71V3271.43H1358.48V573.823C1460.87 573.823 1543.88 490.811 1543.88 388.41C1543.88 286.025 1460.87 203.012 1358.48 203.012H388.415Z" fill="url(#paint0_linear_154_2296)" fill-opacity="0.75"/>
 </g>
 <defs>
 <filter id="filter0_df_154_2296" x="-0.000427246" y="-0.00140381" width="1746.9" height="3474.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="3.6301"/>
-<feGaussianBlur stdDeviation="43.425"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.133333 0 0 0 0 1 0 0 0 0.06 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_154_2296"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_154_2296" result="shape"/>
-<feGaussianBlur stdDeviation="70" result="effect2_foregroundBlur_154_2296"/>
+<feGaussianBlur stdDeviation="70"/>
 </filter>
 <linearGradient id="paint0_linear_154_2296" x1="873.447" y1="203.012" x2="873.447" y2="3271.43" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EBDDBE" style="stop-color:#EBDDBE;stop-color:color(display-p3 0.9201 0.8682 0.7467);stop-opacity:1;"/>
