@@ -9,7 +9,7 @@ import { Section } from '@/components/Section';
 
 export const Hero = () => {
     return (
-        <section className="relative flex min-h-screen flex-col overflow-hidden bg-black">
+        <section className="relative flex min-h-screen flex-col overflow-hidden bg-black supports-[height:100dvh]:min-h-[100dvh]">
             {/* Hero gradient – orange top-left + blue bottom-right (CSS, see global.css) */}
             <div
                 aria-hidden="true"
@@ -29,7 +29,7 @@ export const Hero = () => {
                 src="/images/hero-ray-highlight.webp"
                 className="pointer-events-none absolute -top-[17px] -left-[27px] w-[150px]"
             />
-            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pb-16 sm:pl-32 pt-40">
+            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 sm:pl-32 pt-40">
                 <div className="w-full max-w-[1400px]">
                     {/* Wordmark */}
                     <div>
@@ -69,7 +69,7 @@ export const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-40 opacity-[0.04] mix-blend-overlay bg-grain" />
+            <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-40 opacity-[0.04] mix-blend-overlay bg-grain" />
         </section>
 	);
 };
@@ -93,6 +93,7 @@ export const Values = () => {
                             aria-hidden="true"
                             alt=""
                             src="/images/values-pillar-1.webp"
+                            loading="lazy"
                             className="pointer-events-none absolute left-1/2 -top-[60px] w-full max-w-[350px] -translate-x-1/2"
                         />
                         <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
@@ -111,6 +112,7 @@ export const Values = () => {
                             aria-hidden="true"
                             alt=""
                             src="/images/values-pillar-2.webp"
+                            loading="lazy"
                             className="pointer-events-none absolute left-1/2 -top-[48px] w-full max-w-[350px] -translate-x-1/2"
                         />
                         <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
@@ -129,6 +131,7 @@ export const Values = () => {
                             aria-hidden="true"
                             alt=""
                             src="/images/values-pillar-3.webp"
+                            loading="lazy"
                             className="pointer-events-none absolute left-1/2 -top-[56px] w-full max-w-[350px] -translate-x-1/2"
                         />
                         <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
@@ -156,10 +159,10 @@ export const Roadmaps = ({
     }[];
 }) => {
     return (
-        <Section data-section-theme="dark" className="border-t border-border-primary bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
+        <Section data-section-theme="dark" className="bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
-                    <div className="space-y-3 border-t border-border-primary pt-4">
+                    <div className="space-y-3">
                         <h2 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                             Developer Roadmap
                         </h2>
@@ -168,16 +171,24 @@ export const Roadmaps = ({
                         </p>
                     </div>
                     <div className="grid gap-6 md:grid-cols-2">
-                        {roadmaps?.map((roadmap) => (
+                        {roadmaps?.slice(0, 4).map((roadmap) => (
                             <RoadmapCard
                                 key={roadmap.id}
                                 slug={roadmap.slug}
                                 level={roadmap.data.level}
                                 title={roadmap.data.title}
                                 description={roadmap.data.description}
-                                className="border-border-primary bg-bg-secondary hover:border-accent-primary"
                             />
                         ))}
+                    </div>
+                    <div className="flex w-full justify-center pt-4">
+                        <a
+                            href="/roadmap"
+                            className="group flex items-center gap-2 rounded-full bg-accent-primary px-7 py-3.5 text-base font-semibold text-black shadow-sm transition-all duration-normal hover:shadow-[0_0_32px_-6px_var(--orange)] active:scale-[0.98] md:px-8 md:py-3.5"
+                        >
+                            Explore all roadmaps
+                            <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -202,10 +213,10 @@ const blogs = feed.items.slice(0, 4).map((item) => {
 
 export const Blogs = () => {
     return (
-        <Section data-section-theme="dark" className="border-t border-border-primary bg-bg-secondary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
+        <Section data-section-theme="dark" className="bg-white/[0.06] py-16 md:py-24 text-text-secondary transition-colors duration-normal">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
-                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between border-t border-border-primary pt-4">
+                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                         <div className="space-y-3 max-w-md">
                             <h2 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                                 Blogs
@@ -220,14 +231,14 @@ export const Blogs = () => {
                             href="https://medium.com/thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-primary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-secondary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                         >
                             <span>medium.com/thinc-org</span>
                             <FiChevronRight className="text-lg md:text-xl" />
                         </a>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                         {blogs.map((blog) => {
                             return (
                                 <BlogCard
@@ -242,7 +253,7 @@ export const Blogs = () => {
                     <div className="flex w-full justify-center pt-4">
                         <a
                             href="/blog"
-                            className="group flex items-center gap-2 rounded-full bg-accent-primary px-7 py-3.5 text-base font-semibold text-black shadow-sm transition-all duration-normal hover:shadow-[0_0_32px_-6px_var(--orange)] md:px-8 md:py-3.5"
+                            className="group flex items-center gap-2 rounded-full border border-border-primary bg-bg-secondary px-7 py-3.5 text-base font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary active:scale-[0.98] md:px-8 md:py-3.5"
                         >
                             Explore all blogs
                             <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />
@@ -295,16 +306,18 @@ const videosPlaylists = [
     },
 ];
 
-export const Videos = () => {
+export const Videos = ({ all = false }: { all?: boolean }) => {
+    // standalone /videos page: section heading is the page's h1
+    const Heading = all ? 'h1' : 'h2';
     return (
-        <Section data-section-theme="dark" className="border-t border-border-primary bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
+        <Section data-section-theme="dark" className={`bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal ${all ? 'pt-24 md:pt-28' : ''}`}>
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
-                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between border-t border-border-primary pt-4">
+                    <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                         <div className="space-y-3 max-w-md">
-                            <h2 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
+                            <Heading className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                                 Videos
-                            </h2>
+                            </Heading>
                             <p className="text-lg font-body">
                                 วิดีโอสอนการพัฒนาซอฟต์แวร์และวิธีการใช้เครื่องมือต่าง
                                 ๆ โดยชมรม Thinc.
@@ -321,17 +334,18 @@ export const Videos = () => {
                             <FiChevronRight className="text-lg md:text-xl" />
                         </a>
                     </div>
-                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-                        {videosPlaylists.map((video) => (
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                        {(all ? videosPlaylists : videosPlaylists.slice(0, 2)).map((video) => (
                             <div
                                 key={video.title}
-                                className="group/tilt flex flex-col items-start gap-4 rounded-xl border border-border-primary bg-bg-secondary p-5 shadow-lg transition-all duration-slow hover:shadow-2xl liquid-glass relative overflow-hidden"
+                                className="card flex flex-col items-start gap-4 bg-bg-secondary"
                             >
                                 <iframe
                                     width="560"
                                     height="315"
                                     src={video.link}
-                                    title="YouTube video player"
+                                    loading="lazy"
+                                    title={video.title}
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin"
                                     allowFullScreen
@@ -358,6 +372,17 @@ export const Videos = () => {
                             </div>
                         ))}
                     </div>
+                    {!all && (
+                        <div className="flex w-full justify-center pt-4">
+                            <a
+                                href="/videos"
+                                className="group flex items-center gap-2 rounded-full border border-border-primary bg-bg-secondary px-7 py-3.5 text-base font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary active:scale-[0.98] md:px-8 md:py-3.5"
+                            >
+                                Explore all videos
+                                <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
         </Section>

@@ -14,7 +14,7 @@ export const Section = ({
     return (
         <section className={twMerge('flex w-full justify-center', className)} {...props}>
             <div
-                className={`h-full w-full p-8 ${
+                className={`h-full w-full px-8 ${
                     prose ? 'max-w-prose' : 'max-w-screen-lg'
                 }`}
             >

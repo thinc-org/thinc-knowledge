@@ -26,7 +26,10 @@ export const Statement = () => {
             const p = progress.current;
             setStage(p >= 0.7 ? 2 : p >= 0.25 ? 1 : 0);
             // animation finished in the travel direction -> release the page
-            if ((p >= 1 && delta > 0) || (p <= 0 && delta < 0)) locked.current = false;
+            if ((p >= 1 && delta > 0) || (p <= 0 && delta < 0)) {
+                locked.current = false;
+                document.documentElement.style.overflow = '';
+            }
         };
 
         let prevOff: number | null = null;
@@ -34,11 +37,8 @@ export const Statement = () => {
             const y = window.scrollY;
             const down = y > lastY.current;
             lastY.current = y;
-            if (locked.current) {
-                // momentum/keyboard/scrollbar can still move the page: clamp it back
-                if (y !== lockY.current) window.scrollTo({ top: lockY.current });
-                return;
-            }
+            // page frozen via overflow:hidden while locked — nothing to clamp
+            if (locked.current) return;
             const r = el.getBoundingClientRect();
             // LOCK_BIAS px above geometric center (fixed navbar + optical weight make true center read low)
             const LOCK_BIAS = 32;
@@ -50,6 +50,8 @@ export const Statement = () => {
                 lockY.current = y + off;
                 window.scrollTo({ top: lockY.current }); // snap strip to exact center
                 locked.current = true;
+                // freeze the page instead of clamping scroll events after paint (clamp loop = visible flicker)
+                document.documentElement.style.overflow = 'hidden';
             }
             prevOff = off;
         };
@@ -58,6 +60,22 @@ export const Statement = () => {
             if (!locked.current) return;
             e.preventDefault();
             applyProgress(e.deltaY / 800);
+        };
+        const onKeyDown = (e: KeyboardEvent) => {
+            if (!locked.current) return;
+            const steps: Record<string, number> = {
+                ArrowDown: 0.15,
+                ArrowUp: -0.15,
+                PageDown: 0.4,
+                PageUp: -0.4,
+                End: 1,
+                Home: -1,
+                ' ': e.shiftKey ? -0.4 : 0.4,
+            };
+            const delta = steps[e.key];
+            if (delta === undefined) return;
+            e.preventDefault();
+            applyProgress(delta);
         };
         const onTouchStart = (e: TouchEvent) => {
             touchY.current = e.touches[0].clientY;
@@ -73,11 +91,14 @@ export const Statement = () => {
         lastY.current = window.scrollY;
         window.addEventListener('scroll', onScroll, { passive: true });
         window.addEventListener('wheel', onWheel, { passive: false });
+        window.addEventListener('keydown', onKeyDown);
         window.addEventListener('touchstart', onTouchStart, { passive: true });
         window.addEventListener('touchmove', onTouchMove, { passive: false });
         return () => {
+            document.documentElement.style.overflow = '';
             window.removeEventListener('scroll', onScroll);
             window.removeEventListener('wheel', onWheel);
+            window.removeEventListener('keydown', onKeyDown);
             window.removeEventListener('touchstart', onTouchStart);
             window.removeEventListener('touchmove', onTouchMove);
         };

@@ -1,8 +1,35 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FiInstagram, FiMenu, FiX } from 'react-icons/fi';
 
-export const Navigation = () => {
+import { socialLinks } from '@/partials/Footer';
+
+const drawerSocials = socialLinks.filter(
+    ({ href }) => href !== 'https://thinc.in.th',
+);
+
+const navLinks = [
+    { label: 'Roadmap', href: '/roadmap' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Videos', href: '/videos' },
+];
+
+export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
     const [showNav, setShowNav] = useState(false);
+    const isActive = (href: string) => pathname.startsWith(href);
+
+    // open drawer: lock page scroll, close on Escape
+    useEffect(() => {
+        if (!showNav) return;
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') setShowNav(false);
+        };
+        document.documentElement.style.overflow = 'hidden';
+        window.addEventListener('keydown', onKey);
+        return () => {
+            document.documentElement.style.overflow = '';
+            window.removeEventListener('keydown', onKey);
+        };
+    }, [showNav]);
 
     return (
         <>
@@ -19,6 +46,7 @@ export const Navigation = () => {
                         </a>
                         <button
                             onClick={() => setShowNav(false)}
+                            aria-label="Close menu"
                             className="flex items-center justify-center text-text-secondary"
                         >
                             <FiX size={22} />
@@ -26,47 +54,46 @@ export const Navigation = () => {
                     </div>
 
                     <div className="flex flex-1 flex-col items-center justify-center space-y-8 px-8">
-                        <a
-                            href="/roadmap"
-                            className="text-3xl font-bold font-display text-text-primary duration-fast hover:text-accent-primary"
-                            onClick={() => setShowNav(false)}
-                        >
-                            Roadmap
-                        </a>
-                        <a
-                            href="/blog"
-                            className="text-3xl font-bold font-display text-text-primary duration-fast hover:text-accent-primary"
-                            onClick={() => setShowNav(false)}
-                        >
-                            Blog
-                        </a>
-                        <a
-                            href="/videos"
-                            className="text-3xl font-bold font-display text-text-primary duration-fast hover:text-accent-primary"
-                            onClick={() => setShowNav(false)}
-                        >
-                            Videos
-                        </a>
+                        {navLinks.map(({ label, href }) => (
+                            <a
+                                key={href}
+                                href={href}
+                                aria-current={isActive(href) ? 'page' : undefined}
+                                className={`text-3xl font-bold font-display duration-fast hover:text-accent-primary ${
+                                    isActive(href)
+                                        ? 'text-accent-primary'
+                                        : 'text-text-primary'
+                                }`}
+                                onClick={() => setShowNav(false)}
+                            >
+                                {label}
+                            </a>
+                        ))}
                     </div>
 
-                    <div className="flex flex-col items-center space-y-6 px-8 pb-16">
+                    <div className="flex flex-col items-center space-y-5 px-8 pb-16">
                         <a
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex w-full items-center justify-center rounded-xl border border-border-primary py-3 text-text-primary duration-fast hover:bg-bg-secondary hover:border-accent-primary"
+                            className="flex w-full items-center justify-center rounded-full bg-accent-primary py-3.5 text-lg font-semibold text-black shadow-sm duration-fast hover:shadow-[0_0_32px_-6px_var(--orange)] active:scale-[0.98]"
                         >
                             Main Site
                         </a>
-                        <a
-                            href="https://www.instagram.com/thinc.in.th"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center space-x-2 text-text-secondary duration-fast hover:text-accent-primary"
-                        >
-                            <FiInstagram size={20} />
-                            <span>Instagram</span>
-                        </a>
+                        <div className="flex items-center gap-2">
+                            {drawerSocials.map(({ label, href, Icon }) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={label}
+                                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-border-primary text-text-secondary duration-fast hover:border-accent-primary hover:text-accent-primary"
+                                >
+                                    <Icon size={18} />
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             )}
@@ -83,9 +110,20 @@ export const Navigation = () => {
                         </a>
                         {/* Nav links */}
                         <nav className="hidden items-center space-x-6 sm:flex">
-                            <a href="/roadmap" className="text-sm text-white/70 transition-colors hover:text-white">Roadmap</a>
-                            <a href="/blog" className="text-sm text-white/70 transition-colors hover:text-white">Blog</a>
-                            <a href="/videos" className="text-sm text-white/70 transition-colors hover:text-white">Videos</a>
+                            {navLinks.map(({ label, href }) => (
+                                <a
+                                    key={href}
+                                    href={href}
+                                    aria-current={isActive(href) ? 'page' : undefined}
+                                    className={`text-sm transition-colors ${
+                                        isActive(href)
+                                            ? 'font-semibold text-accent-primary'
+                                            : 'text-white/70 hover:text-white'
+                                    }`}
+                                >
+                                    {label}
+                                </a>
+                            ))}
                         </nav>
                     </div>
                     <div className="flex items-center gap-3">
@@ -93,7 +131,7 @@ export const Navigation = () => {
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 items-center rounded-lg border border-white/15 px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
+                            className="hidden h-8 items-center rounded-lg border border-border-primary px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
                         >
                             Main Site
                         </a>
@@ -101,12 +139,14 @@ export const Navigation = () => {
                             href="https://www.instagram.com/thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 w-8 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
+                            className="hidden h-8 w-8 items-center justify-center rounded-lg border border-border-primary text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
                         >
                             <FiInstagram size={16} />
                         </a>
                         <button
                             onClick={() => setShowNav(true)}
+                            aria-label="Open menu"
+                            aria-expanded={showNav}
                             className="flex items-center justify-center text-white/70 sm:hidden"
                         >
                             <FiMenu size={22} />

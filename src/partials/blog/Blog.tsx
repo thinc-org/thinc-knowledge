@@ -1,5 +1,6 @@
 // @ts-ignore
 import getSrc from 'get-src';
+import { FiChevronRight } from 'react-icons/fi';
 import Parser from 'rss-parser';
 
 import { BlogCard } from '@/components/blog/BlogCard';
@@ -7,14 +8,25 @@ import { Section } from '@/components/Section';
 
 export const Title = () => {
     return (
-        <Section className="bg-white py-4 md:py-6 text-slate-600">
-            <div className="space-y-3 max-w-md">
-                <h1 className="text-3xl font-bold text-slate-800 md:text-4xl">
-                    Thinc Blogs
-                </h1>
-                <p>
-                    บทความให้ความรู้สำหรับการพัฒนาซอฟต์แวร์จากพี่ ๆ ในชมรม
-                </p>
+        <Section data-section-theme="dark" className="bg-bg-primary pt-24 pb-10 text-text-secondary md:pt-28">
+            <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div className="space-y-3 max-w-md">
+                    <h1 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
+                        Thinc Blogs
+                    </h1>
+                    <p className="text-lg font-body">
+                        บทความให้ความรู้สำหรับการพัฒนาซอฟต์แวร์จากพี่ ๆ ในชมรม
+                    </p>
+                </div>
+                <a
+                    href="https://medium.com/thinc-org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-secondary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                >
+                    <span>medium.com/thinc-org</span>
+                    <FiChevronRight className="text-lg md:text-xl" />
+                </a>
             </div>
         </Section>
     );
@@ -36,8 +48,8 @@ const blogs = feed.items.map((item) => {
 });
 export const Blogs = () => {
     return (
-        <Section className="min-h-screen border-t bg-slate-50 py-4 md:py-6">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <Section data-section-theme="dark" className="min-h-screen bg-bg-primary pb-16 text-text-secondary md:pb-24">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {blogs.map((blog) => {
                     return (
                         <BlogCard

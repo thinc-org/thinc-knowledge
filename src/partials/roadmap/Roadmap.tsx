@@ -3,12 +3,12 @@ import { Section } from '@/components/Section';
 
 export const Title = () => {
     return (
-        <Section className="bg-white py-4 md:py-6 text-slate-600">
+        <Section data-section-theme="dark" className="bg-bg-primary pt-24 pb-10 text-text-secondary md:pt-28">
             <div className="space-y-3">
-                <h1 className="text-3xl font-bold text-slate-800 md:text-4xl">
+                <h1 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                     Developer Roadmaps
                 </h1>
-                <p>
+                <p className="text-lg font-body">
                     แหล่งรวมเส้นทางในการเริ่มต้นเรียนรู้ทักษะการเขียนโปรแกรมและพัฒนาซอฟต์แวร์
                 </p>
             </div>
@@ -30,8 +30,8 @@ export const Roadmaps = ({
     }[];
 }) => {
     return (
-        <Section className="min-h-screen border-t bg-slate-50 py-4 md:py-6">
-            <div className="space-y-6">
+        <Section data-section-theme="dark" className="min-h-screen bg-bg-primary pb-16 text-text-secondary md:pb-24">
+            <div className="grid gap-6 md:grid-cols-2">
                 {roadmaps?.map((roadmap) => (
                     <RoadmapCard
                         key={roadmap.id}
@@ -39,7 +39,6 @@ export const Roadmaps = ({
                         level={roadmap.data.level}
                         title={roadmap.data.title}
                         description={roadmap.data.description}
-                        className="bg-white"
                     />
                 ))}
             </div>
