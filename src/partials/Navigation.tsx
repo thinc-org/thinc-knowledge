@@ -34,7 +34,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
     return (
         <>
             {showNav && (
-                <div className="fixed inset-0 z-[60] flex h-[100vh] flex-col overflow-y-auto bg-black/60 backdrop-blur-xl backdrop-brightness-[.45] backdrop-saturate-[.6] text-text-primary supports-[height:100dvh]:h-[100dvh] sm:hidden">
+                <div className="fixed inset-0 z-[60] flex h-[100vh] flex-col overflow-y-auto bg-black/60 backdrop-blur-xl backdrop-brightness-[.45] backdrop-saturate-[.6] text-text-primary supports-[height:100dvh]:h-[100dvh] md:hidden">
                     <div className="flex h-14 items-center justify-between px-8">
                         <a
                             href="/"
@@ -100,7 +100,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                 </div>
             )}
             <header className="fixed top-0 left-0 right-0 z-50 flex w-full justify-center border-b border-white/10 bg-black/20 backdrop-blur-md transition-colors duration-normal">
-                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 h-14">
+                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 h-14 lg:max-w-screen-xl">
                     <div className="flex items-center space-x-10">
                         {/* Logo */}
                         <a
@@ -111,7 +111,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             <span className="text-lg font-semibold tracking-[0.01em] text-white">Thinc.</span>
                         </a>
                         {/* Nav links */}
-                        <nav className="hidden items-center space-x-6 sm:flex">
+                        <nav className="hidden items-center space-x-6 md:flex">
                             {navLinks.map(({ label, href }) => (
                                 <a
                                     key={href}
@@ -133,7 +133,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 items-center rounded-lg border border-border-primary px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
+                            className="hidden h-8 items-center rounded-lg border border-border-primary px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white md:flex"
                         >
                             Main Site
                         </a>
@@ -141,7 +141,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             href="https://www.instagram.com/thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 w-8 items-center justify-center rounded-lg border border-border-primary text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white sm:flex"
+                            className="hidden h-8 w-8 items-center justify-center rounded-lg border border-border-primary text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white md:flex"
                         >
                             <FiInstagram size={16} />
                         </a>
@@ -149,7 +149,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             onClick={() => setShowNav(true)}
                             aria-label="Open menu"
                             aria-expanded={showNav}
-                            className="flex items-center justify-center text-white/70 sm:hidden"
+                            className="flex items-center justify-center text-white/70 md:hidden"
                         >
                             <FiMenu size={22} />
                         </button>

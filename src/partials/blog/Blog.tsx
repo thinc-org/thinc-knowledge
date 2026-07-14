@@ -48,7 +48,7 @@ const blogs = feed.items.map((item) => {
 });
 export const Blogs = () => {
     return (
-        <Section data-section-theme="dark" className="min-h-screen bg-bg-primary pb-16 text-text-secondary md:pb-24">
+        <Section data-section-theme="dark" className="bg-bg-primary pb-16 text-text-secondary md:pb-24">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {blogs.map((blog) => {
                     return (

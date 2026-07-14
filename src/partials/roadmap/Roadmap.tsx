@@ -30,8 +30,8 @@ export const Roadmaps = ({
     }[];
 }) => {
     return (
-        <Section data-section-theme="dark" className="min-h-screen bg-bg-primary pb-16 text-text-secondary md:pb-24">
-            <div className="grid gap-6 md:grid-cols-2">
+        <Section data-section-theme="dark" className="bg-bg-primary pb-16 text-text-secondary md:pb-24">
+            <div className="grid gap-6 sm:grid-cols-2">
                 {roadmaps?.map((roadmap) => (
                     <RoadmapCard
                         key={roadmap.id}

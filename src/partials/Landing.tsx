@@ -29,7 +29,7 @@ export const Hero = () => {
                 src="/images/hero-ray-highlight.webp"
                 className="pointer-events-none absolute -top-[17px] -left-[27px] w-[150px]"
             />
-            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 sm:pl-32 pt-40">
+            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 pt-40 sm:pl-20 lg:pl-32 lg:pt-56">
                 <div className="w-full max-w-[1400px]">
                     {/* Wordmark */}
                     <div>
@@ -52,7 +52,7 @@ export const Hero = () => {
 
                     {/* Description */}
                     <div className="mt-6 sm:mt-[27px]">
-                        <p className="font-display font-normal text-2xl leading-[1.45] tracking-[0.03em] text-text-primary sm:text-[30px]">
+                        <p className="font-display font-normal text-2xl leading-[1.45] tracking-[0.03em] text-text-primary sm:max-w-[50vw] sm:text-[30px]">
                             The real <strong className="font-bold text-white">startup incubator</strong>.{' '}
                             <br className="sm:hidden" />
                             Where builders and dreamers{' '}
@@ -76,16 +76,16 @@ export const Hero = () => {
 
 export const Values = () => {
     return (
-        <section className="relative flex min-h-[calc(100vh+140px)] flex-col items-center justify-start overflow-hidden bg-black px-10 pb-24 pt-32 sm:px-32 md:min-h-0 md:h-screen md:pb-0 md:pt-44">
+        <section className="relative flex min-h-[calc(100vh+140px)] flex-col items-center justify-start overflow-hidden bg-black px-10 pb-24 pt-32 sm:px-16 lg:min-h-0 lg:h-[80vh] lg:pb-0 lg:pt-0">
             {/* Values gradient (CSS, see global.css) */}
             <div
                 aria-hidden="true"
                 className="values-gradient top-0 left-0 h-full w-full"
             />
-            <div className="relative z-10 grid w-full max-w-screen-lg gap-16 md:grid-cols-3">
+            <div className="relative z-10 grid w-full max-w-screen-lg gap-16 lg:h-[80vh] lg:grid-cols-3 lg:gap-16">
                 {/* Love the Pain */}
-                <div className="text-center md:text-left">
-                    <h2 className="font-display text-5xl font-bold text-white">
+                <div className="min-w-0 text-center lg:self-center">
+                    <h2 className="whitespace-nowrap font-display text-5xl font-bold text-white">
                         Love the Pain
                     </h2>
                     <div className="relative mt-6">
@@ -94,17 +94,17 @@ export const Values = () => {
                             alt=""
                             src="/images/values-pillar-1.webp"
                             loading="lazy"
-                            className="pointer-events-none absolute left-1/2 -top-[60px] w-full max-w-[350px] -translate-x-1/2"
+                            className="pointer-events-none absolute left-1/2 -top-[60px] w-full max-w-[350px] -translate-x-1/2 lg:max-w-[480px]"
                         />
-                        <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
+                        <p className="relative mx-auto w-fit whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white lg:min-h-[101px]">
                             &ldquo;Empathy is not softness.{'\n'}It is the foundation of{'\n'}everything we build.&rdquo;
                         </p>
                     </div>
                 </div>
 
                 {/* Fail out loud */}
-                <div className="text-center md:text-left">
-                    <h2 className="font-display text-5xl font-bold text-white">
+                <div className="min-w-0 text-center lg:mb-24 lg:self-end">
+                    <h2 className="whitespace-nowrap font-display text-5xl font-bold text-white">
                         Fail out loud
                     </h2>
                     <div className="relative mt-6">
@@ -113,17 +113,17 @@ export const Values = () => {
                             alt=""
                             src="/images/values-pillar-2.webp"
                             loading="lazy"
-                            className="pointer-events-none absolute left-1/2 -top-[48px] w-full max-w-[350px] -translate-x-1/2"
+                            className="pointer-events-none absolute left-1/2 -top-[48px] w-full max-w-[350px] -translate-x-1/2 lg:max-w-[480px]"
                         />
-                        <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
+                        <p className="relative mx-auto w-fit whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white lg:min-h-[101px]">
                             &ldquo;Fail together,{'\n'}laugh together,{'\n'}grow together.&rdquo;
                         </p>
                     </div>
                 </div>
 
                 {/* Impact at Scale */}
-                <div className="text-center md:text-left">
-                    <h2 className="font-display text-5xl font-bold text-white">
+                <div className="min-w-0 text-center lg:self-center">
+                    <h2 className="whitespace-nowrap font-display text-5xl font-bold text-white">
                         Impact at Scale
                     </h2>
                     <div className="relative mt-6">
@@ -132,9 +132,16 @@ export const Values = () => {
                             alt=""
                             src="/images/values-pillar-3.webp"
                             loading="lazy"
-                            className="pointer-events-none absolute left-1/2 -top-[56px] w-full max-w-[350px] -translate-x-1/2"
+                            className="pointer-events-none absolute left-1/2 -top-[56px] w-full max-w-[350px] -translate-x-1/2 lg:hidden"
                         />
-                        <p className="relative whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white">
+                        <img
+                            aria-hidden="true"
+                            alt=""
+                            src="/images/values-pillar-1.webp"
+                            loading="lazy"
+                            className="pointer-events-none absolute left-1/2 -top-[60px] hidden w-full max-w-[350px] -translate-x-1/2 lg:block lg:max-w-[480px]"
+                        />
+                        <p className="relative mx-auto w-fit whitespace-pre-line font-display text-2xl font-semibold leading-[1.4] text-white lg:min-h-[101px]">
                             &ldquo;Knowledge is our fuel.{'\n'}Impact is our footprint.&rdquo;
                         </p>
                     </div>
@@ -365,7 +372,7 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
                                     <h3 className="text-xl font-bold font-display text-text-primary">
                                         {video.title}
                                     </h3>
-                                    <p className="text-text-tertiary text-sm leading-normal">
+                                    <p className="text-text-secondary text-sm leading-normal">
                                         {video.description}
                                     </p>
                                 </div>
