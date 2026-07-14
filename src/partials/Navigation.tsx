@@ -53,22 +53,24 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                         </button>
                     </div>
 
-                    <div className="flex flex-1 flex-col items-center justify-center space-y-8 px-8">
-                        {navLinks.map(({ label, href }) => (
-                            <a
-                                key={href}
-                                href={href}
-                                aria-current={isActive(href) ? 'page' : undefined}
-                                className={`text-3xl font-bold font-display duration-fast hover:text-accent-primary ${
-                                    isActive(href)
-                                        ? 'text-accent-primary'
-                                        : 'text-text-primary'
-                                }`}
-                                onClick={() => setShowNav(false)}
-                            >
-                                {label}
-                            </a>
-                        ))}
+                    <div className="flex flex-1 flex-col items-center px-8">
+                        <div className="m-auto flex flex-col items-center space-y-8 py-8">
+                            {navLinks.map(({ label, href }) => (
+                                <a
+                                    key={href}
+                                    href={href}
+                                    aria-current={isActive(href) ? 'page' : undefined}
+                                    className={`text-3xl font-bold font-display duration-fast hover:text-accent-primary ${
+                                        isActive(href)
+                                            ? 'text-accent-primary'
+                                            : 'text-text-primary'
+                                    }`}
+                                    onClick={() => setShowNav(false)}
+                                >
+                                    {label}
+                                </a>
+                            ))}
+                        </div>
                     </div>
 
                     <div className="flex flex-col items-center space-y-5 px-8 pb-16 [padding-bottom:max(4rem,env(safe-area-inset-bottom))]">
