@@ -17,25 +17,16 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
     const [showNav, setShowNav] = useState(false);
     const isActive = (href: string) => pathname.startsWith(href);
 
-    // open drawer: lock page scroll (iOS-safe fixed-body technique), close on Escape
+    // open drawer: lock page scroll, close on Escape
     useEffect(() => {
         if (!showNav) return;
-        const scrollY = window.scrollY;
-        const { body } = document;
-        body.style.position = 'fixed';
-        body.style.top = `-${scrollY}px`;
-        body.style.left = '0';
-        body.style.right = '0';
         const onKey = (e: KeyboardEvent) => {
             if (e.key === 'Escape') setShowNav(false);
         };
+        document.documentElement.style.overflow = 'hidden';
         window.addEventListener('keydown', onKey);
         return () => {
-            body.style.position = '';
-            body.style.top = '';
-            body.style.left = '';
-            body.style.right = '';
-            window.scrollTo(0, scrollY);
+            document.documentElement.style.overflow = '';
             window.removeEventListener('keydown', onKey);
         };
     }, [showNav]);
