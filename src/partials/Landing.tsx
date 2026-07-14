@@ -29,7 +29,7 @@ export const Hero = () => {
                 src="/images/hero-ray-highlight.webp"
                 className="pointer-events-none absolute -top-[17px] -left-[27px] w-[150px]"
             />
-            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 pt-40 sm:pl-20 lg:pl-32 lg:pt-56">
+            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 pt-40 sm:pl-20 lg:pl-32 lg:pt-48">
                 <div className="w-full max-w-[1400px]">
                     {/* Wordmark */}
                     <div>
@@ -82,7 +82,7 @@ export const Values = () => {
                 aria-hidden="true"
                 className="values-gradient top-0 left-0 h-full w-full"
             />
-            <div className="relative z-10 grid w-full max-w-screen-lg gap-16 lg:h-[80vh] lg:grid-cols-3 lg:gap-16">
+            <div className="relative z-10 grid w-full max-w-screen-lg gap-16 lg:h-[80vh] lg:max-w-screen-xl lg:grid-cols-3 lg:gap-16">
                 {/* Love the Pain */}
                 <div className="min-w-0 text-center lg:self-center">
                     <h2 className="whitespace-nowrap font-display text-5xl font-bold text-white">
@@ -166,7 +166,7 @@ export const Roadmaps = ({
     }[];
 }) => {
     return (
-        <Section data-section-theme="dark" className="bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
+        <Section wide data-section-theme="dark" className="bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
                     <div className="space-y-3">
@@ -206,7 +206,7 @@ export const Roadmaps = ({
 const parser = new Parser();
 const feed = await parser.parseURL('https://medium.com/feed/thinc-org');
 const blogs = feed.items.slice(0, 4).map((item) => {
-    const imgSrc = getSrc(item['content:encoded']).replace('/1024/', '/400/');
+    const imgSrc = getSrc(item['content:encoded']).replace('/1024/', '/800/');
     const content = item['content:encodedSnippet'];
     return {
         title: item.title,
@@ -220,7 +220,7 @@ const blogs = feed.items.slice(0, 4).map((item) => {
 
 export const Blogs = () => {
     return (
-        <Section data-section-theme="dark" className="bg-white/[0.06] py-16 md:py-24 text-text-secondary transition-colors duration-normal">
+        <Section wide data-section-theme="dark" className="bg-white/[0.06] py-16 md:py-24 text-text-secondary transition-colors duration-normal">
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
                     <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
@@ -317,7 +317,7 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
     // standalone /videos page: section heading is the page's h1
     const Heading = all ? 'h1' : 'h2';
     return (
-        <Section data-section-theme="dark" className={`bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal ${all ? 'pt-24 md:pt-28' : ''}`}>
+        <Section wide={!all} data-section-theme="dark" className={`bg-bg-primary py-16 md:py-24 text-text-secondary transition-colors duration-normal ${all ? 'pt-24 md:pt-28' : ''}`}>
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
                     <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
@@ -369,10 +369,10 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
                                             </span>
                                         ))}
                                     </div>
-                                    <h3 className="text-xl font-bold font-display text-text-primary">
+                                    <h3 className="text-xl font-bold font-display text-text-primary md:text-2xl">
                                         {video.title}
                                     </h3>
-                                    <p className="text-text-secondary text-sm leading-normal">
+                                    <p className="text-text-secondary text-sm leading-normal md:text-base">
                                         {video.description}
                                     </p>
                                 </div>

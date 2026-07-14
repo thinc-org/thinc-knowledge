@@ -35,7 +35,7 @@ export const Title = () => {
 const parser = new Parser();
 const feed = await parser.parseURL('https://medium.com/feed/thinc-org');
 const blogs = feed.items.map((item) => {
-    const imgSrc = getSrc(item['content:encoded']).replace('/1024/', '/400/');
+    const imgSrc = getSrc(item['content:encoded']).replace('/1024/', '/800/');
     const content = item['content:encodedSnippet'];
     return {
         title: item.title,

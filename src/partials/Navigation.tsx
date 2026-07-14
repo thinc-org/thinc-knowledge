@@ -100,7 +100,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                 </div>
             )}
             <header className="fixed top-0 left-0 right-0 z-50 flex w-full justify-center border-b border-white/10 bg-black/20 backdrop-blur-md transition-colors duration-normal">
-                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 h-14 lg:max-w-screen-xl">
+                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 h-16 lg:max-w-screen-xl">
                     <div className="flex items-center space-x-10">
                         {/* Logo */}
                         <a
@@ -108,7 +108,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             className="-ml-2 flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--sky)]"
                         >
                             <img alt="" className="h-7 w-auto" src="/images/thinc-mark.svg" />
-                            <span className="text-lg font-semibold tracking-[0.01em] text-white">Thinc.</span>
+                            <span className="text-lg font-semibold tracking-[0.01em] text-white lg:text-xl">Thinc.</span>
                         </a>
                         {/* Nav links */}
                         <nav className="hidden items-center space-x-6 md:flex">
@@ -117,7 +117,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                                     key={href}
                                     href={href}
                                     aria-current={isActive(href) ? 'page' : undefined}
-                                    className={`text-sm transition-colors ${
+                                    className={`text-sm transition-colors lg:text-base ${
                                         isActive(href)
                                             ? 'font-semibold text-accent-primary'
                                             : 'text-white/70 hover:text-white'
@@ -133,7 +133,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 items-center rounded-lg border border-border-primary px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white md:flex"
+                            className="hidden h-8 items-center rounded-lg border border-border-primary px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white md:flex lg:h-9 lg:text-base"
                         >
                             Main Site
                         </a>

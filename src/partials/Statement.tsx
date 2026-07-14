@@ -110,7 +110,7 @@ export const Statement = () => {
     return (
         <section
             ref={ref}
-            className="flex flex-col items-center justify-center overflow-hidden bg-white py-24 text-center md:py-28"
+            className="flex flex-col items-center justify-center overflow-hidden bg-white py-24 text-center md:py-28 lg:py-36"
         >
             <p className="font-display text-5xl font-bold leading-tight text-black sm:text-7xl md:text-8xl">
                 <span className={lineClass(stage >= 1)}>STOP IMAGINING</span>

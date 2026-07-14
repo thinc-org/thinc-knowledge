@@ -27,7 +27,7 @@ export const Footer = () => {
                         <a href="/" className="flex items-center">
                             <img alt="Thinc." className="h-7 w-auto select-none" src="/images/thinc-mark.svg" />
                         </a>
-                        <p className="max-w-[320px] text-sm leading-relaxed text-white/70">
+                        <p className="max-w-[320px] text-sm leading-relaxed text-white/70 lg:text-base">
                             A student club under the Faculty of Engineering,{' '}
                             <span className="whitespace-nowrap">Chulalongkorn University</span>.
                             <br />
@@ -38,12 +38,12 @@ export const Footer = () => {
                     <div className="grid grid-cols-2 gap-8 sm:flex sm:gap-16">
                         {/* Explore */}
                         <div className="flex flex-col gap-1">
-                            <p className="pb-2 text-sm font-semibold text-white">Explore</p>
+                            <p className="pb-2 text-sm font-semibold text-white lg:text-base">Explore</p>
                             {exploreLinks.map(({ label, href }) => (
                                 <a
                                     key={label}
                                     href={href}
-                                    className="py-1 text-sm text-white/70 transition-colors hover:text-white"
+                                    className="py-1 text-sm text-white/70 transition-colors hover:text-white lg:text-base"
                                 >
                                     {label}
                                 </a>
@@ -52,14 +52,14 @@ export const Footer = () => {
 
                         {/* Connect */}
                         <div className="flex flex-col gap-1">
-                            <p className="pb-2 text-sm font-semibold text-white">Connect</p>
+                            <p className="pb-2 text-sm font-semibold text-white lg:text-base">Connect</p>
                             {socialLinks.map(({ label, href, Icon }) => (
                                 <a
                                     key={label}
                                     href={href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 py-1 text-sm text-white/70 transition-colors hover:text-white"
+                                    className="flex items-center gap-2 py-1 text-sm text-white/70 transition-colors hover:text-white lg:text-base"
                                 >
                                     <Icon size={16} />
                                     <span>{label}</span>
@@ -69,7 +69,7 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <p className="mt-10 border-t border-white/10 pt-6 text-center text-text-tertiary font-mono text-xs tracking-wide sm:text-left">
+                <p className="mt-10 border-t border-white/10 pt-6 text-center text-text-tertiary font-mono text-xs tracking-wide sm:text-left lg:text-sm">
                     © THINC. 2023-2026
                 </p>
             </div>

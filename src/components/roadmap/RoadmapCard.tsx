@@ -29,7 +29,7 @@ export const RoadmapCard = ({
                 <h3 className="text-xl font-bold font-display text-text-primary md:text-2xl">
                     {title}
                 </h3>
-                <p className="text-text-secondary text-sm leading-normal">{description}</p>
+                <p className="text-text-secondary text-sm leading-normal md:text-base">{description}</p>
             </div>
         </a>
     );
