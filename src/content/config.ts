@@ -6,6 +6,12 @@ const roadmap = defineCollection({
         title: z.string(),
         description: z.string(),
         level: z.string(),
+        authors: z.array(
+            z.object({
+                name: z.string(),
+                image: z.string(),
+            }),
+        ),
     }),
 });
 

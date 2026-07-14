@@ -2,6 +2,9 @@
 title: 'Frontend Developer | React'
 description: 'เรียนรู้การใช้ React ฉบับพื้นฐาน'
 level: 'intermediate'
+authors:
+    - name: 'Thinc.'
+      image: '/images/thinc-mark.svg'
 ---
 
 หลังจากที่ได้เรียน[พื้นฐานของการทำ Frontend Development](https://knowledge.thinc.in.th/roadmap/backend-beginner/) กันไปแล้ว ขั้นตอนต่อไปก็คือการใช้ UI Library ในการช่วยเราพัฒนาเว็บไซต์ ซึ่งเราจะมาเรียนรู้เกี่ยวกับ Library ยอดฮิตอย่าง [React](https://react.dev/) กัน

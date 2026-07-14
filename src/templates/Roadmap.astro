@@ -7,13 +7,13 @@ import Base from '@/templates/Base.astro';
 
 type Props = CollectionEntry<'roadmap'>['data'];
 
-const { title, description } = Astro.props;
+const { title, description, authors } = Astro.props;
 ---
 
 <Base title={title} description={description}>
     <article class="flex flex-col items-center bg-bg-primary">
-        <Header title={title} description={description} />
-        <div class="flex min-h-[80vh] w-full flex-col items-center bg-bg-secondary text-lg">
+        <Header title={title} description={description} authors={authors} />
+        <div class="flex min-h-[80vh] w-full flex-col items-center bg-white/[0.06] text-lg">
             <div class="content w-full px-8 pt-8 pb-20 md:pt-10">
                 <slot />
             </div>

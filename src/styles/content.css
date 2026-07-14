@@ -1,8 +1,8 @@
 .content {
-    /* readable measure for long-form text (~68 chars/line) */
+    /* readable measure for long-form text (~80 chars/line) */
     max-width: var(--max-width-content);
 }
-.content body {
+.content {
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.7;
@@ -35,21 +35,21 @@
     font-weight: 700;
 }
 .content a {
-    color: var(--color-text-link);
-    font-weight: 500;
+    color: var(--color-accent-primary);
+    font-weight: 400;
     text-decoration: underline;
 }
 .content a:hover {
-    color: var(--color-accent-primary);
+    color: var(--color-accent-primary-hover);
 }
 .content p {
     margin-bottom: 1em;
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
 }
 .content code {
     padding: 2px 5px;
-    background-color: #303030;
-    color: #fafafa;
+    background-color: var(--logo-gray);
+    color: var(--color-text-primary);
     border-radius: 2px;
     font-weight: 500;
     font-size: 1em;
@@ -80,6 +80,8 @@
     padding-right: 0.5em;
 }
 .content table {
+    display: block;
+    overflow-x: auto;
     text-align: left;
     margin-bottom: 1em;
 }

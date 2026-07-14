@@ -152,7 +152,7 @@
     --letter-spacing-wide: 0.3em;
 
     /* Layout Boundaries */
-    --max-width-content: 68ch;
+    --max-width-content: 80ch;
     --max-width-wide: 80rem;
     --max-width-page: 90rem;
 
@@ -332,22 +332,33 @@ body {
 }
 
 /* Footer gradient — dim echo of the hero (orange bottom-left, blue bottom-right),
-   ~30% of hero intensity so footer text contrast holds; fades to black upward. */
+   ~45% of hero intensity so footer text contrast holds; fades to black upward. */
 .footer-gradient {
     position: absolute;
     pointer-events: none;
     background-blend-mode: screen;
     background:
-        radial-gradient(70% 90% at 8% 100%,rgba(255,93,0,.18) 0,rgba(255,93,0,0) 70%),
-        radial-gradient(80% 100% at 92% 100%,rgba(0,98,255,.14) 0,rgba(0,157,255,.05) 45%,rgba(0,217,255,0) 75%);
+        radial-gradient(70% 90% at 8% 100%,rgba(255,93,0,.27) 0,rgba(255,93,0,0) 70%),
+        radial-gradient(80% 100% at 92% 100%,rgba(0,98,255,.21) 0,rgba(0,157,255,.1) 45%,rgba(0,217,255,0) 75%);
 }
 /* narrow viewport: corner glows would leave a black gap in the middle — widen so they overlap */
 @media (max-width: 639px) {
     .footer-gradient {
         background:
-            radial-gradient(130% 80% at 0% 100%,rgba(255,93,0,.18) 0,rgba(255,93,0,0) 78%),
-            radial-gradient(140% 90% at 100% 100%,rgba(0,98,255,.14) 0,rgba(0,157,255,.05) 50%,rgba(0,217,255,0) 82%);
+            radial-gradient(130% 80% at 0% 100%,rgba(255,93,0,.27) 0,rgba(255,93,0,0) 78%),
+            radial-gradient(140% 90% at 100% 100%,rgba(0,98,255,.21) 0,rgba(0,157,255,.1) 50%,rgba(0,217,255,0) 82%);
     }
+}
+
+/* Roadmap header gradient — dim echo of the hero (orange top-left, blue bottom-right diagonal),
+   ~80% of hero intensity so title contrast holds. */
+.roadmap-header-gradient {
+    position: absolute;
+    pointer-events: none;
+    background-blend-mode: screen;
+    background:
+        radial-gradient(100% 130% at 8% 0%,rgba(255,93,0,.48) 0,rgba(255,93,0,0) 70%),
+        radial-gradient(110% 140% at 92% 100%,rgba(0,98,255,.37) 0,rgba(0,157,255,.19) 45%,rgba(0,217,255,0) 75%);
 }
 
 /* Glassmorphic surface */
