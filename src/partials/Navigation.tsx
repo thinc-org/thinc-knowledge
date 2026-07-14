@@ -34,7 +34,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
     return (
         <>
             {showNav && (
-                <div className="fixed inset-0 z-[60] flex flex-col bg-black/75 backdrop-blur-xl backdrop-brightness-[.3] backdrop-saturate-[.6] text-text-primary sm:hidden">
+                <div className="fixed inset-0 z-[60] flex h-[100vh] flex-col overflow-y-auto bg-black/60 backdrop-blur-xl backdrop-brightness-[.45] backdrop-saturate-[.6] text-text-primary supports-[height:100dvh]:h-[100dvh] sm:hidden">
                     <div className="flex h-14 items-center justify-between px-8">
                         <a
                             href="/"
@@ -71,7 +71,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                         ))}
                     </div>
 
-                    <div className="flex flex-col items-center space-y-5 px-8 pb-16">
+                    <div className="flex flex-col items-center space-y-5 px-8 pb-16 [padding-bottom:max(4rem,env(safe-area-inset-bottom))]">
                         <a
                             href="https://thinc.in.th"
                             target="_blank"
