@@ -36,12 +36,12 @@ export const TableOfContents = ({ headings }: { headings: Heading[] }) => {
     if (items.length === 0) return null;
 
     const list = (
-        <ul className="text-lg">
+        <ul className="text-base lg:text-lg">
             {items.map((item) => (
                 <li key={item.slug} className={item.depth === 3 ? 'pl-4' : ''}>
                     <a
                         href={`#${item.slug}`}
-                        className={`block py-1.5 transition-colors duration-fast ${
+                        className={`block py-1 transition-colors duration-fast lg:py-1.5 ${
                             activeSlug === item.slug
                                 ? 'font-semibold text-white'
                                 : 'text-text-secondary hover:text-text-primary'
