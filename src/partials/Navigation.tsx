@@ -78,7 +78,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-primary flex w-full items-center justify-center py-3.5 text-lg font-semibold"
+                            className="btn-secondary flex w-full items-center justify-center py-3.5 text-lg font-semibold"
                         >
                             Main Site
                         </a>
