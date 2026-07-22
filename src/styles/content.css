@@ -22,6 +22,7 @@
     line-height: 1.2;
     color: var(--color-text-primary);
     font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+    scroll-margin-top: 7rem;
 }
 .content h1 {
     font-size: 1.5em;
@@ -70,8 +71,8 @@
     background-color: var(--logo-gray);
     color: var(--color-text-primary);
     border-radius: 2px;
-    font-weight: 500;
-    font-size: 1em;
+    font-weight: 400;
+    font-size: 0.9em;
 }
 .content pre {
     padding: 1.5em;

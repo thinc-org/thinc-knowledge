@@ -3,19 +3,25 @@ import '@/styles/content.css';
 
 import type { CollectionEntry } from 'astro:content';
 import { Header } from '@/partials/roadmap/Header';
+import { TableOfContents } from '@/partials/roadmap/TableOfContents';
 import Base from '@/templates/Base.astro';
 
-type Props = CollectionEntry<'roadmap'>['data'];
+type Props = CollectionEntry<'roadmap'>['data'] & {
+    headings: { depth: number; slug: string; text: string }[];
+};
 
-const { title, description, authors } = Astro.props;
+const { title, description, authors, headings } = Astro.props;
 ---
 
 <Base title={title} description={description}>
     <article class="flex flex-col items-center bg-bg-primary">
         <Header title={title} description={description} authors={authors} />
         <div class="flex min-h-[80vh] w-full flex-col items-center bg-white/[0.06] text-base sm:text-lg">
-            <div class="content w-full px-8 pt-8 pb-20 md:pt-10">
-                <slot />
+            <div class="flex w-full max-w-[var(--max-width-content)] flex-col px-8 pt-8 pb-20 md:pt-10 lg:max-w-screen-xl lg:flex-row lg:gap-24">
+                <TableOfContents headings={headings} client:idle />
+                <div class="content min-w-0 flex-1">
+                    <slot />
+                </div>
             </div>
         </div>
     </article>

@@ -12,7 +12,7 @@ export const Header = ({
     return (
         <div className="relative w-full overflow-hidden">
             <div aria-hidden="true" className="roadmap-header-gradient inset-0" />
-            <div className="relative mx-auto flex w-full max-w-[var(--max-width-content)] flex-col px-8 pb-10 pt-24 text-lg md:pt-28">
+            <div className="relative mx-auto flex w-full max-w-[var(--max-width-content)] flex-col px-8 pb-10 pt-24 text-lg md:pt-28 lg:max-w-screen-xl">
                 <div className="flex flex-col space-y-4">
                     <div className="flex flex-col">
                         <a

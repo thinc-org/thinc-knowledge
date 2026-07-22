@@ -12,9 +12,9 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'roadmap'>;
 
 const roadmap = Astro.props;
-const { Content } = await roadmap.render();
+const { Content, headings } = await roadmap.render();
 ---
 
-<Roadmap {...roadmap.data}>
+<Roadmap {...roadmap.data} headings={headings}>
     <Content />
 </Roadmap>
