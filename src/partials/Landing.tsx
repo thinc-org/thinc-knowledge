@@ -29,23 +29,23 @@ export const Hero = () => {
                 src="/images/hero-ray-highlight.webp"
                 className="pointer-events-none absolute -top-[17px] -left-[27px] w-[150px]"
             />
-            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 pt-36 sm:pl-20 lg:pl-32 lg:pt-36">
+            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 pt-32 sm:pt-36 sm:pl-20 lg:pl-32 lg:pt-44">
                 <div className="w-full max-w-[1400px]">
                     {/* Wordmark */}
                     <div>
                         <img
                             alt="Thinc."
-                            className="-ml-3 w-full max-w-[220px] sm:-ml-5 sm:max-w-[350px] lg:max-w-[420px] xl:max-w-[480px]"
+                            className="-ml-3 w-full max-w-[220px] sm:-ml-5 sm:max-w-[350px] lg:max-w-[420px]"
                             src="/images/thinc-wordmark.svg"
                         />
                     </div>
 
                     {/* Phonetic + noun */}
                     <div className="mt-6 sm:mt-[26px]">
-                        <p className="font-display font-normal text-xl leading-[1.23] tracking-[0.03em] text-white/90 sm:text-2xl">
+                        <p className="font-display font-normal text-xl leading-[1.23] tracking-[0.03em] text-white/90 sm:text-2xl md:text-3xl">
                             /θɪŋk/
                         </p>
-                        <p className="font-display font-normal text-xl leading-[1.23] tracking-[0.03em] text-white/70 sm:text-2xl">
+                        <p className="font-display font-normal text-xl leading-[1.23] tracking-[0.03em] text-white/70 sm:text-2xl md:text-3xl">
                             noun
                         </p>
                     </div>
@@ -54,7 +54,7 @@ export const Hero = () => {
                     <div className="mt-6 sm:mt-[27px]">
                         <p className="font-normal text-xl leading-[1.45] tracking-[0.03em] text-text-primary sm:max-w-[50vw] md:text-2xl lg:text-3xl">
                             A <strong className="font-bold text-white">knowledge platform</strong> by Thinc.
-                            that gathers real skills and hands-on experience in building tech, from
+                            that gathers real skills and hands‑on experience in building tech, from
                             foundations to real implementation. Covering{' '}
                             <strong className="font-bold text-white">Frontend, Backend, Product, Design</strong>,
                             and beyond, it's built to give everyone a foundation strong enough to create
@@ -218,7 +218,7 @@ export const Blogs = () => {
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
                     <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                        <div className="space-y-3 max-w-md">
+                        <div className="space-y-3 max-w-md sm:max-w-[50%]">
                             <h2 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                                 Blogs
                             </h2>
@@ -315,7 +315,7 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
             <div className="flex w-full flex-col space-y-16">
                 <div className="space-y-10">
                     <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                        <div className="space-y-3 max-w-md">
+                        <div className="space-y-3 max-w-md sm:max-w-[50%]">
                             <Heading className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                                 Videos
                             </Heading>

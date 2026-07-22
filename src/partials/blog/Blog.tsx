@@ -10,7 +10,7 @@ export const Title = () => {
     return (
         <Section data-section-theme="dark" className="bg-bg-primary pt-24 pb-10 text-text-secondary md:pt-28">
             <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                <div className="space-y-3 max-w-md">
+                <div className="space-y-3 max-w-md sm:max-w-[50%]">
                     <h1 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
                         Thinc Blogs
                     </h1>
