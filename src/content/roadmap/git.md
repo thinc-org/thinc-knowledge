@@ -1,6 +1,6 @@
 ---
 title: 'Git/GitHub Basics'
-description: 'เรียนรู้ทักษะพื้นฐานในกาใช้ Git/GitHub ในการทำ version control'
+description: 'เรียนรู้ทักษะพื้นฐานในการใช้ Git/GitHub ในการทำ version control'
 level: 'beginner'
 authors:
     - name: 'Thinc.'
@@ -11,7 +11,7 @@ authors:
 
 บทความนี้จะพาทุกคนมารู้จักกับ basics ของการใช้งานโปรแกรม Git กัน
 
-Git เป็นโปรแกรม version control ที่นับได้ว่าใช้กันอย่างแพร่หลายที่่สุดในสำหรับ software development ที่ช่วยติดตามการเปลี่ยนแปลงของโค้ดระหว่างการพัฒนาโปรแกรมของเรา ซึ่งสำคัญอย่างมากในการจัดการ codebase ร่วมกันทีมที่มีหลายคนทำงานในโปรเจกต์เดียวกัน
+Git เป็นโปรแกรม version control ที่นับได้ว่าใช้กันอย่างแพร่หลายที่สุดสำหรับ software development ที่ช่วยติดตามการเปลี่ยนแปลงของโค้ดระหว่างการพัฒนาโปรแกรมของเรา ซึ่งสำคัญอย่างมากในการจัดการ codebase ร่วมกันทีมที่มีหลายคนทำงานในโปรเจกต์เดียวกัน
 
 ## Basics
 
@@ -21,19 +21,19 @@ Git เป็นโปรแกรม version control ที่นับได�
 
 สามารถติดตั้ง Git ได้จาก [git-scm.com](https://git-scm.com/)
 
-### เกี่ยวกับการสร้าง repository
+### Creating a Repository
 
 -   `git init` สร้าง repository ใหม่ เพื่อให้ Git ติดตามการเปลี่ยนแปลงของไฟล์ในโฟลเดอร์ปัจจุบัน
 -   `git clone` คัดลอก repository จาก remote repository เช่นใน GitHub (repository ที่ถูก host จาก network หรือ internet)
 
-### การอัปเดตการเปลี่ยนแปลง และตรวจสอบสถานะ
+### Commits & Status
 
 -   `git add` เพิ่มไฟล์เข้า staging (เพื่อบอกว่าเรากำลังเตรียมจะ commit ไฟล์เหล่านี้)
 -   `git commit` การ commit บันทึกการเปลี่ยนแปลงที่อยู่ใน staging area
 -   `git log` ดูประวัติการ commit
 -   `git status` ตรวจสอบสถานะของไฟล์ในโฟลเดอร์ปัจจุบัน
 
-### branching
+### Branching
 
 การสร้าง branch คือการสร้าง multiverse ใหม่ของโปรเจกต์ของเรา ที่เราสามารถทำการเปลี่ยนแปลงโค้ดได้โดยไม่มีผลต่อ branch อื่น ๆ ใน repository นั้น
 
@@ -46,7 +46,7 @@ Git เป็นโปรแกรม version control ที่นับได�
 
 -   [Learn Git Branching](https://learngitbranching.js.org/)
 
-### อัปเดตการเปลี่ยนแปลงที่ remote repository
+### Updating a Remote Repository
 
 remote repository คือ repository ที่ถูก host จาก network หรือ internet เช่นใน [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/product/)
 
@@ -61,20 +61,20 @@ remote repository คือ repository ที่ถูก host จาก network
 
 [GitHub](https://github.com) เป็น platform ที่ให้บริการ hosting สำหรับ Git repository ที่เราสามารถใช้งานได้ฟรี และมี feature อื่น ๆ ที่ช่วยในการจัดการโปรเจกต์ของเราอีกเยอะ
 
-### การใช้งาน GitHub
+### Using GitHub
 
 สมัครสมาชิก GitHub ได้ที่ [github.com](https://github.com) จากนั้นให้สร้าง repository ใหม่ โดยกดปุ่ม 'New' ที่หน้าหลักของ GitHub
 
 -   [Hello World - GitHub](https://docs.github.com/en/get-started/start-your-journey/hello-world)
 
-### การใช้งาน Pull Request
+### Using Pull Requests
 
 Pull Request เป็น feature ที่ช่วยให้เราสามารถร้องขอให้เจ้าของ repository รวมการเปลี่ยนแปลงใน branch หนึ่ง เข้าไปที่อีก branch หนึ่ง
 
 -   [Beginner’s guide to GitHub: Creating a pull request](https://github.blog/developer-skills/github/beginners-guide-to-github-creating-a-pull-request/)
 -   [Creating a Pull Request - GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
-### การใช้งาน Issues
+### Using Issues
 
 Issues เป็น feature ที่ช่วยให้เราสามารถสร้าง task หรือ bug report ใน repository ของเรา
 
@@ -82,7 +82,7 @@ Issues เป็น feature ที่ช่วยให้เราสามา�
 
 ## Learning Resources
 
-เราตั้งในให้บทความนี้เป็นแหล่งรวม resources ในการเรียนรู้ต่าง ๆ เกี่ยวกับการใช้ Git โดยเนื้อหาทั้งหมดที่เราแนะนำไว้จะสามารถเรียนรู้ได้ทั้งหมดภายในเวลาไม่เกิน **3 ชั่วโมง** โดยจะมีทั้งเนื้อหาที่สั้นและยาวปนกันไป สามารถคลิกไปที่ลิงก์ต่าง ๆ เพื่อลองหา resources การเรียนที่ใช่สำหรับเราได้เลย
+เราตั้งใจให้บทความนี้เป็นแหล่งรวม resources ในการเรียนรู้ต่าง ๆ เกี่ยวกับการใช้ Git โดยเนื้อหาทั้งหมดที่เราแนะนำไว้จะสามารถเรียนรู้ได้ทั้งหมดภายในเวลาไม่เกิน **3 ชั่วโมง** โดยจะมีทั้งเนื้อหาที่สั้นและยาวปนกันไป สามารถคลิกไปที่ลิงก์ต่าง ๆ เพื่อลองหา resources การเรียนที่ใช่สำหรับเราได้เลย
 
 ### Video Tutorials
 
@@ -108,12 +108,12 @@ Issues เป็น feature ที่ช่วยให้เราสามา�
 -   [GitHub: Git Basics](https://docs.github.com/en/get-started/git-basics)
 -   [Pro Git book](https://git-scm.com/book/en/v2)
 
-### Resources อื่น ๆ
+### Other Resources
 
-#### การเขียน Commit Message ที่ดี
+#### Writing Good Commit Messages
 
 -   [Conventional Commits - A specification for adding human and machine readable meaning to commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
--   [How to write better Git commit messaages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
+-   [How to write better Git commit messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 -   [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 
-เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับการใช้ Git/GitHub ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.in.th](https://instagram.com/thinc.in.th) ด้วยนะะ
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับการใช้ Git/GitHub ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.th](https://instagram.com/thinc.th) ด้วยนะ

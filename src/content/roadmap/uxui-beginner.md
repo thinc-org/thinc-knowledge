@@ -7,7 +7,7 @@ authors:
       image: '/images/thinc-mark.svg'
 ---
 
-## How to become a UX/UI Designer
+## Getting Started
 
 บทความนี้จะพาทุกคนเข้ามาสู่วงการ User Interface / User Experience Design
 
@@ -15,7 +15,7 @@ authors:
 
 โดยในบทความนี้จะมีลิงก์ไปยังเว็บไซต์อื่น ๆ ซึ่งจะเรียงจากเนื้อหาที่รวดเร็วที่สุด จนถึงเนื้อหาที่ครอบคลุมที่สุด โดยสามารถเลือกเรียนลิงก์ไหนก็ได้ตามความสนใจของตัวเองเลย !
 
-คำแนะนำ : แนะนำให้สามารถนำ keywords จากบทความนี้มาค้นหา และลองใช้ในการพัฒนา project จริง ๆ ของตัวเองดู โดยที่เมื่อทำ project จริงแล้ว แนะนำให้กลับมาอ่าน topics ต่าง ๆ จากบทความนี้้อีกครั้งด้วย เนื่องจากบาง topics จะเข้าใจง่ายขึ้นเมื่อเรามี background ของ project ที่เราทำอยู่เป็นจุดเปรียบเทียบ และอาจทำให้เราได้เห็น perspective ใหม่ ๆ ในการออกแบบ product ได้อีกด้วย
+คำแนะนำ : แนะนำให้สามารถนำ keywords จากบทความนี้มาค้นหา และลองใช้ในการพัฒนา project จริง ๆ ของตัวเองดู โดยที่เมื่อทำ project จริงแล้ว แนะนำให้กลับมาอ่าน topics ต่าง ๆ จากบทความนี้อีกครั้งด้วย เนื่องจากบาง topics จะเข้าใจง่ายขึ้นเมื่อเรามี background ของ project ที่เราทำอยู่เป็นจุดเปรียบเทียบ และอาจทำให้เราได้เห็น perspective ใหม่ ๆ ในการออกแบบ product ได้อีกด้วย
 
 ### What is UX/UI Design?
 
@@ -46,7 +46,7 @@ UX/UI แบ่งออกมาเป็นสองอย่างหลั�
 
 ทั้งนี้แล้ว หลักการที่สำคัญที่สุดในการออกแบบ product ชิ้นนึงขึ้นคือการคิดเชิงออกแบบ หรือ Design Thinking
 
-Design Thinking เป็นแนวคิด กระบวนการการออกแบบที่เริ่มกระบวนการจากการเข้าใจปัญหาของผู้ใช้งาน เพื่อหา solution ที่จะสร้าง product ที่ตอบสนองความต้องการของผู้ใช้งาน และแก้ไขปัญหาที่เราตั้่งไว้ได้ดีที่สุด ประกอบด้วยขั้นตอนหลัก ๆ 5 ขั้นตอน คือ
+Design Thinking เป็นแนวคิด กระบวนการการออกแบบที่เริ่มกระบวนการจากการเข้าใจปัญหาของผู้ใช้งาน เพื่อหา solution ที่จะสร้าง product ที่ตอบสนองความต้องการของผู้ใช้งาน และแก้ไขปัญหาที่เราตั้งไว้ได้ดีที่สุด ประกอบด้วยขั้นตอนหลัก ๆ 5 ขั้นตอน คือ
 
 1. Empathize - การเข้าใจผู้ใช้งาน และปัญหาที่พวกเขาเจอ
 2. Define - การกำหนดปัญหาที่จะแก้
@@ -59,11 +59,11 @@ Design Thinking เป็นแนวคิด กระบวนการกา
 -   [What Is Design Thinking? An Overview](https://www.youtube.com/watch?v=gHGN6hs2gZY)
 -   [IDEO: Design Thinking](https://designthinking.ideo.com/)
 
-#### Double Diamond Design Process
+#### Double Diamond
 
 ![Double Diamond Design Process](/images/double-diamond-design-process.png)
 
-Double Diamond Design Process คือกระบวนการออกแบบที่ใช้ในการแก้ปัญหา และสร้าง product ที่ดีที่สุดให้กับผู้ใช้ ซึ่งทิ้งนี้แล้วอาจจะเห็นได้ว่าบางกระบวนการ
+Double Diamond Design Process คือกระบวนการออกแบบที่ใช้ในการแก้ปัญหา และสร้าง product ที่ดีที่สุดให้กับผู้ใช้ ซึ่งทั้งนี้แล้วอาจจะเห็นได้ว่าบางกระบวนการ
 
 โดยแบ่งเป็น 4 ขั้นตอนหลัก ๆ และ 2 ส่วนด้วยกัน
 
@@ -115,7 +115,7 @@ User Experience หมายถึง ประสบการณ์ที่ผ
 
 Persona คือตัวละครที่เราสร้างขึ้นมาเพื่อแทนผู้ใช้งานจริง ๆ ซึ่งจะช่วยให้เราเข้าใจผู้ใช้งานมากขึ้น และสามารถออกแบบ Product ให้ตรงกับความต้องการของผู้ใช้งานได้
 
-การสร้าง Persona นั้นสามารถทำได้หลายวิธี ตั้งแต่การสร้างขึึ้นมาจาก grouping ของ User ที่เราได้ทำ User Research มา หรือการสร้างขึ้นมาจากความคิดสร้างสรรค์ของเราเอง โดยหนึ่งในวิธีการหา persona คือการทำ empathy map ซึ่งจะช่วยให้เราเข้าใจผู้ใช้งานมากขึ้น
+การสร้าง Persona นั้นสามารถทำได้หลายวิธี ตั้งแต่การสร้างขึ้นมาจาก grouping ของ User ที่เราได้ทำ User Research มา หรือการสร้างขึ้นมาจากความคิดสร้างสรรค์ของเราเอง โดยหนึ่งในวิธีการหา persona คือการทำ empathy map ซึ่งจะช่วยให้เราเข้าใจผู้ใช้งานมากขึ้น
 
 -   [Empathy Mapping: The First Step in Design Thinking](https://www.nngroup.com/articles/empathy-mapping/)
 -   [เข้าใจความรู้สึกนึกคิดของลูกค้าด้วย Empathy Map](https://www.popticles.com/marketing/understand-your-customers-with-empathy-map/)
@@ -138,7 +138,7 @@ User Flow หรือ เส้นทางของผู้ใช้ คื�
 
 User Story คือ ข้อความที่ใช้ในการอธิบายความต้องการของผู้ใช้งาน ซึ่งจะช่วยให้ทีมพัฒนาสามารถเข้าใจความต้องการของผู้ใช้งานได้ดีขึ้น
 
-การทำ User Story นั้นสามารถทำได้โดยการใช้รูปแบบเป็น "As a [type of user], I want [some goal] so that [some reason]" ซึ่งจะสามารถนำ user stories ที่สร้างมาเพื่อนำไปเขียนเป็น tasks เพื่อพีัฒนา Product ของเราต่อได้ด้วย
+การทำ User Story นั้นสามารถทำได้โดยการใช้รูปแบบเป็น "As a [type of user], I want [some goal] so that [some reason]" ซึ่งจะสามารถนำ user stories ที่สร้างมาเพื่อนำไปเขียนเป็น tasks เพื่อพัฒนา Product ของเราต่อได้ด้วย
 
 -   [User stories with examples and a template](https://www.atlassian.com/agile/project-management/user-stories)
 
@@ -217,7 +217,7 @@ Brand Identity ไม่ว่าจะเป็นรูปแบบการ�
 
 ### Prototyping
 
-Prototype คือแบบจำลองของ Product ที่เราออกแบบขึ้นมาเพื่อให้ผู้ใช้สามารถทดสอบการใช้งานได้ก่อนจะปล่ อยออกมาเป็น Product ที่ให้ใช้จริง
+Prototype คือแบบจำลองของ Product ที่เราออกแบบขึ้นมาเพื่อให้ผู้ใช้สามารถทดสอบการใช้งานได้ก่อนจะปล่อยออกมาเป็น Product ที่ให้ใช้จริง
 
 เราสามารถสร้าง Prototype ได้ง่าย ๆ ด้วย Figma โดยการใช้งานเครื่องมือที่มีอยู่ใน Figma ได้เลย มาดูวิธีการสร้าง Prototype กัน
 
@@ -232,7 +232,7 @@ Prototype คือแบบจำลองของ Product ที่เรา�
 
 ## Design Handoff
 
-เมื่อเราได้ออกแบบ User Interface ของเรามาเสร็จแล้ว เราจะต้องส่งให้ Developer ได้นำ Design นี้ไปไปทำต่อให้กลายเป็นเว็บไซต์หรือแอปพลิเคชันจริง
+เมื่อเราได้ออกแบบ User Interface ของเรามาเสร็จแล้ว เราจะต้องส่งให้ Developer ได้นำ Design นี้ไปทำต่อให้กลายเป็นเว็บไซต์หรือแอปพลิเคชันจริง
 
 ซึ่งการส่งงานหรือ Handoff ให้นักพัฒนาสามารถเข้าใจได้ง่ายนั้น จะทำให้ช่วยลดเวลาในการพัฒนา และลดความสับสนในการทำงานของทั้งสองฝ่ายได้
 
@@ -240,13 +240,13 @@ Prototype คือแบบจำลองของ Product ที่เรา�
 
 ### Measuring the Impact
 
-เมื่อเราได้ออกแบบ​ Product เสร็จเรียบร้อยแล้ว กระบวนการถัดไปคือการวัดผลว่า Product ที่เราออกแบบไปนั้นมีผลต่อผู้ใช้งานอย่างไรบ้าง และนำ feedback ที่ได้มากลับมาปรับปรุง Product ของเราให้ดียิ่งขึ้น โดยกระบวนการนี้สามารถทำได้ตั้งแต่ก่อน Handoff จนถึงตอนที่ได้ launch product ออกมาแล้วด้วยเลย
+เมื่อเราได้ออกแบบ Product เสร็จเรียบร้อยแล้ว กระบวนการถัดไปคือการวัดผลว่า Product ที่เราออกแบบไปนั้นมีผลต่อผู้ใช้งานอย่างไรบ้าง และนำ feedback ที่ได้มากลับมาปรับปรุง Product ของเราให้ดียิ่งขึ้น โดยกระบวนการนี้สามารถทำได้ตั้งแต่ก่อน Handoff จนถึงตอนที่ได้ launch product ออกมาแล้วด้วยเลย
 
 ตัวอย่างของการวัดผลได้แก่ A/B Testing, Usability Testing, Analytics
 
-## Design Resources, Inspiration & References
+## Resources & Inspiration
 
-สำหรับบทความ Introduction to UX/UI Design นั้นก็จบลงแล้วนะครับ เพื่อน ๆ สามารถนำ keywords จากบทความนี้มาใช้ในการพัฒนา project จริง ๆ ของตัวเองดู โดยเมื่อทำ project จริงแล้ว แนะนำให้กลับมาอ่าน topics ต่าง ๆ จากบทความนี้้อีกครั้งด้วย เนื่องจากบาง topics จะเข้าใจง่ายขึ้นเมื่อเรามี context ของ project ที่เราทำอยู่ และอาจทำให้เราได้เห็น perspective ใหม่ ๆ ในการออกแบบ product ได้อีกด้วย
+สำหรับบทความ Introduction to UX/UI Design นั้นก็จบลงแล้วนะครับ เพื่อน ๆ สามารถนำ keywords จากบทความนี้มาใช้ในการพัฒนา project จริง ๆ ของตัวเองดู โดยเมื่อทำ project จริงแล้ว แนะนำให้กลับมาอ่าน topics ต่าง ๆ จากบทความนี้อีกครั้งด้วย เนื่องจากบาง topics จะเข้าใจง่ายขึ้นเมื่อเรามี context ของ project ที่เราทำอยู่ และอาจทำให้เราได้เห็น perspective ใหม่ ๆ ในการออกแบบ product ได้อีกด้วย
 
 สุดท้ายนี้ ขอรวบรวมแหล่งเครื่องมือ แหล่งข้อมูล และแบบตัวอย่างสำหรับการออกแบบ Digital Product เพื่อให้ทุกคนสามารถนำไปศึกษาต่อได้ในอนาคต
 
@@ -255,7 +255,7 @@ Prototype คือแบบจำลองของ Product ที่เรา�
 -   [Design Resources](https://designresourc.es/)
 -   [onur.dev - Design Bookmarks](https://onur.dev/bookmarks/design)
 
-### Design Inspiration & References
+### Inspiration & References
 
 -   [Mobbin](https://mobbin.com)
 -   [Dribbble](https://dribbble.com)
@@ -266,7 +266,7 @@ Prototype คือแบบจำลองของ Product ที่เรา�
 -   [cryptodesign.club](https://cryptodesign.club/)
 -   [PageFlows](https://pageflows.com/)
 
-### YouTube/Podcast Channels / Blogs
+### Channels & Blogs
 
 -   [UX Collective](https://uxdesign.cc)
 -   [ผักสด พอดแคสต์ (PUXOD Podcast)](https://puxodpodcast.pruxus.com/)
@@ -291,4 +291,4 @@ Prototype คือแบบจำลองของ Product ที่เรา�
 
 -   [ทำไมคนถึง(ไม่)ใช้ Chula Popbus ด้วยแนวคิด Hooked Model](https://medium.com/thinc-org/hooked-chula-popbus-th-c7688bac200b)
 
-เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ UX/UI ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.in.th](https://instagram.com/thinc.in.th) ด้วยนะะ
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ UX/UI ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.th](https://instagram.com/thinc.th) ด้วยนะ

@@ -69,4 +69,4 @@ Tips: สุดท้ายเราลองมานำ 3 ภาษาที�
 
 <br />
 
-เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Frontend Developer ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.in.th](https://instagram.com/thinc.in.th) ด้วยนะะ
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Frontend Developer ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.th](https://instagram.com/thinc.th) ด้วยนะ
