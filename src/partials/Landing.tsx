@@ -32,7 +32,7 @@ export const Hero = () => {
                     <div>
                         <img
                             alt="Thinc."
-                            className="-ml-3 w-full max-w-[220px] sm:-ml-5 sm:max-w-[350px] lg:max-w-[370px]"
+                            className="-ml-3 w-full max-w-[220px] sm:-ml-5 sm:max-w-[300px] md:max-w-[350px] lg:max-w-[370px]"
                             src="/images/thinc-wordmark.svg"
                         />
                     </div>
