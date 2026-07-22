@@ -10,7 +10,9 @@
     font-weight: 400 700;
     font-display: swap;
     src: url('/fonts/afacad-latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
     font-family: 'Afacad';
@@ -18,7 +20,10 @@
     font-weight: 400 700;
     font-display: swap;
     src: url('/fonts/afacad-latin-ext.woff2') format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
 }
 @font-face {
     font-family: 'Afacad';
@@ -26,7 +31,19 @@
     font-weight: 400 700;
     font-display: swap;
     src: url('/fonts/afacad-math.woff2') format('woff2');
-    unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+    unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315,
+        U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A,
+        U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1,
+        U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C,
+        U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E,
+        U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115,
+        U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5,
+        U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310,
+        U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0,
+        U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA,
+        U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11,
+        U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF,
+        U+1EE00-1EEFF;
 }
 @font-face {
     font-family: 'IBM Plex Sans Thai';
@@ -34,7 +51,9 @@
     font-weight: 400;
     font-display: swap;
     src: url('/fonts/plex-sans-thai-latin-400.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
     font-family: 'IBM Plex Sans Thai';
@@ -42,7 +61,10 @@
     font-weight: 400;
     font-display: swap;
     src: url('/fonts/plex-sans-thai-latin-ext-400.woff2') format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
 }
 @font-face {
     font-family: 'IBM Plex Sans Thai';
@@ -50,7 +72,9 @@
     font-weight: 700;
     font-display: swap;
     src: url('/fonts/plex-sans-thai-latin-700.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
     font-family: 'IBM Plex Sans Thai';
@@ -58,7 +82,10 @@
     font-weight: 700;
     font-display: swap;
     src: url('/fonts/plex-sans-thai-latin-ext-700.woff2') format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
 }
 @font-face {
     font-family: 'IBM Plex Sans Thai';
@@ -84,7 +111,9 @@
     font-weight: 400 500;
     font-display: swap;
     src: url('/fonts/jetbrains-mono-latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
     font-family: 'JetBrains Mono';
@@ -92,7 +121,10 @@
     font-weight: 400 500;
     font-display: swap;
     src: url('/fonts/jetbrains-mono-latin-ext.woff2') format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
 }
 
 /* Inter + Noto Sans Thai — markdown-rendered content only, see .content in
@@ -103,7 +135,9 @@
     font-weight: 400 700;
     font-display: swap;
     src: url('/fonts/inter-latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
     font-family: 'Inter';
@@ -111,7 +145,10 @@
     font-weight: 400 700;
     font-display: swap;
     src: url('/fonts/inter-latin-ext.woff2') format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
 }
 @font-face {
     font-family: 'Noto Sans Thai';
@@ -119,7 +156,9 @@
     font-weight: 400 700;
     font-display: swap;
     src: url('/fonts/noto-sans-thai-latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
     font-family: 'Noto Sans Thai';
@@ -127,7 +166,10 @@
     font-weight: 400 700;
     font-display: swap;
     src: url('/fonts/noto-sans-thai-latin-ext.woff2') format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
 }
 @font-face {
     font-family: 'Noto Sans Thai';
@@ -137,9 +179,6 @@
     src: url('/fonts/noto-sans-thai-thai.woff2') format('woff2');
     unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
 }
-
-
-
 
 :root {
     /* Base Color Palette (Dark Theme / default stage) */
@@ -203,18 +242,18 @@
 
     /* Spacing Scale (Balanced 8px base) */
     --space-0: 0px;
-    --space-1: 0.25rem;  /* 4px */
-    --space-2: 0.5rem;   /* 8px */
-    --space-3: 0.75rem;  /* 12px */
-    --space-4: 1rem;     /* 16px */
-    --space-5: 1.5rem;   /* 24px */
-    --space-6: 2rem;     /* 32px */
-    --space-7: 3rem;     /* 48px */
-    --space-8: 4rem;     /* 64px */
-    --space-9: 6rem;     /* 96px */
-    --space-10: 8rem;    /* 128px */
-    --space-11: 12rem;   /* 192px */
-    --space-12: 16rem;   /* 256px */
+    --space-1: 0.25rem; /* 4px */
+    --space-2: 0.5rem; /* 8px */
+    --space-3: 0.75rem; /* 12px */
+    --space-4: 1rem; /* 16px */
+    --space-5: 1.5rem; /* 24px */
+    --space-6: 2rem; /* 32px */
+    --space-7: 3rem; /* 48px */
+    --space-8: 4rem; /* 64px */
+    --space-9: 6rem; /* 96px */
+    --space-10: 8rem; /* 128px */
+    --space-11: 12rem; /* 192px */
+    --space-12: 16rem; /* 256px */
 
     /* Typography Settings */
     --font-afacad: 'Afacad', 'Noto Sans Thai', sans-serif;
@@ -224,15 +263,15 @@
     --font-family-mono: 'JetBrains Mono', monospace;
 
     /* Fonts size ramp */
-    --font-size-xs: 0.75rem;     /* 12px */
-    --font-size-sm: 0.875rem;    /* 14px */
-    --font-size-base: 1rem;      /* 16px */
-    --font-size-md: 1.125rem;    /* 18px */
-    --font-size-lg: 1.25rem;     /* 20px */
-    --font-size-xl: 1.5rem;      /* 24px */
-    --font-size-2xl: 1.875rem;   /* 30px */
-    --font-size-3xl: 2.25rem;    /* 36px */
-    --font-size-4xl: 3rem;       /* 48px */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-md: 1.125rem; /* 18px */
+    --font-size-lg: 1.25rem; /* 20px */
+    --font-size-xl: 1.5rem; /* 24px */
+    --font-size-2xl: 1.875rem; /* 30px */
+    --font-size-3xl: 2.25rem; /* 36px */
+    --font-size-4xl: 3rem; /* 48px */
 
     --font-weight-normal: 400;
     --font-weight-medium: 500;
@@ -262,14 +301,18 @@
     --card-padding: 1.25rem;
     --card-border-color: var(--color-border-primary);
     --card-border-color-hover: var(--color-accent-primary);
-    --card-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07), 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --card-shadow-hover: inset 0 1px 0 rgb(255 255 255 / 0.07), 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --card-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07),
+        0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --card-shadow-hover: inset 0 1px 0 rgb(255 255 255 / 0.07),
+        0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --card-corner-light: rgb(255 255 255 / 0.05);
     --border-radius-full: 9999px;
 
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-focus: 0 0 0 2px var(--color-border-focus);
 
     /* Motion Curves */
@@ -299,8 +342,8 @@
 }
 
 /* Light Theme overrides (flipping the stage to daylight) */
-[data-section-theme="light"],
-[data-theme="light"],
+[data-section-theme='light'],
+[data-theme='light'],
 .theme-light {
     background: var(--paper);
     color: var(--ink);
@@ -378,10 +421,18 @@ html {
     border-radius: inherit;
     padding: 1px;
     pointer-events: none;
-    background: linear-gradient(135deg, var(--card-corner-light), rgb(255 255 255 / 0) 45%);
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    background: linear-gradient(
+        135deg,
+        var(--card-corner-light),
+        rgb(255 255 255 / 0) 45%
+    );
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
-    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
     mask-composite: exclude;
 }
 .card:hover {
@@ -451,7 +502,9 @@ body {
     font-family: var(--font-family-body);
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
-    transition: background-color var(--duration-slow) var(--easing-default), color var(--duration-slow) var(--easing-default);
+    transition:
+        background-color var(--duration-slow) var(--easing-default),
+        color var(--duration-slow) var(--easing-default);
 }
 
 /* Background gradients (converted from Figma SVG exports).
@@ -465,24 +518,72 @@ body {
     background-blend-mode: screen;
 }
 .hero-gradient {
-    background:
-        radial-gradient(90.6% 49.4% at 15.87% 23.39%,rgba(255,93,0,.6) 0,rgba(255,202,179,0) 79.55%),
-        radial-gradient(58% 38% at 54% 55%,rgba(0,255,150,.10) 0,rgba(0,255,150,0) 100%),
-        radial-gradient(133.9% 68.4% at 92.16% 86.83%,rgba(0,98,255,.468) 0,rgba(0,157,255,.234) 46.17%,rgba(0,217,255,0) 81.62%);
-    background:
-        radial-gradient(90.6% 49.4% at 15.87% 23.39%,color(display-p3 1 0.3667 0 / 0.6) 0,color(display-p3 1 0.792 0.702 / 0) 79.55%),
-        radial-gradient(58% 38% at 54% 55%,color(display-p3 0 1 0.6 / 0.10) 0,color(display-p3 0 1 0.6 / 0) 100%),
-        radial-gradient(133.9% 68.4% at 92.16% 86.83%,color(display-p3 0 0.3833 1 / 0.468) 0,color(display-p3 0 0.6167 1 / 0.234) 46.17%,color(display-p3 0 0.85 1 / 0) 81.62%);
+    background: radial-gradient(
+            90.6% 49.4% at 15.87% 23.39%,
+            rgba(255, 93, 0, 0.6) 0,
+            rgba(255, 202, 179, 0) 79.55%
+        ),
+        radial-gradient(
+            58% 38% at 54% 55%,
+            rgba(0, 255, 150, 0.1) 0,
+            rgba(0, 255, 150, 0) 100%
+        ),
+        radial-gradient(
+            133.9% 68.4% at 92.16% 86.83%,
+            rgba(0, 98, 255, 0.468) 0,
+            rgba(0, 157, 255, 0.234) 46.17%,
+            rgba(0, 217, 255, 0) 81.62%
+        );
+    background: radial-gradient(
+            90.6% 49.4% at 15.87% 23.39%,
+            color(display-p3 1 0.3667 0 / 0.6) 0,
+            color(display-p3 1 0.792 0.702 / 0) 79.55%
+        ),
+        radial-gradient(
+            58% 38% at 54% 55%,
+            color(display-p3 0 1 0.6 / 0.1) 0,
+            color(display-p3 0 1 0.6 / 0) 100%
+        ),
+        radial-gradient(
+            133.9% 68.4% at 92.16% 86.83%,
+            color(display-p3 0 0.3833 1 / 0.468) 0,
+            color(display-p3 0 0.6167 1 / 0.234) 46.17%,
+            color(display-p3 0 0.85 1 / 0) 81.62%
+        );
 }
 .values-gradient {
-    background:
-        radial-gradient(111% 52.7% at 53.93% 17.06%,rgba(255,93,0,.6) 0,rgba(255,202,179,0) 79.55%),
-        radial-gradient(58% 38% at 46% 55%,rgba(0,255,150,.10) 0,rgba(0,255,150,0) 100%),
-        radial-gradient(185.2% 61% at 38.38% 92.5%,rgba(0,98,255,.468) 0,rgba(0,157,255,.234) 46.17%,rgba(0,217,255,0) 81.62%);
-    background:
-        radial-gradient(111% 52.7% at 53.93% 17.06%,color(display-p3 1 0.3667 0 / 0.6) 0,color(display-p3 1 0.792 0.702 / 0) 79.55%),
-        radial-gradient(58% 38% at 46% 55%,color(display-p3 0 1 0.6 / 0.10) 0,color(display-p3 0 1 0.6 / 0) 100%),
-        radial-gradient(185.2% 61% at 38.38% 92.5%,color(display-p3 0 0.3833 1 / 0.468) 0,color(display-p3 0 0.6167 1 / 0.234) 46.17%,color(display-p3 0 0.85 1 / 0) 81.62%);
+    background: radial-gradient(
+            111% 52.7% at 53.93% 17.06%,
+            rgba(255, 93, 0, 0.6) 0,
+            rgba(255, 202, 179, 0) 79.55%
+        ),
+        radial-gradient(
+            58% 38% at 46% 55%,
+            rgba(0, 255, 150, 0.1) 0,
+            rgba(0, 255, 150, 0) 100%
+        ),
+        radial-gradient(
+            185.2% 61% at 38.38% 92.5%,
+            rgba(0, 98, 255, 0.468) 0,
+            rgba(0, 157, 255, 0.234) 46.17%,
+            rgba(0, 217, 255, 0) 81.62%
+        );
+    background: radial-gradient(
+            111% 52.7% at 53.93% 17.06%,
+            color(display-p3 1 0.3667 0 / 0.6) 0,
+            color(display-p3 1 0.792 0.702 / 0) 79.55%
+        ),
+        radial-gradient(
+            58% 38% at 46% 55%,
+            color(display-p3 0 1 0.6 / 0.1) 0,
+            color(display-p3 0 1 0.6 / 0) 100%
+        ),
+        radial-gradient(
+            185.2% 61% at 38.38% 92.5%,
+            color(display-p3 0 0.3833 1 / 0.468) 0,
+            color(display-p3 0 0.6167 1 / 0.234) 46.17%,
+            color(display-p3 0 0.85 1 / 0) 81.62%
+        );
 }
 
 /* Footer gradient — dim echo of the hero (orange bottom-left, blue bottom-right),
@@ -491,16 +592,32 @@ body {
     position: absolute;
     pointer-events: none;
     background-blend-mode: screen;
-    background:
-        radial-gradient(70% 90% at 8% 100%,rgba(255,93,0,.27) 0,rgba(255,93,0,0) 70%),
-        radial-gradient(80% 100% at 92% 100%,rgba(0,98,255,.21) 0,rgba(0,157,255,.1) 45%,rgba(0,217,255,0) 75%);
+    background: radial-gradient(
+            70% 90% at 8% 100%,
+            rgba(255, 93, 0, 0.27) 0,
+            rgba(255, 93, 0, 0) 70%
+        ),
+        radial-gradient(
+            80% 100% at 92% 100%,
+            rgba(0, 98, 255, 0.21) 0,
+            rgba(0, 157, 255, 0.1) 45%,
+            rgba(0, 217, 255, 0) 75%
+        );
 }
 /* narrow viewport: corner glows would leave a black gap in the middle — widen so they overlap */
 @media (max-width: 639px) {
     .footer-gradient {
-        background:
-            radial-gradient(130% 80% at 0% 100%,rgba(255,93,0,.27) 0,rgba(255,93,0,0) 78%),
-            radial-gradient(140% 90% at 100% 100%,rgba(0,98,255,.21) 0,rgba(0,157,255,.1) 50%,rgba(0,217,255,0) 82%);
+        background: radial-gradient(
+                130% 80% at 0% 100%,
+                rgba(255, 93, 0, 0.27) 0,
+                rgba(255, 93, 0, 0) 78%
+            ),
+            radial-gradient(
+                140% 90% at 100% 100%,
+                rgba(0, 98, 255, 0.21) 0,
+                rgba(0, 157, 255, 0.1) 50%,
+                rgba(0, 217, 255, 0) 82%
+            );
     }
 }
 
@@ -510,26 +627,46 @@ body {
     position: absolute;
     pointer-events: none;
     background-blend-mode: screen;
-    background:
-        radial-gradient(100% 130% at 8% 0%,rgba(255,93,0,.48) 0,rgba(255,93,0,0) 70%),
-        radial-gradient(110% 140% at 92% 100%,rgba(0,98,255,.37) 0,rgba(0,157,255,.19) 45%,rgba(0,217,255,0) 75%);
+    background: radial-gradient(
+            100% 130% at 8% 0%,
+            rgba(255, 93, 0, 0.48) 0,
+            rgba(255, 93, 0, 0) 70%
+        ),
+        radial-gradient(
+            110% 140% at 92% 100%,
+            rgba(0, 98, 255, 0.37) 0,
+            rgba(0, 157, 255, 0.19) 45%,
+            rgba(0, 217, 255, 0) 75%
+        );
 }
 
 /* Glassmorphic surface */
 .liquid-glass {
-    border-color: rgba(255,255,255,.1);
-    background: linear-gradient(to bottom right,rgba(255,255,255,.05),rgba(255,255,255,.02));
-    box-shadow: 0 8px 40px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.18);
+    border-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.02)
+    );
+    box-shadow:
+        0 8px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
 }
 
-[data-section-theme="light"] .liquid-glass,
-[data-theme="light"] .liquid-glass,
+[data-section-theme='light'] .liquid-glass,
+[data-theme='light'] .liquid-glass,
 .theme-light .liquid-glass {
-    border-color: rgba(22,19,13,.1);
-    background: linear-gradient(to bottom right,rgba(22,19,13,.05),rgba(22,19,13,.02));
-    box-shadow: 0 8px 40px rgba(22,19,13,.12),inset 0 1px 0 rgba(255,255,255,.6);
+    border-color: rgba(22, 19, 13, 0.1);
+    background: linear-gradient(
+        to bottom right,
+        rgba(22, 19, 13, 0.05),
+        rgba(22, 19, 13, 0.02)
+    );
+    box-shadow:
+        0 8px 40px rgba(22, 19, 13, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 /* Specular reflection on TiltCard */
@@ -537,67 +674,74 @@ body {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient(440px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.1),transparent 55%);
+    background: radial-gradient(
+        440px circle at var(--mx, 50%) var(--my, 50%),
+        rgba(255, 255, 255, 0.1),
+        transparent 55%
+    );
     opacity: 0;
-    transition: opacity .35s ease;
+    transition: opacity 0.35s ease;
 }
 .group\/tilt:hover .specular {
     opacity: 1;
 }
 
 /* Auto-remapping helper classes for light-mode sections from Reference */
-[data-section-theme=light] .group:hover .group-hover\:text-white,
-[data-section-theme=light] .hover\:text-white:hover,
-[data-section-theme=light] .text-white {
+[data-section-theme='light'] .group:hover .group-hover\:text-white,
+[data-section-theme='light'] .hover\:text-white:hover,
+[data-section-theme='light'] .text-white {
     color: var(--text);
 }
-[data-section-theme=light] .bg-black {
+[data-section-theme='light'] .bg-black {
     background-color: transparent;
 }
-[data-section-theme=light] .border-white\/10 {
-    border-color: rgba(22,19,13,.14);
+[data-section-theme='light'] .border-white\/10 {
+    border-color: rgba(22, 19, 13, 0.14);
 }
-[data-section-theme=light] .border-white\/15 {
-    border-color: rgba(22,19,13,.2);
+[data-section-theme='light'] .border-white\/15 {
+    border-color: rgba(22, 19, 13, 0.2);
 }
-[data-section-theme=light] .divide-white\/10>:not([hidden])~:not([hidden]) {
-    border-color: rgba(22,19,13,.14);
+[data-section-theme='light']
+    .divide-white\/10
+    > :not([hidden])
+    ~ :not([hidden]) {
+    border-color: rgba(22, 19, 13, 0.14);
 }
-[data-section-theme=light] .bg-white\/10 {
-    background-color: rgba(22,19,13,.14);
+[data-section-theme='light'] .bg-white\/10 {
+    background-color: rgba(22, 19, 13, 0.14);
 }
-[data-section-theme=light] .bg-white\/15 {
-    background-color: rgba(22,19,13,.18);
+[data-section-theme='light'] .bg-white\/15 {
+    background-color: rgba(22, 19, 13, 0.18);
 }
-[data-section-theme=light] .bg-white\/30 {
-    background-color: rgba(22,19,13,.32);
+[data-section-theme='light'] .bg-white\/30 {
+    background-color: rgba(22, 19, 13, 0.32);
 }
-[data-section-theme=light] .bg-white\/\[0\.02\] {
-    background-color: rgba(22,19,13,.03);
+[data-section-theme='light'] .bg-white\/\[0\.02\] {
+    background-color: rgba(22, 19, 13, 0.03);
 }
-[data-section-theme=light] .bg-white\/\[0\.03\] {
-    background-color: rgba(22,19,13,.045);
+[data-section-theme='light'] .bg-white\/\[0\.03\] {
+    background-color: rgba(22, 19, 13, 0.045);
 }
-[data-section-theme=light] .bg-white\/\[0\.04\] {
-    background-color: rgba(22,19,13,.055);
+[data-section-theme='light'] .bg-white\/\[0\.04\] {
+    background-color: rgba(22, 19, 13, 0.055);
 }
-[data-section-theme=light] .bg-white\/\[0\.06\] {
-    background-color: rgba(22,19,13,.07);
+[data-section-theme='light'] .bg-white\/\[0\.06\] {
+    background-color: rgba(22, 19, 13, 0.07);
 }
-[data-section-theme=light] .hover\:bg-white\/\[0\.04\]:hover {
-    background-color: rgba(22,19,13,.055);
+[data-section-theme='light'] .hover\:bg-white\/\[0\.04\]:hover {
+    background-color: rgba(22, 19, 13, 0.055);
 }
-[data-section-theme=light] .ring-white\/5 {
-    --tw-ring-color: rgba(22,19,13,0.08);
+[data-section-theme='light'] .ring-white\/5 {
+    --tw-ring-color: rgba(22, 19, 13, 0.08);
 }
-[data-section-theme=light] .ring-white\/10 {
-    --tw-ring-color: rgba(22,19,13,0.14);
+[data-section-theme='light'] .ring-white\/10 {
+    --tw-ring-color: rgba(22, 19, 13, 0.14);
 }
-[data-section-theme=light] .hover\:ring-white\/15:hover {
-    --tw-ring-color: rgba(22,19,13,0.22);
+[data-section-theme='light'] .hover\:ring-white\/15:hover {
+    --tw-ring-color: rgba(22, 19, 13, 0.22);
 }
-[data-section-theme=light] .hover\:ring-white\/20:hover {
-    --tw-ring-color: rgba(22,19,13,0.26);
+[data-section-theme='light'] .hover\:ring-white\/20:hover {
+    --tw-ring-color: rgba(22, 19, 13, 0.26);
 }
 
 /* Duotone photo overlays & Noise Grain overlay */
@@ -610,7 +754,7 @@ body {
     overflow: hidden;
 }
 .duotone-photo::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     mix-blend-mode: overlay;
@@ -618,50 +762,58 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 .duotone-photo-warm {
-    background: linear-gradient(165deg, rgba(255, 215, 0, 0.38) 0%, rgba(255, 123, 15, 0.24) 46%, rgba(16, 6, 0, 0.95) 100%);
+    background: linear-gradient(
+        165deg,
+        rgba(255, 215, 0, 0.38) 0%,
+        rgba(255, 123, 15, 0.24) 46%,
+        rgba(16, 6, 0, 0.95) 100%
+    );
 }
 .duotone-photo-cool {
-    background: linear-gradient(165deg, rgba(0, 221, 255, 0.36) 0%, rgba(0, 100, 255, 0.26) 46%, rgba(0, 4, 14, 0.95) 100%);
+    background: linear-gradient(
+        165deg,
+        rgba(0, 221, 255, 0.36) 0%,
+        rgba(0, 100, 255, 0.26) 46%,
+        rgba(0, 4, 14, 0.95) 100%
+    );
 }
 
 /* Level Tags */
 .tag-beginner {
-  color: var(--color-status-success);
-  background-color: rgba(16, 185, 129, 0.1);
-  border-color: rgba(16, 185, 129, 0.2);
+    color: var(--color-status-success);
+    background-color: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.2);
 }
-[data-section-theme="light"] .tag-beginner,
-[data-theme="light"] .tag-beginner,
+[data-section-theme='light'] .tag-beginner,
+[data-theme='light'] .tag-beginner,
 .theme-light .tag-beginner {
-  color: #059669;
-  background-color: rgba(5, 150, 105, 0.1);
-  border-color: rgba(5, 150, 105, 0.2);
+    color: #059669;
+    background-color: rgba(5, 150, 105, 0.1);
+    border-color: rgba(5, 150, 105, 0.2);
 }
 
 .tag-intermediate {
-  color: var(--color-status-warning);
-  background-color: rgba(254, 201, 43, 0.1);
-  border-color: rgba(254, 201, 43, 0.2);
+    color: var(--color-status-warning);
+    background-color: rgba(254, 201, 43, 0.1);
+    border-color: rgba(254, 201, 43, 0.2);
 }
-[data-section-theme="light"] .tag-intermediate,
-[data-theme="light"] .tag-intermediate,
+[data-section-theme='light'] .tag-intermediate,
+[data-theme='light'] .tag-intermediate,
 .theme-light .tag-intermediate {
-  color: #cc9900;
-  background-color: rgba(204, 153, 0, 0.1);
-  border-color: rgba(204, 153, 0, 0.2);
+    color: #cc9900;
+    background-color: rgba(204, 153, 0, 0.1);
+    border-color: rgba(204, 153, 0, 0.2);
 }
 
 .tag-advanced {
-  color: var(--color-status-error);
-  background-color: rgba(255, 76, 0, 0.1);
-  border-color: rgba(255, 76, 0, 0.2);
+    color: var(--color-status-error);
+    background-color: rgba(255, 76, 0, 0.1);
+    border-color: rgba(255, 76, 0, 0.2);
 }
-[data-section-theme="light"] .tag-advanced,
-[data-theme="light"] .tag-advanced,
+[data-section-theme='light'] .tag-advanced,
+[data-theme='light'] .tag-advanced,
 .theme-light .tag-advanced {
-  color: #d63000;
-  background-color: rgba(214, 48, 0, 0.1);
-  border-color: rgba(214, 48, 0, 0.2);
+    color: #d63000;
+    background-color: rgba(214, 48, 0, 0.1);
+    border-color: rgba(214, 48, 0, 0.2);
 }
-
-
