@@ -36,7 +36,7 @@ export const TableOfContents = ({ headings }: { headings: Heading[] }) => {
     if (items.length === 0) return null;
 
     const list = (
-        <ul className="text-base lg:text-lg">
+        <ul className="text-sm lg:text-base">
             {items.map((item) => (
                 <li key={item.slug} className={item.depth === 3 ? 'pl-4' : ''}>
                     <a
