@@ -47,7 +47,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                         <button
                             onClick={() => setShowNav(false)}
                             aria-label="Close menu"
-                            className="flex items-center justify-center text-text-secondary"
+                            className="btn-ghost flex items-center justify-center"
                         >
                             <FiX size={22} />
                         </button>
@@ -78,7 +78,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex w-full items-center justify-center rounded-full bg-accent-primary py-3.5 text-lg font-semibold text-black shadow-sm duration-fast hover:shadow-[0_0_32px_-6px_var(--orange)] active:scale-[0.98]"
+                            className="btn-primary flex w-full items-center justify-center py-3.5 text-lg font-semibold"
                         >
                             Main Site
                         </a>
@@ -90,7 +90,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={label}
-                                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-border-primary text-text-secondary duration-fast hover:border-accent-primary hover:text-accent-primary"
+                                    className="btn-icon flex h-11 w-11 items-center justify-center"
                                 >
                                     <Icon size={18} />
                                 </a>
@@ -138,10 +138,10 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             Main Site
                         </a>
                         <a
-                            href="https://www.instagram.com/thinc.in.th"
+                            href="https://www.instagram.com/thinc.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 w-8 items-center justify-center rounded-lg border border-border-primary text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white md:flex"
+                            className="btn-ghost hidden h-8 w-8 items-center justify-center md:flex"
                         >
                             <FiInstagram size={16} />
                         </a>
@@ -149,7 +149,7 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                             onClick={() => setShowNav(true)}
                             aria-label="Open menu"
                             aria-expanded={showNav}
-                            className="flex items-center justify-center text-white/70 md:hidden"
+                            className="btn-ghost flex items-center justify-center md:hidden"
                         >
                             <FiMenu size={22} />
                         </button>

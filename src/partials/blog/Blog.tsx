@@ -22,7 +22,7 @@ export const Title = () => {
                     href="https://medium.com/thinc-org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-secondary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                    className="btn-secondary flex shrink-0 whitespace-nowrap items-center gap-1.5 px-4 py-2 text-sm font-semibold self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                 >
                     <span>medium.com/thinc-org</span>
                     <FiChevronRight className="text-lg md:text-xl" />

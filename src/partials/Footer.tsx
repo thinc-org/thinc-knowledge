@@ -9,7 +9,7 @@ const exploreLinks = [
 
 export const socialLinks = [
     { label: 'thinc.in.th', href: 'https://thinc.in.th', Icon: FiGlobe },
-    { label: 'Instagram', href: 'https://instagram.com/thinc.in.th', Icon: FiInstagram },
+    { label: 'Instagram', href: 'https://instagram.com/thinc.th', Icon: FiInstagram },
     { label: 'Facebook', href: 'https://facebook.com/ThailandIncubator', Icon: FiFacebook },
     { label: 'GitHub', href: 'https://github.com/thinc-org', Icon: FiGithub },
     { label: 'Medium', href: 'https://medium.com/thinc-org', Icon: FaMedium },

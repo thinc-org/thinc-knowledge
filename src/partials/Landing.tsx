@@ -29,49 +29,43 @@ export const Hero = () => {
                 src="/images/hero-ray-highlight.webp"
                 className="pointer-events-none absolute -top-[17px] -left-[27px] w-[150px]"
             />
-            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 pt-40 sm:pl-20 lg:pl-32 lg:pt-48">
+            <div className="relative z-10 flex w-full flex-1 items-start pl-10 pr-10 pb-16 pt-36 sm:pl-20 lg:pl-32 lg:pt-36">
                 <div className="w-full max-w-[1400px]">
                     {/* Wordmark */}
                     <div>
                         <img
                             alt="Thinc."
-                            className="-ml-3 w-full max-w-[220px] sm:-ml-5 sm:max-w-[380px]"
+                            className="-ml-3 w-full max-w-[220px] sm:-ml-5 sm:max-w-[350px] lg:max-w-[420px] xl:max-w-[480px]"
                             src="/images/thinc-wordmark.svg"
                         />
                     </div>
 
                     {/* Phonetic + noun */}
                     <div className="mt-6 sm:mt-[26px]">
-                        <p className="font-display font-normal text-2xl leading-[1.23] tracking-[0.03em] text-white/90 sm:text-[26px]">
+                        <p className="font-display font-normal text-xl leading-[1.23] tracking-[0.03em] text-white/90 sm:text-2xl">
                             /θɪŋk/
                         </p>
-                        <p className="font-display font-normal text-2xl leading-[1.23] tracking-[0.03em] text-white/70 sm:text-[26px]">
+                        <p className="font-display font-normal text-xl leading-[1.23] tracking-[0.03em] text-white/70 sm:text-2xl">
                             noun
                         </p>
                     </div>
 
                     {/* Description */}
                     <div className="mt-6 sm:mt-[27px]">
-                        <p className="font-display font-normal text-2xl leading-[1.45] tracking-[0.03em] text-text-primary sm:max-w-[50vw] sm:text-[30px]">
-                            The real <strong className="font-bold text-white">startup incubator</strong>.{' '}
-                            <br className="sm:hidden" />
-                            Where builders and dreamers{' '}
-                            <br className="sm:hidden" />
-                            turn <strong className="font-bold text-white">ideas</strong> into{' '}
-                            <strong className="font-bold text-white">real startups</strong>{' '}
-                            <br className="sm:hidden" />
-                            through close <strong className="font-bold text-white">mentorship</strong>{' '}
-                            <br className="sm:hidden" />
-                            from founder alumni and{' '}
-                            <br className="sm:hidden" />
-                            take full ownership.
+                        <p className="font-normal text-xl leading-[1.45] tracking-[0.03em] text-text-primary sm:max-w-[50vw] md:text-2xl lg:text-3xl">
+                            A <strong className="font-bold text-white">knowledge platform</strong> by Thinc.
+                            that gathers real skills and hands-on experience in building tech, from
+                            foundations to real implementation. Covering{' '}
+                            <strong className="font-bold text-white">Frontend, Backend, Product, Design</strong>,
+                            and beyond, it's built to give everyone a foundation strong enough to create
+                            their own impact in the tech era.
                         </p>
                     </div>
                 </div>
             </div>
             <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-40 opacity-[0.04] mix-blend-overlay bg-grain" />
         </section>
-	);
+    );
 };
 
 export const Values = () => {
@@ -191,7 +185,7 @@ export const Roadmaps = ({
                     <div className="flex w-full justify-center pt-4">
                         <a
                             href="/roadmap"
-                            className="group flex items-center gap-2 rounded-full bg-accent-primary px-7 py-3.5 text-base font-semibold text-black shadow-sm transition-all duration-normal hover:shadow-[0_0_32px_-6px_var(--orange)] active:scale-[0.98] md:px-8 md:py-3.5"
+                            className="btn-primary group flex items-center gap-2 px-7 py-3.5 text-base font-semibold md:px-8 md:py-3.5"
                         >
                             Explore all roadmaps
                             <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />
@@ -238,7 +232,7 @@ export const Blogs = () => {
                             href="https://medium.com/thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-secondary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                            className="btn-secondary flex shrink-0 whitespace-nowrap items-center gap-1.5 px-4 py-2 text-sm font-semibold self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                         >
                             <span>medium.com/thinc-org</span>
                             <FiChevronRight className="text-lg md:text-xl" />
@@ -260,7 +254,7 @@ export const Blogs = () => {
                     <div className="flex w-full justify-center pt-4">
                         <a
                             href="/blog"
-                            className="group flex items-center gap-2 rounded-full border border-border-primary bg-bg-secondary px-7 py-3.5 text-base font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary active:scale-[0.98] md:px-8 md:py-3.5"
+                            className="btn-secondary group flex items-center gap-2 px-7 py-3.5 text-base font-semibold md:px-8 md:py-3.5"
                         >
                             Explore all blogs
                             <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />
@@ -334,7 +328,7 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
                             href="https://www.youtube.com/@thinc-org"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-full border border-border-primary bg-bg-secondary px-4 py-2 text-sm font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                            className="btn-secondary flex shrink-0 whitespace-nowrap items-center gap-1.5 px-4 py-2 text-sm font-semibold self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
                         >
                             <FiYoutube className="text-lg text-red-500 md:text-xl" />
                             <span>@thinc-org</span>
@@ -356,7 +350,7 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin"
                                     allowFullScreen
-                                    className="aspect-video h-auto w-full rounded-lg relative z-10 border border-border-primary"
+                                    className="aspect-video h-auto w-full rounded-sm relative z-10 border border-border-primary"
                                 />
                                 <div className="flex flex-col gap-2 relative z-10">
                                     <div className="flex flex-wrap gap-2">
@@ -383,7 +377,7 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
                         <div className="flex w-full justify-center pt-4">
                             <a
                                 href="/videos"
-                                className="group flex items-center gap-2 rounded-full border border-border-primary bg-bg-secondary px-7 py-3.5 text-base font-semibold text-text-primary transition-all duration-fast hover:border-accent-primary hover:text-accent-primary active:scale-[0.98] md:px-8 md:py-3.5"
+                                className="btn-secondary group flex items-center gap-2 px-7 py-3.5 text-base font-semibold md:px-8 md:py-3.5"
                             >
                                 Explore all videos
                                 <FiChevronRight className="text-lg transition-transform group-hover:translate-x-1 md:text-xl" />

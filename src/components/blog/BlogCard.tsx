@@ -14,7 +14,7 @@ export const BlogCard = ({
             rel="noopener noreferrer"
             className="card group block space-y-4 bg-bg-secondary"
         >
-            <div className="w-full overflow-hidden rounded-lg bg-bg-secondary">
+            <div className="w-full overflow-hidden rounded-sm bg-bg-secondary">
                 <img
                     src={imgSrc}
                     alt=""

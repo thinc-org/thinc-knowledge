@@ -7,6 +7,12 @@
     overflow-wrap: break-word;
     line-height: 1.7;
 }
+.content p,
+.content li,
+.content blockquote,
+.content table {
+    font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+}
 .content h1,
 .content h2,
 .content h3,
@@ -15,19 +21,33 @@
     margin: 3rem 0 1rem 0;
     line-height: 1.2;
     color: var(--color-text-primary);
-    font-family: var(--font-family-display);
+    font-family: 'Inter', 'Noto Sans Thai', sans-serif;
 }
 .content h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .content h2 {
-    font-size: 1.8em;
-}
-.content h3 {
     font-size: 1.4em;
 }
-.content h4 {
+.content h3 {
     font-size: 1.2em;
+}
+.content h4 {
+    font-size: 1.1em;
+}
+@media (min-width: 640px) {
+    .content h1 {
+        font-size: 2em;
+    }
+    .content h2 {
+        font-size: 1.8em;
+    }
+    .content h3 {
+        font-size: 1.4em;
+    }
+    .content h4 {
+        font-size: 1.2em;
+    }
 }
 
 .content strong,
@@ -37,7 +57,6 @@
 .content a {
     color: var(--color-accent-primary);
     font-weight: 400;
-    text-decoration: underline;
 }
 .content a:hover {
     color: var(--color-accent-primary-hover);

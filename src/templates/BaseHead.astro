@@ -20,6 +20,12 @@ const { title, description, image = '/images/og-image.png' } = Astro.props;
 
 <!-- Font preloads (self-hosted, @font-face in global.css) -->
 <link rel="preload" href="/fonts/afacad-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/plex-sans-thai-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+
+<!-- Noto Sans Thai + Inter (Google Fonts CDN) — trial swap for markdown-rendered content, see .content in content.css -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+Thai:wght@400;700&display=swap" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

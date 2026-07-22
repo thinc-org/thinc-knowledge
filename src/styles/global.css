@@ -1,7 +1,9 @@
 /* Self-hosted fonts (subset woff2 from Google Fonts, see public/fonts/).
    Afacad = variable 400-700, latin + latin-ext + math (math carries the
-   Greek θ used in the hero phonetic). IBM Plex Sans Thai = thai subset only,
-   Thai glyphs fall through to it via unicode-range. */
+   Greek θ used in the hero phonetic), used for display/headings. Body copy
+   uses IBM Plex Sans Thai's own latin/latin-ext/thai subsets (not the
+   separate IBM Plex Sans family) so mixed Thai/English text renders from
+   one typeface instead of switching design mid-sentence. */
 @font-face {
     font-family: 'Afacad';
     font-style: normal;
@@ -25,6 +27,38 @@
     font-display: swap;
     src: url('/fonts/afacad-math.woff2') format('woff2');
     unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+@font-face {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/plex-sans-thai-latin-400.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/plex-sans-thai-latin-ext-400.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/plex-sans-thai-latin-700.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'IBM Plex Sans Thai';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/plex-sans-thai-latin-ext-700.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
     font-family: 'IBM Plex Sans Thai';
@@ -122,7 +156,8 @@
     --space-12: 16rem;   /* 256px */
 
     /* Typography Settings */
-    --font-afacad: 'Afacad', 'IBM Plex Sans Thai', sans-serif;
+    --font-afacad: 'Afacad', 'Noto Sans Thai', sans-serif;
+    --font-plex-sans: 'IBM Plex Sans Thai', sans-serif;
     --font-family-display: var(--font-afacad);
     --font-family-body: var(--font-afacad);
     --font-family-mono: 'Afacad', monospace;
@@ -152,7 +187,7 @@
     --letter-spacing-wide: 0.3em;
 
     /* Layout Boundaries */
-    --max-width-content: 80ch;
+    --max-width-content: 70ch;
     --max-width-wide: 80rem;
     --max-width-page: 90rem;
 
@@ -291,6 +326,64 @@ html {
 .card:hover {
     border-color: var(--card-border-color-hover);
     box-shadow: var(--card-shadow-hover);
+}
+
+/* Button primitives — chrome only (color/border/radius/motion). Sizing,
+   layout, and typography (padding, gap, text size) stay as per-instance
+   Tailwind utilities since those vary by context. */
+.btn-primary {
+    border-radius: var(--border-radius-full);
+    background-color: var(--color-accent-primary);
+    color: var(--black);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    transition:
+        box-shadow var(--duration-normal) var(--easing-default),
+        transform var(--duration-fast) var(--easing-default);
+}
+.btn-primary:hover {
+    box-shadow: 0 0 32px -6px var(--orange);
+}
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    border-radius: var(--border-radius-full);
+    border: 1px solid var(--color-border-primary);
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    transition:
+        border-color var(--duration-fast) var(--easing-default),
+        color var(--duration-fast) var(--easing-default),
+        transform var(--duration-fast) var(--easing-default);
+}
+.btn-secondary:hover {
+    border-color: var(--color-accent-primary);
+    color: var(--color-accent-primary);
+}
+.btn-secondary:active {
+    transform: scale(0.98);
+}
+
+.btn-icon {
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--color-border-primary);
+    color: var(--color-text-secondary);
+    transition:
+        border-color var(--duration-fast) var(--easing-default),
+        color var(--duration-fast) var(--easing-default);
+}
+.btn-icon:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--white);
+}
+
+.btn-ghost {
+    color: var(--color-text-secondary);
+    transition: color var(--duration-fast) var(--easing-default);
+}
+.btn-ghost:hover {
+    color: var(--white);
 }
 
 body {
