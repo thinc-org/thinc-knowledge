@@ -99,6 +99,19 @@
     font-size: 1.3em;
     padding-right: 0.5em;
 }
+.content ol {
+    margin: -0.2em 0 3em 0;
+    counter-reset: content-ol;
+}
+.content ol li {
+    counter-increment: content-ol;
+}
+.content ol li::before {
+    content: counter(content-ol) '.';
+    opacity: 0.5;
+    font-weight: 700;
+    padding-right: 0.5em;
+}
 .content table {
     display: block;
     overflow-x: auto;
