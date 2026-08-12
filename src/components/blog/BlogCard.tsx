@@ -12,12 +12,17 @@ export const BlogCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="space-y-4 rounded-lg border bg-white p-4"
+            className="card group block space-y-4 bg-bg-secondary"
         >
-            <div className="grid h-36 w-full place-content-center overflow-hidden rounded-md">
-                <img src={imgSrc} className="scale-110" />
+            <div className="w-full overflow-hidden rounded-sm bg-bg-secondary">
+                <img
+                    src={imgSrc}
+                    alt=""
+                    loading="lazy"
+                    className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
             </div>
-            <h4 className="text-lg font-semibold text-slate-700">{title}</h4>
+            <h3 className="text-lg font-bold font-display text-text-primary transition-colors duration-fast group-hover:text-accent-primary md:text-xl">{title}</h3>
         </a>
     );
 };

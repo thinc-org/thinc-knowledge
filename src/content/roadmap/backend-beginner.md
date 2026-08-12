@@ -3,6 +3,9 @@ title: 'Backend Developer Roadmap'
 description: 'เส้นทางการเรียนรู้สู่การเตรียมพร้อมเป็น Backend Developer
     ฉบับพื้นฐาน'
 level: 'beginner'
+authors:
+    - name: 'Thinc.'
+      image: '/images/thinc-mark.svg'
 ---
 
 หากใครที่อยากเริ่มต้นเรียนรู้เกี่ยวกับ Backend Developer แต่ยังไม่รู้จะเริ่มต้นอย่างไร<br />หรือจะมางาน Thinc First Act แต่ยังไม่มีพื้นฐานเลย สามารถเริ่มต้นเรียนรู้ได้จาก Roadmap นี้เลย
@@ -64,4 +67,4 @@ Tips: หลังจากที่ได้รู้จัก Database แล�
 
 <br />
 
-เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Backend Developer ได้แล้ว<br />และอย่าลืมมางาน Thinc First Act กันด้วยนะ
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Backend Developer ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.th](https://instagram.com/thinc.th) ด้วยนะ

@@ -3,6 +3,9 @@ title: 'Frontend Developer Roadmap'
 description: 'เส้นทางการเรียนรู้สู่การเตรียมพร้อมเป็น Frontend Developer
     ฉบับพื้นฐาน'
 level: 'beginner'
+authors:
+    - name: 'Thinc.'
+      image: '/images/thinc-mark.svg'
 ---
 
 ก่อนอื่นเลยต้องบอกว่า Roadmap ของ Frontend Developer นั้นสามารถเรียนรู้<br />ให้จบได้ภายในเวลาเพียง <strong>1 ชั่วโมง</strong> เท่านั้นซึ่งแนะนำมาก ๆ ให้ทุกคนลองเรียนดูก่อนที่จะมางาน Thinc First Act
@@ -66,4 +69,4 @@ Tips: สุดท้ายเราลองมานำ 3 ภาษาที�
 
 <br />
 
-เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Frontend Developer ได้แล้ว<br />และอย่าลืมมางาน Thinc First Act กันด้วยนะ
+เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับ Frontend Developer ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.th](https://instagram.com/thinc.th) ด้วยนะ

@@ -16,25 +16,21 @@ export const RoadmapCard = ({
     description: string;
 }) => {
     return (
-        <div
+        <a
+            href={`/roadmap/${slug}`}
             className={twMerge(
-                'flex w-full rounded-lg border-2 bg-slate-50',
+                'card flex w-full items-center bg-bg-secondary',
                 className,
             )}
         >
-            <a
-                href={`/roadmap/${slug}`}
-                className="flex h-full w-full items-center px-10 py-8 text-center"
-            >
-                <div className="text-left">
-                    <LevelTag level={level} />
+            <div className="text-left space-y-2">
+                <LevelTag level={level} />
 
-                    <h3 className="mt-1 text-2xl font-semibold text-slate-800">
-                        {title}
-                    </h3>
-                    <p className="text-slate-600">{description}</p>
-                </div>
-            </a>
-        </div>
+                <h3 className="text-xl font-bold font-display text-text-primary md:text-2xl">
+                    {title}
+                </h3>
+                <p className="text-text-secondary text-sm leading-normal md:text-base">{description}</p>
+            </div>
+        </a>
     );
 };

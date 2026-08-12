@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import { Hero, Roadmaps, Blogs, Videos } from '@/partials/Landing';
+import { Hero, Values, Roadmaps, Blogs, Videos } from '@/partials/Landing';
+import { Statement } from '@/partials/Statement';
 import Base from '@/templates/Base.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 
@@ -12,4 +13,6 @@ const roadmaps = await getCollection('roadmap');
     <Roadmaps roadmaps={roadmaps} />
     <Blogs client:load />
     <Videos client:load />
+    <Values />
+    <Statement client:load />
 </Base>
