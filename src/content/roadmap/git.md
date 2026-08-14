@@ -23,37 +23,37 @@ Git เป็นโปรแกรม version control ที่นับได�
 
 ### Creating a Repository
 
--   `git init` สร้าง repository ใหม่ เพื่อให้ Git ติดตามการเปลี่ยนแปลงของไฟล์ในโฟลเดอร์ปัจจุบัน
--   `git clone` คัดลอก repository จาก remote repository เช่นใน GitHub (repository ที่ถูก host จาก network หรือ internet)
+- `git init` สร้าง repository ใหม่ เพื่อให้ Git ติดตามการเปลี่ยนแปลงของไฟล์ในโฟลเดอร์ปัจจุบัน
+- `git clone` คัดลอก repository จาก remote repository เช่นใน GitHub (repository ที่ถูก host จาก network หรือ internet)
 
 ### Commits & Status
 
--   `git add` เพิ่มไฟล์เข้า staging (เพื่อบอกว่าเรากำลังเตรียมจะ commit ไฟล์เหล่านี้)
--   `git commit` การ commit บันทึกการเปลี่ยนแปลงที่อยู่ใน staging area
--   `git log` ดูประวัติการ commit
--   `git status` ตรวจสอบสถานะของไฟล์ในโฟลเดอร์ปัจจุบัน
+- `git add` เพิ่มไฟล์เข้า staging (เพื่อบอกว่าเรากำลังเตรียมจะ commit ไฟล์เหล่านี้)
+- `git commit` การ commit บันทึกการเปลี่ยนแปลงที่อยู่ใน staging area
+- `git log` ดูประวัติการ commit
+- `git status` ตรวจสอบสถานะของไฟล์ในโฟลเดอร์ปัจจุบัน
 
 ### Branching
 
 การสร้าง branch คือการสร้าง multiverse ใหม่ของโปรเจกต์ของเรา ที่เราสามารถทำการเปลี่ยนแปลงโค้ดได้โดยไม่มีผลต่อ branch อื่น ๆ ใน repository นั้น
 
--   `git branch` จัดการหรือสร้าง branch ของ repository
--   `git checkout` สลับไปที่ branch ที่เราต้องการ
--   `git rebase` รวม branch โดยการเลือก commit ที่จะรวม (เพื่อให้ประวัติการ commit ของ branch ที่เรา merge มีลำดับที่เรียงกัน)
--   `git merge` รวม branch หนึ่ง กับ branch ปัจจุบัน
+- `git branch` จัดการหรือสร้าง branch ของ repository
+- `git checkout` สลับไปที่ branch ที่เราต้องการ
+- `git rebase` รวม branch โดยการเลือก commit ที่จะรวม (เพื่อให้ประวัติการ commit ของ branch ที่เรา merge มีลำดับที่เรียงกัน)
+- `git merge` รวม branch หนึ่ง กับ branch ปัจจุบัน
 
 แหล่งเรียนรู้เพิ่มเติม
 
--   [Learn Git Branching](https://learngitbranching.js.org/)
+- [Learn Git Branching](https://learngitbranching.js.org/)
 
 ### Updating a Remote Repository
 
 remote repository คือ repository ที่ถูก host จาก network หรือ internet เช่นใน [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/product/)
 
--   `git push` ส่งการ commit ไปยัง remote repository
--   `git pull` ดึงการ commit จาก remote repository
--   `git fetch` ดึงการ commit จาก remote repository แต่ยังไม่ merge กับ branch ปัจจุบัน
--   `git remote` จัดการ remote repository ทั้งหมดที่เชื่อมกับ local repository (ส่วนใหญ่จะตั้งชื่อว่า 'origin')
+- `git push` ส่งการ commit ไปยัง remote repository
+- `git pull` ดึงการ commit จาก remote repository
+- `git fetch` ดึงการ commit จาก remote repository แต่ยังไม่ merge กับ branch ปัจจุบัน
+- `git remote` จัดการ remote repository ทั้งหมดที่เชื่อมกับ local repository (ส่วนใหญ่จะตั้งชื่อว่า 'origin')
 
 นอกจากนี้ ยังมีคำสั่งอื่น ๆ อีกเยอะมากที่มีประโยชน์กับ experience ของเราในฐานะ developer สามารถเข้าไปอ่าน documentation ของ Git ได้ที่ [git-scm.com/doc](https://git-scm.com/doc) เลย
 
@@ -65,20 +65,20 @@ remote repository คือ repository ที่ถูก host จาก network
 
 สมัครสมาชิก GitHub ได้ที่ [github.com](https://github.com) จากนั้นให้สร้าง repository ใหม่ โดยกดปุ่ม 'New' ที่หน้าหลักของ GitHub
 
--   [Hello World - GitHub](https://docs.github.com/en/get-started/start-your-journey/hello-world)
+- [Hello World - GitHub](https://docs.github.com/en/get-started/start-your-journey/hello-world)
 
 ### Using Pull Requests
 
 Pull Request เป็น feature ที่ช่วยให้เราสามารถร้องขอให้เจ้าของ repository รวมการเปลี่ยนแปลงใน branch หนึ่ง เข้าไปที่อีก branch หนึ่ง
 
--   [Beginner’s guide to GitHub: Creating a pull request](https://github.blog/developer-skills/github/beginners-guide-to-github-creating-a-pull-request/)
--   [Creating a Pull Request - GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+- [Beginner’s guide to GitHub: Creating a pull request](https://github.blog/developer-skills/github/beginners-guide-to-github-creating-a-pull-request/)
+- [Creating a Pull Request - GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 ### Using Issues
 
 Issues เป็น feature ที่ช่วยให้เราสามารถสร้าง task หรือ bug report ใน repository ของเรา
 
--   [Quickstart for GitHub Issues - Follow this brief interactive guide to learn about GitHub Issues.](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart)
+- [Quickstart for GitHub Issues - Follow this brief interactive guide to learn about GitHub Issues.](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart)
 
 ## Learning Resources
 
@@ -86,34 +86,34 @@ Issues เป็น feature ที่ช่วยให้เราสามา�
 
 ### Video Tutorials
 
--   [Git & GitHub Tutorial | Visualized Git Course](https://www.youtube.com/watch?v=S7XpTAnSDL4)
--   [Git in 100 seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
--   [Git Tutorial For Dummies](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
--   [Learn Git - The Full Course [Freecodecamp]](https://www.youtube.com/watch?v=zTjRZNkhiEU)
+- [Git & GitHub Tutorial | Visualized Git Course](https://www.youtube.com/watch?v=S7XpTAnSDL4)
+- [Git in 100 seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
+- [Git Tutorial For Dummies](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
+- [Learn Git - The Full Course [Freecodecamp]](https://www.youtube.com/watch?v=zTjRZNkhiEU)
 
 ### Web Content
 
--   [Git พื้นฐานสุด ๆ จบในหน้าเดียว](https://www.borntodev.com/2020/03/30/git-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%86/)
--   [Git Handbook](https://guides.github.com/introduction/git-handbook/)
--   [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Git พื้นฐานสุด ๆ จบในหน้าเดียว](https://www.borntodev.com/2020/03/30/git-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%86/)
+- [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ### Interactive Games
 
--   [Learn Git Branching](https://learngitbranching.js.org/)
--   [Ohmygit (Git Game)](https://ohmygit.org/)
--   [Githug - Command Line Git Game](https://github.com/Gazler/githug)
+- [Learn Git Branching](https://learngitbranching.js.org/)
+- [Ohmygit (Git Game)](https://ohmygit.org/)
+- [Githug - Command Line Git Game](https://github.com/Gazler/githug)
 
 ### Long Content
 
--   [GitHub: Git Basics](https://docs.github.com/en/get-started/git-basics)
--   [Pro Git book](https://git-scm.com/book/en/v2)
+- [GitHub: Git Basics](https://docs.github.com/en/get-started/git-basics)
+- [Pro Git book](https://git-scm.com/book/en/v2)
 
 ### Other Resources
 
 #### Writing Good Commit Messages
 
--   [Conventional Commits - A specification for adding human and machine readable meaning to commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
--   [How to write better Git commit messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
--   [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+- [Conventional Commits - A specification for adding human and machine readable meaning to commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
+- [How to write better Git commit messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
+- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 
 เพียงเท่านี้ เราก็เชื่อว่าทุกคนก็สามารถเริ่มต้นเรียนรู้เกี่ยวกับการใช้ Git/GitHub ได้แล้ว<br />อย่าลืมกดติดตาม Instagram ของเราได้ที่ [@thinc.th](https://instagram.com/thinc.th) ด้วยนะ

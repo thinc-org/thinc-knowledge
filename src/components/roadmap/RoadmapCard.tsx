@@ -23,13 +23,15 @@ export const RoadmapCard = ({
                 className,
             )}
         >
-            <div className="text-left space-y-2">
+            <div className="space-y-2 text-left">
                 <LevelTag level={level} />
 
-                <h3 className="text-xl font-bold font-display text-text-primary md:text-2xl">
+                <h3 className="font-display text-xl font-bold text-text-primary md:text-2xl">
                     {title}
                 </h3>
-                <p className="text-text-secondary text-sm leading-normal md:text-base">{description}</p>
+                <p className="text-sm leading-normal text-text-secondary md:text-base">
+                    {description}
+                </p>
             </div>
         </a>
     );

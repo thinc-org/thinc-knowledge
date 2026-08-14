@@ -16,8 +16,12 @@ const { title, description, authors, headings } = Astro.props;
 <Base title={title} description={description}>
     <article class="flex flex-col items-center bg-bg-primary">
         <Header title={title} description={description} authors={authors} />
-        <div class="flex min-h-[80vh] w-full flex-col items-center bg-white/[0.06] text-base sm:text-lg">
-            <div class="flex w-full max-w-[var(--max-width-content)] flex-col px-8 pt-8 pb-20 md:pt-10 lg:max-w-screen-xl lg:flex-row lg:gap-24">
+        <div
+            class="flex min-h-[80vh] w-full flex-col items-center bg-white/[0.06] text-base sm:text-lg"
+        >
+            <div
+                class="flex w-full max-w-[var(--max-width-content)] flex-col px-8 pt-8 pb-20 md:pt-10 lg:max-w-screen-xl lg:flex-row lg:gap-24"
+            >
                 <TableOfContents headings={headings} client:idle />
                 <div class="content min-w-0 flex-1">
                     <slot />

@@ -16,7 +16,7 @@ export const Statement = () => {
                     observer.unobserve(el);
                 }
             },
-            { threshold: 0.5 }
+            { threshold: 0.5 },
         );
 
         observer.observe(el);
@@ -30,7 +30,7 @@ export const Statement = () => {
     return (
         <section
             ref={ref}
-            className="flex flex-col items-center justify-center overflow-hidden border-t border-black/10 bg-white py-24 text-center md:py-28 lg:py-36"
+            className="border-black/10 flex flex-col items-center justify-center overflow-hidden border-t bg-white py-24 text-center md:py-28 lg:py-36"
         >
             <p className="font-display text-5xl font-bold leading-tight text-black sm:text-7xl md:text-8xl">
                 <span className={lineClass(stage >= 1)}>STOP IMAGINING</span>

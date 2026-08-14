@@ -14,10 +14,17 @@ export const Section = ({
     [key: string]: any;
 }) => {
     return (
-        <section className={twMerge('flex w-full justify-center', className)} {...props}>
+        <section
+            className={twMerge('flex w-full justify-center', className)}
+            {...props}
+        >
             <div
                 className={`h-full w-full px-8 ${
-                    prose ? 'max-w-prose' : wide ? 'max-w-screen-lg lg:max-w-screen-xl' : 'max-w-screen-lg'
+                    prose
+                        ? 'max-w-prose'
+                        : wide
+                          ? 'max-w-screen-lg lg:max-w-screen-xl'
+                          : 'max-w-screen-lg'
                 }`}
             >
                 {children}

@@ -7,7 +7,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 const roadmaps = await getCollection('roadmap');
 ---
 
-<Base title={`Developer Roadmaps | ${SITE_TITLE}`} description={SITE_DESCRIPTION}>
+<Base
+    title={`Developer Roadmaps | ${SITE_TITLE}`}
+    description={SITE_DESCRIPTION}
+>
     <Title />
     <Roadmaps roadmaps={roadmaps} />
 </Base>

@@ -1,4 +1,10 @@
-import { FiFacebook, FiGithub, FiGlobe, FiInstagram, FiYoutube } from 'react-icons/fi';
+import {
+    FiFacebook,
+    FiGithub,
+    FiGlobe,
+    FiInstagram,
+    FiYoutube,
+} from 'react-icons/fi';
 import { FaMedium } from 'react-icons/fa6';
 
 const exploreLinks = [
@@ -9,11 +15,23 @@ const exploreLinks = [
 
 export const socialLinks = [
     { label: 'thinc.in.th', href: 'https://thinc.in.th', Icon: FiGlobe },
-    { label: 'Instagram', href: 'https://instagram.com/thinc.th', Icon: FiInstagram },
-    { label: 'Facebook', href: 'https://facebook.com/ThailandIncubator', Icon: FiFacebook },
+    {
+        label: 'Instagram',
+        href: 'https://instagram.com/thinc.th',
+        Icon: FiInstagram,
+    },
+    {
+        label: 'Facebook',
+        href: 'https://facebook.com/ThailandIncubator',
+        Icon: FiFacebook,
+    },
     { label: 'GitHub', href: 'https://github.com/thinc-org', Icon: FiGithub },
     { label: 'Medium', href: 'https://medium.com/thinc-org', Icon: FaMedium },
-    { label: 'YouTube', href: 'https://youtube.com/@thinc-org', Icon: FiYoutube },
+    {
+        label: 'YouTube',
+        href: 'https://youtube.com/@thinc-org',
+        Icon: FiYoutube,
+    },
 ];
 
 export const Footer = () => {
@@ -25,11 +43,18 @@ export const Footer = () => {
                     {/* Brand */}
                     <div className="flex flex-col gap-4">
                         <a href="/" className="flex items-center">
-                            <img alt="Thinc." className="h-7 w-auto select-none" src="/images/thinc-mark.svg" />
+                            <img
+                                alt="Thinc."
+                                className="h-7 w-auto select-none"
+                                src="/images/thinc-mark.svg"
+                            />
                         </a>
                         <p className="max-w-[320px] text-sm leading-relaxed text-white/70 lg:text-base">
                             A student club under the Faculty of Engineering,{' '}
-                            <span className="whitespace-nowrap">Chulalongkorn University</span>.
+                            <span className="whitespace-nowrap">
+                                Chulalongkorn University
+                            </span>
+                            .
                             <br />
                             Open to every faculty.
                         </p>
@@ -38,7 +63,9 @@ export const Footer = () => {
                     <div className="grid grid-cols-2 gap-8 sm:flex sm:gap-16">
                         {/* Explore */}
                         <div className="flex flex-col gap-1">
-                            <p className="pb-2 text-sm font-semibold text-white lg:text-base">Explore</p>
+                            <p className="pb-2 text-sm font-semibold text-white lg:text-base">
+                                Explore
+                            </p>
                             {exploreLinks.map(({ label, href }) => (
                                 <a
                                     key={label}
@@ -52,7 +79,9 @@ export const Footer = () => {
 
                         {/* Connect */}
                         <div className="flex flex-col gap-1">
-                            <p className="pb-2 text-sm font-semibold text-white lg:text-base">Connect</p>
+                            <p className="pb-2 text-sm font-semibold text-white lg:text-base">
+                                Connect
+                            </p>
                             {socialLinks.map(({ label, href, Icon }) => (
                                 <a
                                     key={label}
@@ -69,7 +98,7 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <p className="mt-10 border-t border-white/10 pt-6 text-center text-text-tertiary font-mono text-xs tracking-wide sm:text-left lg:text-sm">
+                <p className="mt-10 border-t border-white/10 pt-6 text-center font-mono text-xs tracking-wide text-text-tertiary sm:text-left lg:text-sm">
                     © THINC. 2023-2026
                 </p>
             </div>

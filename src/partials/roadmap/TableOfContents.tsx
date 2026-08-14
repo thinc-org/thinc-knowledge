@@ -4,7 +4,9 @@ import { FiChevronRight } from 'react-icons/fi';
 type Heading = { depth: number; slug: string; text: string };
 
 export const TableOfContents = ({ headings }: { headings: Heading[] }) => {
-    const items = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 3);
+    const items = headings.filter(
+        (heading) => heading.depth >= 2 && heading.depth <= 3,
+    );
     const [activeSlug, setActiveSlug] = useState('');
     const observerRef = useRef<IntersectionObserver | null>(null);
     const navRef = useRef<HTMLElement>(null);
@@ -29,7 +31,9 @@ export const TableOfContents = ({ headings }: { headings: Heading[] }) => {
 
     useEffect(() => {
         if (!activeSlug || !navRef.current) return;
-        const activeLink = navRef.current.querySelector(`a[href="#${CSS.escape(activeSlug)}"]`);
+        const activeLink = navRef.current.querySelector(
+            `a[href="#${CSS.escape(activeSlug)}"]`,
+        );
         activeLink?.scrollIntoView({ block: 'nearest' });
     }, [activeSlug]);
 
@@ -75,7 +79,9 @@ export const TableOfContents = ({ headings }: { headings: Heading[] }) => {
                 aria-label="Table of contents"
                 className="sticky top-24 hidden max-h-[calc(100vh-8rem)] shrink-0 basis-56 overflow-y-auto [scrollbar-width:none] lg:block [&::-webkit-scrollbar]:hidden"
             >
-                <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-text-tertiary">Table of Contents</p>
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-text-tertiary">
+                    Table of Contents
+                </p>
                 {list}
             </nav>
         </>

@@ -22,7 +22,9 @@ export const BlogCard = ({
                     className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
             </div>
-            <h3 className="text-lg font-bold font-display text-text-primary transition-colors duration-fast group-hover:text-accent-primary md:text-xl">{title}</h3>
+            <h3 className="font-display text-lg font-bold text-text-primary transition-colors duration-fast group-hover:text-accent-primary md:text-xl">
+                {title}
+            </h3>
         </a>
     );
 };

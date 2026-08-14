@@ -185,17 +185,15 @@ export const Roadmaps = ({
                         </p>
                     </div>
                     <div className="grid gap-6 md:grid-cols-2">
-                        {roadmaps
-                            ?.slice(0, 4)
-                            .map((roadmap) => (
-                                <RoadmapCard
-                                    key={roadmap.id}
-                                    slug={roadmap.slug}
-                                    level={roadmap.data.level}
-                                    title={roadmap.data.title}
-                                    description={roadmap.data.description}
-                                />
-                            ))}
+                        {roadmaps?.slice(0, 4).map((roadmap) => (
+                            <RoadmapCard
+                                key={roadmap.id}
+                                slug={roadmap.slug}
+                                level={roadmap.data.level}
+                                title={roadmap.data.title}
+                                description={roadmap.data.description}
+                            />
+                        ))}
                     </div>
                     <div className="flex w-full justify-center pt-4">
                         <a

@@ -8,13 +8,16 @@ import { Section } from '@/components/Section';
 
 export const Title = () => {
     return (
-        <Section data-section-theme="dark" className="bg-bg-primary pt-24 pb-10 text-text-secondary md:pt-28">
+        <Section
+            data-section-theme="dark"
+            className="bg-bg-primary pb-10 pt-24 text-text-secondary md:pt-28"
+        >
             <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                <div className="space-y-3 max-w-md sm:max-w-[50%]">
-                    <h1 className="text-3xl font-bold font-display text-text-primary md:text-4xl">
+                <div className="max-w-md space-y-3 sm:max-w-[50%]">
+                    <h1 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
                         Thinc Blogs
                     </h1>
-                    <p className="text-lg font-body">
+                    <p className="font-body text-lg">
                         บทความให้ความรู้สำหรับการพัฒนาซอฟต์แวร์จากพี่ ๆ ในชมรม
                     </p>
                 </div>
@@ -22,7 +25,7 @@ export const Title = () => {
                     href="https://medium.com/thinc-org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-secondary flex shrink-0 whitespace-nowrap items-center gap-1.5 px-4 py-2 text-sm font-semibold self-start sm:self-auto md:px-5 md:py-2.5 md:text-base"
+                    className="btn-secondary flex shrink-0 items-center gap-1.5 self-start whitespace-nowrap px-4 py-2 text-sm font-semibold sm:self-auto md:px-5 md:py-2.5 md:text-base"
                 >
                     <span>medium.com/thinc-org</span>
                     <FiChevronRight className="text-lg md:text-xl" />
@@ -48,7 +51,10 @@ const blogs = feed.items.map((item) => {
 });
 export const Blogs = () => {
     return (
-        <Section data-section-theme="dark" className="bg-bg-primary pb-16 text-text-secondary md:pb-24">
+        <Section
+            data-section-theme="dark"
+            className="bg-bg-primary pb-16 text-text-secondary md:pb-24"
+        >
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {blogs.map((blog) => {
                     return (

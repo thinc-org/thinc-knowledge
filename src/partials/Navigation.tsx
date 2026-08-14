@@ -34,15 +34,21 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
     return (
         <>
             {showNav && (
-                <div className="fixed inset-0 z-[60] flex h-[100vh] flex-col overflow-y-auto bg-black/60 backdrop-blur-xl backdrop-brightness-[.45] backdrop-saturate-[.6] text-text-primary supports-[height:100dvh]:h-[100dvh] md:hidden">
+                <div className="bg-black/60 fixed inset-0 z-[60] flex h-[100vh] flex-col overflow-y-auto text-text-primary backdrop-blur-xl backdrop-brightness-[.45] backdrop-saturate-[.6] supports-[height:100dvh]:h-[100dvh] md:hidden">
                     <div className="flex h-14 items-center justify-between px-8">
                         <a
                             href="/"
                             onClick={() => setShowNav(false)}
                             className="-ml-2 flex items-center gap-2.5"
                         >
-                            <img alt="" className="h-7 w-auto" src="/images/thinc-mark.svg" />
-                            <span className="text-lg font-semibold tracking-[0.01em] text-text-primary">Thinc.</span>
+                            <img
+                                alt=""
+                                className="h-7 w-auto"
+                                src="/images/thinc-mark.svg"
+                            />
+                            <span className="text-lg font-semibold tracking-[0.01em] text-text-primary">
+                                Thinc.
+                            </span>
                         </a>
                         <button
                             onClick={() => setShowNav(false)}
@@ -59,8 +65,10 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                                 <a
                                     key={href}
                                     href={href}
-                                    aria-current={isActive(href) ? 'page' : undefined}
-                                    className={`text-3xl font-bold font-display duration-fast hover:text-accent-primary ${
+                                    aria-current={
+                                        isActive(href) ? 'page' : undefined
+                                    }
+                                    className={`font-display text-3xl font-bold duration-fast hover:text-accent-primary ${
                                         isActive(href)
                                             ? 'text-accent-primary'
                                             : 'text-text-primary'
@@ -99,16 +107,22 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                     </div>
                 </div>
             )}
-            <header className="fixed top-0 left-0 right-0 z-50 flex w-full justify-center border-b border-white/10 bg-black/20 backdrop-blur-md transition-colors duration-normal">
-                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 h-16 lg:max-w-screen-xl">
+            <header className="bg-black/20 fixed left-0 right-0 top-0 z-50 flex w-full justify-center border-b border-white/10 backdrop-blur-md transition-colors duration-normal">
+                <div className="flex h-16 w-full max-w-screen-lg items-center justify-between px-8 lg:max-w-screen-xl">
                     <div className="flex items-center space-x-10">
                         {/* Logo */}
                         <a
                             href="/"
                             className="-ml-2 flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--sky)]"
                         >
-                            <img alt="" className="h-7 w-auto" src="/images/thinc-mark.svg" />
-                            <span className="text-lg font-semibold tracking-[0.01em] text-white lg:text-xl">Thinc.</span>
+                            <img
+                                alt=""
+                                className="h-7 w-auto"
+                                src="/images/thinc-mark.svg"
+                            />
+                            <span className="text-lg font-semibold tracking-[0.01em] text-white lg:text-xl">
+                                Thinc.
+                            </span>
                         </a>
                         {/* Nav links */}
                         <nav className="hidden items-center space-x-6 md:flex">
@@ -116,7 +130,9 @@ export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
                                 <a
                                     key={href}
                                     href={href}
-                                    aria-current={isActive(href) ? 'page' : undefined}
+                                    aria-current={
+                                        isActive(href) ? 'page' : undefined
+                                    }
                                     className={`text-sm transition-colors lg:text-base ${
                                         isActive(href)
                                             ? 'font-semibold text-accent-primary'

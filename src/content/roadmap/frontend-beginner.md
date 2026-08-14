@@ -28,14 +28,14 @@ HTML CSS และ JavaScript นั้นคือ 3 ภาษาที่ส�
 
 HTML หรือ HyperText Markup Language คือภาษาพื้นฐานที่เป็นเหมือนกับโครงสร้างของเว็บไซต์<br />ซึ่งเป็นภาษาที่ง่ายที่สุดในการเรียนรู้
 
--   [มาเรียนเขียนเว็บด้วย HTML 5 !! ฉบับที่เร็วที่สุด !](https://www.youtube.com/watch?v=-jzu5YH6OMQ)
--   [HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)
--   [W3Schools: Learn HTML](https://www.w3schools.com/html/html_intro.asp)
+- [มาเรียนเขียนเว็บด้วย HTML 5 !! ฉบับที่เร็วที่สุด !](https://www.youtube.com/watch?v=-jzu5YH6OMQ)
+- [HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)
+- [W3Schools: Learn HTML](https://www.w3schools.com/html/html_intro.asp)
 
 Tips: ถ้าหากว่าอยากต่อยอดสกิลในการเขียน HTML สามารถเรียนรู้ได้จากการเรียนรู้เกี่ยวกับ Semantic HTML และ SEO ได้
 
--   [Why & When to Use Semantic HTML Elements over Divs](https://www.youtube.com/watch?v=bOUhq46fd5g)
--   [Complete SEO Course for Beginners: Learn to Rank #1 in Google](https://www.youtube.com/watch?v=xsVTqzratPs)
+- [Why & When to Use Semantic HTML Elements over Divs](https://www.youtube.com/watch?v=bOUhq46fd5g)
+- [Complete SEO Course for Beginners: Learn to Rank #1 in Google](https://www.youtube.com/watch?v=xsVTqzratPs)
 
 ### CSS
 
@@ -43,13 +43,13 @@ CSS หรือ Cascading Style Sheets คือภาษาที่ใช้�
 
 ภาษานี้อาจจะเป็นภาษาที่ใช้เวลานานในการเรียนรู้ แต่เพียงแค่รู้พื้นฐานก็สามารถใช้งานได้แล้ว และสามารถเรียนรู้เพิ่มเติมได้ต่อไประหว่างการทำงานได้ไม่ยากเลย
 
--   [มาหัดเขียน CSS3 ที่ช่วยให้เว็บสวยขึ้น แบบไว ๆ ใน 10 นาที](https://www.youtube.com/watch?v=9H6ubALp8vo2)
--   [CSS Masterclass](https://www.youtube.com/watch?v=FqmB-Zj2-PA)
--   [W3Schools: Learn CSS](https://www.w3schools.com/css/)
+- [มาหัดเขียน CSS3 ที่ช่วยให้เว็บสวยขึ้น แบบไว ๆ ใน 10 นาที](https://www.youtube.com/watch?v=9H6ubALp8vo2)
+- [CSS Masterclass](https://www.youtube.com/watch?v=FqmB-Zj2-PA)
+- [W3Schools: Learn CSS](https://www.w3schools.com/css/)
 
 Tips: อย่าลืมทำความรู้จักกับการออกแบบเว็บไซต์ให้เป็น Responsive เพื่อให้สามารถรองรับในอุปกรณ์ต่าง ๆ ได้
 
--   [5 simple tips to making responsive layouts the easy way](https://www.youtube.com/watch?v=VQraviuwbzU)
+- [5 simple tips to making responsive layouts the easy way](https://www.youtube.com/watch?v=VQraviuwbzU)
 
 ### JavaScript
 
@@ -57,15 +57,15 @@ Tips: อย่าลืมทำความรู้จักกับกา�
 
 JavaScript นั้นถือว่าเป็นภาษาที่ยากที่สุดใน 3 ภาษา แต่ก็เป็นภาษาที่เราจะได้ใช้งานและต่อยอดต่อไปในเนื้อหาต่อ ๆ ไป
 
--   [JavaScript Crash Course - PasaComputer](https://youtu.be/Tz5Wk1yPlBE?si=LF1miZGscb60gEPB)
--   [JavaScript ใน 21 วัน - PasaComputer](https://www.youtube.com/watch?v=oKY8tJLA5nU&list=PLOgiLP3tCaPXc9-whn0on3tDT9rQdXAWL)
--   [JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk)
--   [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)
--   [The Modern JavaScript Tutorial](https://javascript.info/)
+- [JavaScript Crash Course - PasaComputer](https://youtu.be/Tz5Wk1yPlBE?si=LF1miZGscb60gEPB)
+- [JavaScript ใน 21 วัน - PasaComputer](https://www.youtube.com/watch?v=oKY8tJLA5nU&list=PLOgiLP3tCaPXc9-whn0on3tDT9rQdXAWL)
+- [JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk)
+- [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)
+- [The Modern JavaScript Tutorial](https://javascript.info/)
 
 Tips: สุดท้ายเราลองมานำ 3 ภาษาที่เรียนมาทั้งหมดมาใช้งานร่วมกันดูผ่านตัวอย่างเล็ก ๆ นี้ได้เลย
 
--   [Build a Netflix Landing Page Clone with HTML, CSS & JS](https://www.youtube.com/watch?v=P7t13SGytRk)
+- [Build a Netflix Landing Page Clone with HTML, CSS & JS](https://www.youtube.com/watch?v=P7t13SGytRk)
 
 <br />
 
