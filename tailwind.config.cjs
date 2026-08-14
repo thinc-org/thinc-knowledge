@@ -28,7 +28,11 @@ module.exports = {
                 'border-secondary': 'var(--color-border-secondary)',
                 'border-focus': 'var(--color-border-focus)',
 
-                'accent-primary': 'var(--color-accent-primary)',
+                'accent-primary': {
+                    DEFAULT: 'var(--color-accent-primary)',
+                    hover: 'var(--color-accent-primary-hover)',
+                    active: 'var(--color-accent-primary-active)',
+                },
 
                 'status-success': 'var(--color-status-success)',
                 'status-warning': 'var(--color-status-warning)',

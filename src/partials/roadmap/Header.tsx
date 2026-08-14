@@ -20,7 +20,7 @@ export const Header = ({
                     <div className="flex flex-col">
                         <a
                             href="/roadmap"
-                            className="hover:text-accent-primary-hover group -mt-2 flex w-fit items-center gap-1 py-2 text-lg font-semibold uppercase tracking-widest text-accent-primary transition-colors duration-fast md:text-xl"
+                            className="group -mt-2 flex w-fit items-center gap-1 py-2 text-lg font-semibold uppercase tracking-widest text-accent-primary transition-colors duration-fast hover:text-accent-primary-hover md:text-xl"
                         >
                             <FiChevronLeft className="text-xl transition-transform group-hover:-translate-x-1 md:text-2xl" />
                             Roadmap

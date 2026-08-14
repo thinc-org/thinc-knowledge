@@ -324,6 +324,17 @@ const videosPlaylists = [
     },
 ];
 
+const LEVEL_MAP: Record<string, string> = {
+    beginner: 'tag-beginner',
+    basic: 'tag-beginner',
+    intermediate: 'tag-intermediate',
+    advanced: 'tag-advanced',
+};
+
+const getVideoTagClass = (tag: string) =>
+    LEVEL_MAP[tag.toLowerCase()] ??
+    'border-border-primary bg-bg-secondary text-accent-primary-hover';
+
 export const Videos = ({ all = false }: { all?: boolean }) => {
     // standalone /videos page: section heading is the page's h1
     const Heading = all ? 'h1' : 'h2';
@@ -383,7 +394,7 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
                                         {video.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="rounded-full border border-border-primary bg-border-secondary px-2.5 py-1 text-xs font-semibold text-accent-primary"
+                                                className={`rounded-lg border px-2.5 py-0.5 text-sm font-semibold capitalize ${getVideoTagClass(tag)}`}
                                             >
                                                 {tag}
                                             </span>
