@@ -11,22 +11,22 @@ export interface Props {
     image?: string;
 }
 
-const {
-    title,
-    description,
-    hideNav,
-    hideFooter,
-    image = '/blog-placeholder-1.jpg',
-} = Astro.props;
+const { title, description, hideNav, hideFooter, image } = Astro.props;
 ---
 
 <html lang="th">
     <head>
-        <BaseHead title={title} description={description} />
+        <BaseHead title={title} description={description} image={image} />
     </head>
-    <body class="bg-thinc-blue text-gray-100">
-        {!hideNav && <Navigation client:load />}
-        <main class="min-h-screen">
+    <body class="bg-bg-primary text-text-primary">
+        <a
+            href="#main"
+            class="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-[100] focus:rounded-lg focus:bg-accent-primary focus:px-4 focus:py-2 focus:font-semibold focus:text-black"
+        >
+            Skip to content
+        </a>
+        {!hideNav && <Navigation client:load pathname={Astro.url.pathname} />}
+        <main id="main" class="min-h-screen">
             <slot />
         </main>
 

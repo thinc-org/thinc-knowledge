@@ -1,20 +1,8 @@
 export const LevelTag = ({ level }: { level: string }) => {
-    const colorSchema = {
-        beginner: '#4ade80',
-        intermediate: '#fbbf24',
-        advanced: '#ef4444',
-    };
-
-    const color = colorSchema as Record<string, string>;
-
     return (
         <div className="flex">
             <div
-                className="rounded-full px-2 py-1 text-xs font-semibold uppercase"
-                style={{
-                    color: color[level],
-                    backgroundColor: `${color[level]}15`,
-                }}
+                className={`rounded-lg border px-2.5 py-0.5 text-sm font-semibold capitalize tag-${level}`}
             >
                 {level}
             </div>

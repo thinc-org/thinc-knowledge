@@ -1,7 +1,17 @@
-.content body {
+.content {
+    /* readable measure for long-form text (~80 chars/line) */
+    max-width: var(--max-width-content);
+}
+.content {
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.7;
+}
+.content p,
+.content li,
+.content blockquote,
+.content table {
+    font-family: 'Inter', 'Noto Sans Thai', sans-serif;
 }
 .content h1,
 .content h2,
@@ -10,19 +20,35 @@
     font-weight: 700;
     margin: 3rem 0 1rem 0;
     line-height: 1.2;
-    color: #1e293b;
+    color: var(--color-text-primary);
+    font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+    scroll-margin-top: 7rem;
 }
 .content h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .content h2 {
-    font-size: 1.8em;
-}
-.content h3 {
     font-size: 1.4em;
 }
-.content h4 {
+.content h3 {
     font-size: 1.2em;
+}
+.content h4 {
+    font-size: 1.1em;
+}
+@media (min-width: 640px) {
+    .content h1 {
+        font-size: 2em;
+    }
+    .content h2 {
+        font-size: 1.8em;
+    }
+    .content h3 {
+        font-size: 1.4em;
+    }
+    .content h4 {
+        font-size: 1.2em;
+    }
 }
 
 .content strong,
@@ -30,24 +56,23 @@
     font-weight: 700;
 }
 .content a {
-    color: #0f172a;
-    font-weight: 500;
-    text-decoration: underline;
+    color: var(--color-accent-primary);
+    font-weight: 400;
 }
 .content a:hover {
-    color: #334155;
+    color: var(--color-accent-primary-hover);
 }
 .content p {
     margin-bottom: 1em;
-    color: #334155;
+    color: var(--color-text-primary);
 }
 .content code {
     padding: 2px 5px;
-    background-color: #303030;
-    color: #fafafa;
+    background-color: var(--logo-gray);
+    color: var(--color-text-primary);
     border-radius: 2px;
-    font-weight: 500;
-    font-size: 1em;
+    font-weight: 400;
+    font-size: 0.9em;
 }
 .content pre {
     padding: 1.5em;
@@ -57,13 +82,13 @@
     all: unset;
 }
 .content blockquote {
-    border-left: 4px solid #fec92b;
+    border-left: 4px solid var(--color-accent-primary);
     padding: 0 0 0 20px;
     margin: 0px;
 }
 .content hr {
     border: none;
-    border-top: 1px solid rgb(var(--gray-light));
+    border-top: 1px solid var(--color-border-primary);
 }
 .content ul {
     margin: -0.2em 0 3em 0;
@@ -74,11 +99,37 @@
     font-size: 1.3em;
     padding-right: 0.5em;
 }
+.content ol {
+    margin: -0.2em 0 3em 0;
+    counter-reset: content-ol;
+}
+.content ol li {
+    counter-increment: content-ol;
+}
+.content ol li::before {
+    content: counter(content-ol) '.';
+    opacity: 0.5;
+    font-weight: 700;
+    padding-right: 0.5em;
+}
 .content table {
+    display: block;
+    overflow-x: auto;
     text-align: left;
     margin-bottom: 1em;
+    border-collapse: collapse;
 }
 .content table th,
 .content table td {
     padding: 0.5em 1em;
+    border: 1px solid var(--color-border-primary);
+}
+.content table th {
+    color: var(--color-text-primary);
+    font-weight: 700;
+}
+
+/* Remove top margin from the very first element so spacing is uniform regardless of whether a page starts with a paragraph or a heading */
+.content > *:first-child {
+    margin-top: 0;
 }

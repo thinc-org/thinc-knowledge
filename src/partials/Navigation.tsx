@@ -1,64 +1,173 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FiInstagram, FiMenu, FiX } from 'react-icons/fi';
 
-export const Navigation = () => {
+import { socialLinks } from '@/partials/Footer';
+
+const drawerSocials = socialLinks.filter(
+    ({ href }) => href !== 'https://thinc.in.th',
+);
+
+const navLinks = [
+    { label: 'Roadmap', href: '/roadmap' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Videos', href: '/videos' },
+];
+
+export const Navigation = ({ pathname = '' }: { pathname?: string }) => {
     const [showNav, setShowNav] = useState(false);
+    const isActive = (href: string) => pathname.startsWith(href);
+
+    // open drawer: lock page scroll, close on Escape
+    useEffect(() => {
+        if (!showNav) return;
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') setShowNav(false);
+        };
+        document.documentElement.style.overflow = 'hidden';
+        window.addEventListener('keydown', onKey);
+        return () => {
+            document.documentElement.style.overflow = '';
+            window.removeEventListener('keydown', onKey);
+        };
+    }, [showNav]);
 
     return (
         <>
             {showNav && (
-                <div className="fixed inset-0 z-50 flex flex-col bg-gradient-to-b from-thinc-blue to-slate-950 sm:hidden">
-                    <div className="flex justify-end px-8 pt-9">
+                <div className="bg-black/60 fixed inset-0 z-[60] flex h-[100vh] flex-col overflow-y-auto text-text-primary backdrop-blur-xl backdrop-brightness-[.45] backdrop-saturate-[.6] supports-[height:100dvh]:h-[100dvh] md:hidden">
+                    <div className="flex h-14 items-center justify-between px-8">
+                        <a
+                            href="/"
+                            onClick={() => setShowNav(false)}
+                            className="-ml-2 flex items-center gap-2.5"
+                        >
+                            <img
+                                alt=""
+                                className="h-7 w-auto"
+                                src="/images/thinc-mark.svg"
+                            />
+                            <span className="text-lg font-semibold tracking-[0.01em] text-text-primary">
+                                Thinc.
+                            </span>
+                        </a>
                         <button
                             onClick={() => setShowNav(false)}
-                            className="grid h-10 place-content-center rounded-lg border border-slate-700 px-3 text-lg text-slate-400 duration-200 hover:bg-slate-800"
+                            aria-label="Close menu"
+                            className="btn-ghost flex items-center justify-center"
                         >
-                            <FiX />
+                            <FiX size={22} />
                         </button>
                     </div>
-                </div>
-            )}
-            <header className="flex w-full justify-center drop-shadow-md">
-                <div className="flex w-full max-w-screen-lg items-center justify-between px-8 sm:h-24">
-                    <div className="flex items-center space-x-12">
-                        <div className="h-20 py-5">
-                            <a href="/">
-                                <img
-                                    className="h-full w-auto select-none"
-                                    src="/images/thinc-logo-alt.svg"
-                                    alt="Thinc Logo"
-                                    loading="eager"
-                                />
-                            </a>
-                        </div>
-                        <div className="mt-4 hidden items-center space-x-8 text-slate-400 sm:flex">
-                            <a href="/roadmap">Roadmap</a>
-                            <a href="/blog">Blog</a>
-                            <a href="/videos">Videos</a>
+
+                    <div className="flex flex-1 flex-col items-center px-8">
+                        <div className="m-auto flex flex-col items-center space-y-8 py-8">
+                            {navLinks.map(({ label, href }) => (
+                                <a
+                                    key={href}
+                                    href={href}
+                                    aria-current={
+                                        isActive(href) ? 'page' : undefined
+                                    }
+                                    className={`font-display text-3xl font-bold duration-fast hover:text-accent-primary ${
+                                        isActive(href)
+                                            ? 'text-accent-primary'
+                                            : 'text-text-primary'
+                                    }`}
+                                    onClick={() => setShowNav(false)}
+                                >
+                                    {label}
+                                </a>
+                            ))}
                         </div>
                     </div>
-                    <div className="flex items-center space-x-4 sm:mt-4">
+
+                    <div className="flex flex-col items-center space-y-5 px-8 pb-16 [padding-bottom:max(4rem,env(safe-area-inset-bottom))]">
                         <a
                             href="https://thinc.in.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 place-content-center rounded-lg border border-slate-700 px-3 text-sm text-slate-400 duration-200 hover:bg-slate-800 sm:grid"
+                            className="btn-secondary flex w-full items-center justify-center py-3.5 text-lg font-semibold"
+                        >
+                            Main Site
+                        </a>
+                        <div className="flex items-center gap-2">
+                            {drawerSocials.map(({ label, href, Icon }) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={label}
+                                    className="btn-icon flex h-11 w-11 items-center justify-center"
+                                >
+                                    <Icon size={18} />
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
+            <header className="bg-black/20 fixed left-0 right-0 top-0 z-50 flex w-full justify-center border-b border-white/10 backdrop-blur-md transition-colors duration-normal">
+                <div className="flex h-16 w-full max-w-screen-lg items-center justify-between px-8 lg:max-w-screen-xl">
+                    <div className="flex items-center space-x-10">
+                        {/* Logo */}
+                        <a
+                            href="/"
+                            className="-ml-2 flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--sky)]"
+                        >
+                            <img
+                                alt=""
+                                className="h-7 w-auto"
+                                src="/images/thinc-mark.svg"
+                            />
+                            <span className="text-lg font-semibold tracking-[0.01em] text-white lg:text-xl">
+                                Thinc.
+                            </span>
+                        </a>
+                        {/* Nav links */}
+                        <nav className="hidden items-center space-x-6 md:flex">
+                            {navLinks.map(({ label, href }) => (
+                                <a
+                                    key={href}
+                                    href={href}
+                                    aria-current={
+                                        isActive(href) ? 'page' : undefined
+                                    }
+                                    className={`text-sm transition-colors lg:text-base ${
+                                        isActive(href)
+                                            ? 'font-semibold text-accent-primary'
+                                            : 'text-white/70 hover:text-white'
+                                    }`}
+                                >
+                                    {label}
+                                </a>
+                            ))}
+                        </nav>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <a
+                            href="https://thinc.in.th"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hidden h-8 items-center rounded-lg border border-border-primary px-4 text-sm text-white/70 transition-colors duration-fast hover:border-white/40 hover:text-white md:flex lg:h-9 lg:text-base"
                         >
                             Main Site
                         </a>
                         <a
-                            href="https://www.instagram.com/thinc.in.th"
+                            href="https://www.instagram.com/thinc.th"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hidden h-8 place-content-center rounded-lg border border-slate-700 px-2.5 text-slate-400 duration-200 hover:bg-slate-800 sm:grid"
+                            className="btn-ghost hidden h-8 w-8 items-center justify-center md:flex"
                         >
-                            <FiInstagram />
+                            <FiInstagram size={16} />
                         </a>
                         <button
                             onClick={() => setShowNav(true)}
-                            className="grid h-10 place-content-center rounded-lg border border-slate-700 px-3 text-lg text-slate-400 duration-200 hover:bg-slate-800 sm:hidden"
+                            aria-label="Open menu"
+                            aria-expanded={showNav}
+                            className="btn-ghost flex items-center justify-center md:hidden"
                         >
-                            <FiMenu />
+                            <FiMenu size={22} />
                         </button>
                     </div>
                 </div>
