@@ -285,6 +285,12 @@ export const Blogs = () => {
 
 const videosPlaylists = [
     {
+        title: 'Thinc. First Meet 2026',
+        description: 'กิจกรรม First Meet 2026 โดยชมรม Thinc.',
+        link: 'https://drive.google.com/file/d/1WSE3sugsFmtA3UrtxHtCT-EQ3p3hFBJZ/preview',
+        tags: ['Event'],
+    },
+    {
         title: 'Basic TypeScript',
         description:
             'การสอนการเขียนโปรแกรมภาษา TypeScript จากกิจกรรม Get Ready, Developer! 2022',
@@ -387,7 +393,12 @@ export const Videos = ({ all = false }: { all?: boolean }) => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin"
                                     allowFullScreen
-                                    className="relative z-10 aspect-video h-auto w-full rounded-sm border border-border-primary"
+                                    className={`relative z-10 h-auto w-full rounded-sm border border-border-primary ${
+                                        // Drive's player reserves ~42px for its own bar, 16:9 pushes it off-center
+                                        video.link.includes('drive.google.com')
+                                            ? 'aspect-[16/10]'
+                                            : 'aspect-video'
+                                    }`}
                                 />
                                 <div className="relative z-10 flex flex-col gap-2">
                                     <div className="flex flex-wrap gap-2">
