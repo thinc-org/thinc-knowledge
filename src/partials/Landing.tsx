@@ -285,6 +285,12 @@ export const Blogs = () => {
 
 const videosPlaylists = [
     {
+        title: 'Thinc. First Meet 2026',
+        description: 'กิจกรรม First Meet 2026 โดยชมรม Thinc.',
+        link: 'https://drive.google.com/file/d/1WSE3sugsFmtA3UrtxHtCT-EQ3p3hFBJZ/preview',
+        tags: ['Event'],
+    },
+    {
         title: 'Basic TypeScript',
         description:
             'การสอนการเขียนโปรแกรมภาษา TypeScript จากกิจกรรม Get Ready, Developer! 2022',
